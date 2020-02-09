@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://www.tkssharma.com/sitemap.xml
