@@ -1,15 +1,14 @@
 ---
-date: 2020-02-01
-title: 'DevOps Gitbook for Developers | K8S and Docker | beginner'
+date: 2020-01-06
+title: 'GitBook on DevOps'
+template: post
 thumbnail: '../thumbnails/k8s.png'
-slug: devops-gitbook-for-developers-k8s-and-docker-beginner
+slug: gitbook-devops-sessions
 categories:
   - DevOps
-  - K8S
 tags:
-  - Docker
   - DevOps
-  - K8S
+  - Gitbook
 ---
 
 ![](https://cdn-images-1.medium.com/max/3324/1*kjwOLwdtIwidCAR7MozuFQ.png)

@@ -1,15 +1,16 @@
 ---
-date: 2020-02-01
-slug: building-website-quickly-with-flexbox-30-min
-title: 'Building Website Quickly with Flexbox | 30 Mintemplate'
+date: 2020-01-05
+title: 'Layout using flexbox'
+template: post
 thumbnail: '../thumbnails/css.png'
+slug: design-template-using-flexbox
 categories:
-  - Design
-  - flexbox
+  - design
 tags:
   - CSS
-  - Design
+  - Flexbox
 ---
+
 
 ![](https://cdn-images-1.medium.com/max/3708/1*38lLutRTTmmfIxTnuMXhdQ.png)
 
