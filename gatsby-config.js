@@ -109,7 +109,7 @@ module.exports = {
         setup(ref) {
           const ret = ref.query.site.siteMetadata.rssMetadata
           ret.allMarkdownRemark = ref.query.allMarkdownRemark
-          ret.generator = 'Tania Rascia'
+          ret.generator = 'Tarun Sharma'
           return ret
         },
         query: `
@@ -173,7 +173,7 @@ module.exports = {
             }
           `,
             output: config.siteRss,
-            title: 'Tania Rascia - RSS Feed',
+            title: 'Tarun Sharma - RSS Feed',
           },
         ],
       },

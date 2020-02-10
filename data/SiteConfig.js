@@ -11,7 +11,7 @@ const config = {
   siteDescription:
     'Hi, I’m Tarun.😎 I help people to make better world by good apps, I am Publisher, Trainer Developer, working on Enterprise and open source Technologies JavaScript frameworks (React Angular 2.x), I work with client side and server side javascript programming',
   siteRss: '/rss.xml',
-  googleAnalyticsID: '',
+  googleAnalyticsID: 'UA-26353225-1',
   postDefaultCategoryID: 'Tech',
   newsletter: '',
   newsletterEmbed: '',
