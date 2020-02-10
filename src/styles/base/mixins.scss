@@ -8,6 +8,12 @@
   }
 }
 
+@mixin small-breakpoint-max {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
 @mixin medium-breakpoint {
   @media (min-width: #{$tablet}) {
     @content;

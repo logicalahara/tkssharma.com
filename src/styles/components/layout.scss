@@ -6,8 +6,7 @@
 
 @include small-breakpoint {
   #main-content {
-    margin-top: 140px;
-    padding: 60px 0 0;
+    padding: 40px 0 0;
     min-height: calc(100vh - 219px);
   }
 }
@@ -22,6 +21,67 @@
 @include small-breakpoint {
   .container {
     padding: 0 2rem;
+  }
+}
+
+
+.youtube {
+  display: flex;
+  list-style: none;
+  margin-bottom: 10px;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid #ccc;
+
+  &::before {
+    content: '';
+  }
+
+  &:hover {
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+  }
+
+  &__content {
+    flex: 1 1;
+    margin: 20px;
+
+    &__description {
+      font-size: 1rem;
+      padding: 0.75rem 0;
+      margin: 0;
+    }
+  }
+
+  &__img {
+
+    width: 280px;
+    height: 180px;
+    margin: 20px;
+  }
+
+}
+
+@include small-breakpoint-max {
+  .youtube {
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &:hover {
+      border-bottom: 1px solid transparent;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    }
+
+    &__content {
+      margin-top: 10px;
+    }
+
+    &__img {
+      width: 100%;
+      margin: 0px;
+    }
+
   }
 }
 
@@ -54,6 +114,7 @@
     .elevator {
       flex: 2;
       margin-right: 3rem;
+
       p {
         max-width: 450px;
       }
@@ -421,6 +482,7 @@ h2.publication-company {
 
 @include small-breakpoint {
   .alert {
+
     .new,
     .popular {
       font-size: 0.9rem;
@@ -790,6 +852,7 @@ blockquote {
 
     a.donate-button {
       background: darken($primary-color, 20%);
+
       &:hover {
         background: darken($primary-color, 30%);
       }
@@ -1121,6 +1184,7 @@ button[disabled] {
     padding: 1rem 1.5rem;
     border: none;
     background: darken($primary-color, 25%);
+
     &:hover,
     &:active,
     &:focus {

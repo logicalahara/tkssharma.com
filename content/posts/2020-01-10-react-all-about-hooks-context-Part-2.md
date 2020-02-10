@@ -6,7 +6,7 @@ thumbnail: '../thumbnails/react.png'
 slug: react-hooks-and-context-apis-part-2
 categories:
   - javascript
-  - React
+  - ReactJS
   - Popular
 tags:
   - React

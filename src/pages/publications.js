@@ -6,7 +6,8 @@ import publications from '../../data/publications'
 
 export default class PublicationsPage extends Component {
   render() {
-    const pubs = Object.entries(publications)
+    const pubs = Object.entries(publications);
+    const link = 'http://s.ytimg.com/yts/img/no_thumbnail-vfl4t3-4R.jpg';
     return (
       <Layout>
         <Helmet title={`Published Articles – ${config.siteTitle}`} />
@@ -26,12 +27,19 @@ export default class PublicationsPage extends Component {
                   </h2>
                   <ul key={i}>
                     {articles.map((article, f) => {
-                      return (
-                        <li key={f}>
-                          <a href={`https://www.youtube.com/embed/videoseries?list=${article.id}`} target="_blank" rel="noopener noreferrer">
-                            {article.snippet.title}
-                          </a>
+                      return ( article.snippet.thumbnails.medium.url !== link ? (
+                        <li className="youtube" key={f}>
+                          <div className="youtube__item">
+                            <img className="youtube__img" src={article.snippet.thumbnails.medium.url} alt={article.snippet.title} />
+                          </div>
+                          <div className="youtube__content">
+                            <a href={`https://www.youtube.com/embed/videoseries?list=${article.id}`} target="_blank" rel="noopener noreferrer">
+                              <h5>{article.snippet.title}</h5>
+                              { article.snippet.description && <p className="youtube__content__description">{article.snippet.description.substr(0, 300) }</p>}
+                            </a>
+                          </div>
                         </li>
+                        ): ''
                       )
                     })}
                   </ul>
