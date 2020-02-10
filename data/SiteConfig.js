@@ -32,6 +32,10 @@ const config = {
       link: '/resume/',
     },
     {
+      name: 'Webinar',
+      link: '/webinar/',
+    },
+    {
       name: 'Contact',
       link: '/contact/',
     },

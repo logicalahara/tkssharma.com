@@ -4,7 +4,7 @@ slug: resume
 template: page
 ---
 
-### Front End Software Developer
+### Full Stack Developer
 
 - [tkssharma.com](https://www.tkssharma.com)
 - [tarun.softengg@gmail.com](mailto:tarun.softengg@gmail.com)
