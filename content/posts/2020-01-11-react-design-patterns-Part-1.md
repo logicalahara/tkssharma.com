@@ -1,16 +1,16 @@
 ---
-date: 2020-01-10
-title: 'React Hooks and Context APIs-Part-2'
+date: 2020-01-11
+title: 'React Design patterns (Props-Renderer, Compound Component & Context)'
 template: post
 thumbnail: '../thumbnails/react.png'
-slug: react-hooks-and-context-apis-part-2
+slug: react-design-pattern
 categories:
   - javascript
   - React
   - Popular
 tags:
   - React
-  - Hooks
+  - Design Pattern
   - Javascript
 ---
 
