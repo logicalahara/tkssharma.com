@@ -5,8 +5,7 @@ template: post
 thumbnail: '../thumbnails/drupal.png'
 slug: Journey-of-apis-rest-to-gql
 categories:
-  - Drual
-  - API
+  - Drupal
 tags:
   - APIs
   - Decoupled Drupal
