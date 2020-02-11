@@ -1,6 +1,6 @@
 ---
 date: 2020-01-13
-title: 'Journey of APIs REST & Graphql'
+title: 'Journey of APIs from REST => Graphql'
 template: post
 thumbnail: '../thumbnails/drupal.png'
 slug: Journey-of-apis-rest-to-gql
@@ -22,9 +22,13 @@ All different kinds of applications being built using the progressive web, decou
 
 Main Focus will be on Advantages of Graphql Over REST in some use-cases
 
+Few Advantages are - 
+
 * Good for Decoupled applications with one common Graphql as API gateway 
 * Good for client-side caching or managing state like for React Application at client side
 * Helping us to Build APIs with schema & Type definition
+
+Simple Architecture of application may Have - 
 
 Frontend
 * React
