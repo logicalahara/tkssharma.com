@@ -1,5 +1,5 @@
 ---
-date: 2020-01-11
+date: 2020-01-12
 title: 'React LifeCycle Methods'
 template: post
 thumbnail: '../thumbnails/react.png'
