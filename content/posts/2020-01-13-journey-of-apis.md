@@ -38,7 +38,7 @@ Backend
 The frontend talks to the backend using GraphQL, simple use-case can be this 
 <img class="cp t u fy ak" src="../thumbnails/arch.png" width="600" height="200" role="presentation"/>
 
-Graphql Cool Playground (2 min Demo)
+Graphql Cool Playground (4 min Demo)
 > [**Graphql Explorer or Playground**]()
 
 <img class="cp t u fy ak" src="https://miro.medium.com/max/3600/1*A1eQh4GlSP0Rjnt_u2VifQ.png" width="800" height="400" role="presentation"/>
