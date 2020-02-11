@@ -9,7 +9,7 @@ categories:
   - API
 tags:
   - APIs
-  - Decouple Drupal
+  - Decoupled Drupal
   - Graphql
 ---
 
@@ -19,7 +19,7 @@ In this short Talk, I will be talking about why you should choose GraphQL over R
 * REST API development
 * GraphQL API Development 
 
-All different kinds of applications being built using the progressive web, decouple Drupal or Using JAM Stack (Gatsby), One thing which is common is now we are adopting Graphql everywhere for its advantages over REST APIs.
+All different kinds of applications being built using the progressive web, decoupled Drupal or Using JAM Stack (Gatsby), One thing which is common is now we are adopting Graphql everywhere for its advantages over REST APIs.
 
 Main Focus will be on Advantages of Graphql Over REST in some use-cases
 
@@ -41,6 +41,5 @@ The frontend talks to the backend using GraphQL, simple use-case can be this
 Graphql Cool Playground (2 min Demo)
 > [**Graphql Explorer or Playground**]()
 
-![Playground]('https://miro.medium.com/max/3600/1*A1eQh4GlSP0Rjnt_u2VifQ.png')
-
+<img class="cp t u fy ak" src="https://miro.medium.com/max/3600/1*A1eQh4GlSP0Rjnt_u2VifQ.png" width="800" height="400" role="presentation"/>
 
