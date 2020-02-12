@@ -18,7 +18,7 @@ Diagram published by React Commnunity, its a new set of lifecycle methods which 
 
 React lifecycle diagram — [http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
-<img class="cp t u fy ak" src="http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/" width="2742" height="1258" role="presentation"/>
+<img class="cp t u fy ak" src="https://miro.medium.com/max/4560/1*EnuAy1kb9nOcFuIzM49Srw.png" width="800" height="500" role="presentation"/>
 
 There are two main ways to define React components:
 Lifecycle Methods depends on what kind of componnent you are writing (fn or classes based)
@@ -157,7 +157,7 @@ import axios from 'axios'function List() {
 
 The release of 16.3 introduced some new life-cycle functions, which replaced existing ones to provide better support for the new asynchronous nature of React. We’ll be starting with one of these methods, getDerivedStateFromProps.
 
-1. getDerivedStateFromProps
+getDerivedStateFromProps
 ============================
 
 As like as`componentWillReceiveProps`, `getDerivedStateFromProps` is invoked whenever a component receives new props. The new function’s main responsibility is ensuring that the state and props are in sync, when it is required. Replacing _componentWillReceiveProps_ is it’s  main job.
@@ -172,7 +172,7 @@ _getDerivedStateFromProps_ function is invoked when the component is mounted as 
 
 `getDerivedStateFromProps` may be called multiple times for a single update, so it’s important to avoid any side-effects. Instead, we can use, which executes only once after the component updates.
 
-**2. componentDidMount**
+**componentDidMount**
 =========================
 
 **componentDidMount** is executed after the first render only on the client side. This is where AJAX requests and DOM or state updates should occur. This method is also used for integration with other JavaScript frameworks and any functions with delayed execution such as **setTimeout** or **setInterval**. We are using it to update the state so we can trigger the other lifecycle methods.
@@ -185,7 +185,7 @@ This is an example of fetching data from Reddit.
 
 <img class="dq t u hb ak" src="https://miro.medium.com/max/2928/1*NsqqxQ0li0M00a7KqS0uWw.png" width="1464" height="1278" role="presentation"/>
 
-3. getSnapshotBeforeUpdate(prevProps, prevState)
+getSnapshotBeforeUpdate(prevProps, prevState)
 =================================================
 
 _getSnapshotBeforeUpdate()_ is another new lifecycle method introduced in React recently. This will be a safer alternative to the previous lifecycle method _componentWillUpdate()._
