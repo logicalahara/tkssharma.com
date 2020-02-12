@@ -14,6 +14,8 @@ tags:
 
 ## React Lifecycle Methods 
 
+![LifeCycle React](../thumbnails/lifecycle.png)
+
 Diagram published by React Commnunity, its a new set of lifecycle methods which are added in React >= 16.3.x 
 
 React lifecycle diagram — [http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)

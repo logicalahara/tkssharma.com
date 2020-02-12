@@ -14,6 +14,8 @@ tags:
   - Javascript
 ---
 
+![LifeCycle React](../thumbnails/hooks.png)
+
 ## Lets Talk about some Advance React Hooks
 
 useReducer Hook for Managing State

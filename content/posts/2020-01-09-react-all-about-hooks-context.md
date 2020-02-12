@@ -13,6 +13,8 @@ tags:
   - Hooks
   - Javascript
 ---
+![LifeCycle React](../thumbnails/hooks.png)
+
 
 React includes several ways of managing state in an application. The most straight forward way is to define a state inside a component. The state of a component is like the props which are passed to a component, a plain JavaScript object containing information that influences the way a component is rendered, lets talk about managing state using Hooks and Context APIs
 
