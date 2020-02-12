@@ -18,6 +18,8 @@ Diagram published by React Commnunity, its a new set of lifecycle methods which 
 
 React lifecycle diagram — [http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
+<img class="cp t u fy ak" src="http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/" width="2742" height="1258" role="presentation"/>
+
 There are two main ways to define React components:
 Lifecycle Methods depends on what kind of componnent you are writing (fn or classes based)
 
@@ -75,7 +77,7 @@ This is a very simple example, but I think it covers both of the main use cases 
 
 ```
 import React, {useState} from 'react'function Message() {  
-  const \[message, setMessage\] = useState('')  
+  const [message, setMessage] = useState('')  
   return (  
     <main>  
       <button onClick={() => setMessage('Hello World!')}>  
@@ -134,13 +136,13 @@ In preparing this blog, it appears there may be a better way to do this with [Re
 ```
 import React, {useState, useEffect} from 'react'  
 import axios from 'axios'function List() {  
-  const \[data, loadData\] = useState(null)  
+  const [data, loadData] = useState(null)  
   useEffect(async () => {  
     let listItems = await axios(  
       'http://imaginaryurl.com/api/listItems'  
     )  
     loadData(listItems.data)  
-  }, \[\])  
+  }, [])  
   let listItems     
   if (data) {  
     listItems = data.map((item, i) => {  
@@ -152,3 +154,56 @@ import axios from 'axios'function List() {
   return {listItems}  
 }
 ```
+
+The release of 16.3 introduced some new life-cycle functions, which replaced existing ones to provide better support for the new asynchronous nature of React. We’ll be starting with one of these methods, getDerivedStateFromProps.
+
+1. getDerivedStateFromProps
+============================
+
+As like as`componentWillReceiveProps`, `getDerivedStateFromProps` is invoked whenever a component receives new props. The new function’s main responsibility is ensuring that the state and props are in sync, when it is required. Replacing _componentWillReceiveProps_ is it’s  main job.
+
+Here’s a sample of what the old method would look like:
+
+<img class="dq t u hb ak" src="https://miro.medium.com/max/2184/1*QwVGn8ngZkJjht2RcxfUdA.png" width="1092" height="702" role="presentation"/>
+
+_getDerivedStateFromProps_ function is invoked when the component is mounted as well as receives new props whether they are changed or not. It is also called if the parent component is re-render, so if you want to only update change of value, it is vital to have the previous and new value comparison. If a component has a state that is initialized from the props receiving from the parents. This function is the right place to sync up your props and state.
+
+<img class="dq t u hb ak" src="https://miro.medium.com/max/2152/1*ULTJxP4vq0CCN7_4Vs47SA.png" width="1076" height="846" role="presentation"/>
+
+`getDerivedStateFromProps` may be called multiple times for a single update, so it’s important to avoid any side-effects. Instead, we can use, which executes only once after the component updates.
+
+**2. componentDidMount**
+=========================
+
+**componentDidMount** is executed after the first render only on the client side. This is where AJAX requests and DOM or state updates should occur. This method is also used for integration with other JavaScript frameworks and any functions with delayed execution such as **setTimeout** or **setInterval**. We are using it to update the state so we can trigger the other lifecycle methods.
+
+As, this method would be invoked after a component is mounted, this is the right place to load any data from endpoint or set up any subscription.
+
+Calling here `setState` will trigger re-render, so need to use this method with caution.
+
+This is an example of fetching data from Reddit.
+
+<img class="dq t u hb ak" src="https://miro.medium.com/max/2928/1*NsqqxQ0li0M00a7KqS0uWw.png" width="1464" height="1278" role="presentation"/>
+
+3. getSnapshotBeforeUpdate(prevProps, prevState)
+=================================================
+
+_getSnapshotBeforeUpdate()_ is another new lifecycle method introduced in React recently. This will be a safer alternative to the previous lifecycle method _componentWillUpdate()._
+
+It is used mostly if you need to read the current DOM state, for example, you have an application in which new messages are added to the top of the screen — if a user scrolled down, and a new message is added the screen could move and make the UI harder to use. By adding `getSnapshotBeforeUpdate` you can calculate the current scroll position and maintain it through the DOM update.
+
+Another use case might be, resizing the window during an async rendering is a good use-case of when the _getSnapshotBeforeUpdate()_ can be utilized.
+
+Even though the function is not static, it is recommended to return the value, not update the component. The returned value will be passed to as the 3rd parameter.
+
+Deprecated functions
+====================
+
+You will start seeing the deprecation warnings in the next major version, and the function will be removed (the renamed versions will be kept!) in version 17.0. For now you can use these functions like this.
+
+*   `componentWillReceiveProps` — `UNSAFE_componentWillReceiveProps`
+*   `componentWillUpdate` — `UNSAFE_componentWillUpdate`
+
+You will start seeing the deprecation warnings in the next major version, and the function will be removed (the renamed versions will be kept!) in version 17.0
+
+I hope you found this tutorial fun and valuable. That’s it and if you found this article helpful, you can also follow me on [Medium](https://medium.com/@shuvohabib) and [Twitter](https://twitter.com/shuvohabib), and if you have any doubt, feel free to comment! I’d be happy to help :)
