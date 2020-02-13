@@ -8,7 +8,7 @@ categories:
   - ReactJS
   - Popular
 tags:
-  - React
+  - ReactJS
   - Javascript
 ---
 

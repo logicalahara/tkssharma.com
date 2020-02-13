@@ -8,7 +8,7 @@ categories:
   - javascript
   - ReactJS
 tags:
-  - React
+  - ReactJS
   - Design Pattern
   - Javascript
 ---
@@ -17,7 +17,7 @@ tags:
 ![React Patterns ](../thumbnails/patterns.png)
 - Compound Pattern
 - Renderer Props
-- React Context Pattern using Provider 
+- ReactJS Context Pattern using Provider 
 
 ### Lets talk about Each Pattern one by one
 

@@ -8,7 +8,7 @@ categories:
   - javascript
   - ReactJS
 tags:
-  - React
+  - ReactJS
   - Design Pattern
   - Javascript
 ---
@@ -17,7 +17,7 @@ tags:
 ![React Patterns ](../thumbnails/patterns.png)
 - Compound Pattern
 - Renderer Props
-- React Context Pattern using Provider 
+- ReactJS Context Pattern using Provider 
 
 ### Lets talk about Each Pattern one by one
 
@@ -30,7 +30,7 @@ Functional Component React JS
 React functional component with Hooks are the best thing happened in React, Now i do write React Componnets using Functional Components only where state can be managed by Hooks and Context APIs
 
 
-The definition of the component happens with just a JavaScript Function which has to return JSX -- React's syntax for defining a mix of HTML and JavaScript whereas the JavaScript is used with curly braces within the HTML. In our case, we render a variable called greeting, which is defined in the component's function body, and is returned as HTML headline in JSX.
+The definition of the component happens with just a JavaScript Function which has to return JSX -- ReactJS's syntax for defining a mix of HTML and JavaScript whereas the JavaScript is used with curly braces within the HTML. In our case, we render a variable called greeting, which is defined in the component's function body, and is returned as HTML headline in JSX.
 
 Note: If you are familiar with React Class Components, you may have noticed that a Functional Component is a React Component without render function. Everything defined in the function's body is the render function which returns JSX in the end.
 

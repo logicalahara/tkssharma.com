@@ -8,8 +8,8 @@ categories:
   - ReactJS
   - Popular
 tags:
-  - React
-  - React Hooks
+  - ReactJS
+  - ReactJS Hooks
 ---
 
 <img class="cp t u fy ak" src="https://miro.medium.com/max/4980/1*FpQmx8PP09a-j1qKc89hYA.png" width="2490" height="1204" role="presentation"/>

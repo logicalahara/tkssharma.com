@@ -9,7 +9,7 @@ categories:
   - ReactJS
   - Popular
 tags:
-  - React
+  - ReactJS
   - Hooks
   - Javascript
 ---
