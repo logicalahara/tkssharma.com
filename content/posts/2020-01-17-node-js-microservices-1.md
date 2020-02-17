@@ -20,7 +20,7 @@ In this blogs, we will Just setup docker-compose for running different container
 
 I will not talk much about Docker, docker file and docker-compose. you can find good resource around to learn more about this.
 
-[![](http://img.youtube.com/vi/NcJHTUeTcOk/0.jpg)](http://www.youtube.com/watch?v=NcJHTUeTcOk "docker")
+[![](http://img.youtube.com/vi/NcJHTUeTcOk/0.jpg)](http://www.youtube.com/watch?v=NcJHTUeTcOk "Docker")
 
 
 ## A little bit about docker
