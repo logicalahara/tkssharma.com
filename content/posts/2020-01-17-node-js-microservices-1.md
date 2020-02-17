@@ -20,7 +20,8 @@ In this blogs, we will Just setup docker-compose for running different container
 
 I will not talk much about Docker, docker file and docker-compose. you can find good resource around to learn more about this.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries" frameborder="0" allowfullscreen></iframe></center>
+[![](http://img.youtube.com/vi/NcJHTUeTcOk/0.jpg)](http://www.youtube.com/watch?v=NcJHTUeTcOk "docker")
+
 
 ## A little bit about docker
 
@@ -167,12 +168,92 @@ To remove all containers, we can use the following command:
 
 MySQL will be built from its image directly same with redis. We have to build Node js apps using docker file so we can deploy node js code in containers.
 
-<iframe src="https://medium.com/media/c0d49c23cd9aec43f57962a9dba11f21" frameborder=0></iframe>
+```dockerfile
 
+FROM node:carbon
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Bundle app source
+COPY ./package.json .
+
+# npm install
+RUN apt-get update && npm install
+
+# expose  api port and debug port
+EXPOSE 3000 9229
+
+CMD [ "npm", "run", "start" ]
+```
 Node js containers can be built by running docker-compose up which will spin up all containers defined in the compose.yml file
 
-<iframe src="https://medium.com/media/b9f8a56ecffe5361ab5db2479ec176f7" frameborder=0></iframe>
-
+```yml
+#  Run `docker-compose build` to build the images
+#  Run `docker-compose up` to run the containers
+#  Run `docker-compose down` to remove the containers
+version: '3.5'
+services:
+  mysql:
+    container_name: service_mysql
+    image: mysql:5.7
+    volumes:
+      - ~/datadir/mysql:/var/lib/mysql
+    ports:
+      - 3306:3306
+      - 33060:33060
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      - service_network
+  redis:
+    container_name: service_redis
+    image: redis:4.0
+    volumes:
+      - ~/datadir/redis:/var/lib/redis
+    ports:
+      - 6379:6379
+    networks:
+      - service_network
+  api:
+    container_name: service_api
+    build: ./apiapp/
+    image: service_api
+    volumes:
+      - ./apiapp/:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 3000:3000
+      - 9229:9229
+    depends_on:
+      - mysql
+      - redis
+      - notification
+    networks:
+      - service_network
+  app2:
+    build: ./notification/
+    image: service_notification
+    container_name: service_notify
+    environment:
+      - NODE_ENV=local
+    volumes:
+      - ./notification/:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 4000:4000 # Notification api port
+      - 9223:9223 # Node debugg port
+      - 8099:8099 # GRPC port
+    depends_on:
+      - mysql
+    networks:
+      - service_network
+networks:
+  service_network:
+    driver: bridge
+    name: service_network
+ 
+ ```
 In this docker-compose file, we have 4 different containers running. Now how these containers will talk to each other so that the API app can connect to the Mysql database.
 
 ![](https://cdn-images-1.medium.com/max/2728/1*zYzfJBNQvZBosf4GEXJoNg.png)
@@ -221,8 +302,25 @@ Container talks to each other with the name !!
 
 ![](https://cdn-images-1.medium.com/max/2140/1*g7uPPi59q5peJGtZyH5M1w.png)
 
-<iframe src="https://medium.com/media/1bc5c21c577c55446e683a02a163d964" frameborder=0></iframe>
-
+```javascript
+const mysql = require('mysql2/promise');
+const config =  {
+  user: 'root',
+  password: 'root',
+  database: 'testdb',
+  host: 'mysql',
+  connectTimeout: 80000,
+};
+mysql.createConnection(config)
+  .then((connection) => {
+    console.log(`connection established to local ${config.database} database`);
+    global.MYconnection = connection;
+  })
+  .catch((e) => {
+    console.log(e);
+    eventEmitter.emit('connectionFailed', 'Destination');
+  });
+```
 Now in Node JS code to connect to MySQL host will be MySQL only not localhost, Node running on the container will connect with MySQL with container names. same for Redis is applied to connect with Redis you will be using Redis as host. considering they are in default or same network.
 
 ## Conclusion
