@@ -5,7 +5,7 @@ template: post
 thumbnail: '../thumbnails/node.png'
 slug: nodejs-top-50-interview-questions
 categories:
-  - Nodejs
+  - NodeJS
   - Popular
 tags:
   - NodeJS
