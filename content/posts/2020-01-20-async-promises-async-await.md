@@ -44,13 +44,13 @@ const afterSomeTime = (time) => {
 const executeAfterSomeTime = (callback, time) => afterSomeTime(time).then(callback);
 executeAfterSomeTime(() => console.log('Hello after 1500ms'), 1500);
 ```
-## Promise Chains
+## Promise Nested/Chains
 Promise chains are not new but are worth mentioning because of "how promises behave".
 The way promises behave is that when you create a promise, promise's prototype provides who methods named then, catch and finally. These methods of promise will handle the resolve, reject or settlement cases of promise.
 
 But the interesting thing is that these methods return the promise again with the any return value as a response/resolve. Which means that the success handler of then function can return promise as well.So based on the promise result, you can create another promise and return it in the success handler.
 
-Let’s take a look at an example:
+Let’s take a look at an example: nested promises
 
 ```javascript
 document
@@ -72,7 +72,7 @@ document
       });
   });
 ```  
-The above chain can be simply written as:
+The above chain can be simply written as below and it look nice and clean
 
 ```javascript
 document
