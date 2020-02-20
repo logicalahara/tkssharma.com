@@ -87,7 +87,7 @@ Running the command will create an app.js file in the same directory. Opening it
 ### Installing dependencies
 
 As this would be a proper tutorial without some real code, we need to install some dependencies first. Two of them which make up a large portion of Node apps today are express and body-parser. So what’s Express?
-> # Fast, unopinionated, minimalist web framework for [Node.js](https://nodejs.org/en/) — [Official Website](http://expressjs.com/)
+> ### Fast, unopinionated, minimalist web framework for [Node.js](https://nodejs.org/en/) — [Official Website](http://expressjs.com/)
 
 Let’s get crackin’, shall we? Installing the required dependencies is easy, just one command to run.
 
