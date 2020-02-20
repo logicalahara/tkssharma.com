@@ -22,7 +22,37 @@ The most popular method for creating arrays is using the array literal syntax, w
 
 Here is a simple code snippet showing the use of the Array constructor.
 
-<iframe src="https://medium.com/media/74c06cf0f6445671739b9e7a6eabac58" frameborder=0></iframe>
+```javascript
+// MORE THAN ONE ARGUMENTS:
+// Creates a new array with the arguments as items.
+// The length of the array is set to the number of arguments.
+
+var array1 = new Array(1, 2, 3);
+
+console.log(array1); // [1, 2, 3]
+console.log(array1.length); // 3
+
+
+// ONLY ONE(NUMBER) ARGUMENT:
+// Creates an array with length set to the number.
+// The number must be a positive integer otherwise an error will be thrown.
+// Note that the array has no property keys apart from length.
+
+var array2 = new Array(3);
+
+console.log(array2); // Array(3) {length: 3}
+console.log(array2.length); // 3
+
+
+// ONLY ONE(NON-NUMBER) ARGUMENT:
+// Creates a new array with the argument as the only item.
+// The length of the array is set to 1.
+
+var array3 = new Array("3");
+
+console.log(array3); // ["3"]
+console.log(array3.length); // 1
+```
 
 From the previous snippet, we can see that the Array constructor creates arrays differently depending on the arguments it receives.
 
@@ -131,7 +161,58 @@ As a case study before we proceed, we will create a simple range() function to i
 
 Here is the code snippet:
 
-<iframe src="https://medium.com/media/71065ae86b233451a3dce3314338a308" frameborder=0></iframe>
+```javascript
+/**
+ * range()
+ *
+ * Returns an array of numbers between a start number and an end number incremented
+ * sequentially by a fixed number(step), beginning with either the start number or
+ * the end number depending on which is greater.
+ *
+ * @param {number} start (Required: The start number.)
+ * @param {number} end (Required: The end number. If end is less than start,
+ *  then the range begins with end instead of start and decrements instead of increment.)
+ * @param {number} step (Optional: The fixed increment or decrement step. Defaults to 1.)
+ *
+ * @return {array} (An array containing the range numbers.)
+ *
+ * @throws {TypeError} (If any of start, end and step is not a finite number.)
+ * @throws {Error} (If step is not a positive number.)
+ */
+function range(start, end, step = 1) {
+  
+  // Test that the first 3 arguments are finite numbers.
+  // Using Array.prototype.every() and Number.isFinite().
+  const allNumbers = [start, end, step].every(Number.isFinite);
+
+  // Throw an error if any of the first 3 arguments is not a finite number.
+  if (!allNumbers) {
+    throw new TypeError('range() expects only finite numbers as arguments.');
+  }
+  
+  // Ensure the step is always a positive number.
+  if (step <= 0) {
+    throw new Error('step must be a number greater than 0.');
+  }
+  
+  // When the start number is greater than the end number,
+  // modify the step for decrementing instead of incrementing.
+  if (start > end) {
+    step = -step;
+  }
+  
+  // Determine the length of the array to be returned.
+  // The length is incremented by 1 after Math.floor().
+  // This ensures that the end number is listed if it falls within the range.
+  const length = Math.floor(Math.abs((end - start) / step)) + 1;
+  
+  // Fill up a new array with the range numbers
+  // using Array.from() with a mapping function.
+  // Finally, return the new array.
+  return Array.from(Array(length), (x, index) => start + index * step);
+  
+}
+```
 
 In this code snippet, we used Array.from() to create the new range array of dynamic length and then populate it sequentially incremented numbers by providing a mapping function.
 
@@ -249,7 +330,33 @@ A viable alternative to the JSON technique will be to implement your own *deep c
 
 Here is a very simple and minimalistic deep copy function called deepClone:
 
-<iframe src="https://medium.com/media/5b6fdca7847526a46a3eeb7f8a4aeea2" frameborder=0></iframe>
+```javascript
+function deepClone(o) {
+  // Construct the copy `output` array or object.
+  // Use `Array.isArray()` to check if `o` is an array.
+  // If `o` is an array, set the copy `output` to an empty array (`[]`).
+  // Otherwise, set the copy `output` to an empty object (`{}`).
+  //
+  // If `Array.isArray()` is not supported, this can be used as an alternative:
+  // Object.prototype.toString.call(o) === '[object Array]'
+  // However, it is a fragile alternative.
+  const output = Array.isArray(o) ? [] : {};
+  
+  // Loop through all the properties of `o`
+  for (let i in o) {
+    // Get the value of the current property of `o`
+    const value = o[i];
+    
+    // If the value of the current property is an object and is not null,
+    // deep clone the value and assign it to the same property on the copy `output`.
+    // Otherwise, assign the raw value to the property on the copy `output`.
+    output[i] = value !== null && typeof value === 'object' ? deepClone(value) : value;
+  }
+  
+  // Return the copy `output`.
+  return output;
+}
+```
 
 Now this is not the best of deep copy functions out there, like you will soon see with some JavaScript libraries — however, it performs deep copying to a pretty good extent.
 
