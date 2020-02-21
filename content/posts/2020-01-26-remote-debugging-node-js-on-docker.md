@@ -209,14 +209,14 @@ EXPOSE 3000 9229
 CMD [ "npm", "run", "debug" ]
 ```
 Just take al look on last two lines of docker file
-> # EXPOSE 3000 9229
-> # CMD [ “npm”, “run”, “debug” ]
+> #### EXPOSE 3000 9229
+> #### CMD [ “npm”, “run”, “debug” ]
 
 As we will be doing remote debugging we need to expose one extra port from application container, its exposing 3000 application port and 9229 debug port where we can attach debugger from host system
 
 Once container is running it will trigger npm run debug command from package json, this NPM script look like this.
 
-### “debug”: “NODE_ENV=test nodemon — inspect=0.0.0.0:9229 app/server.js”
+“debug”: “NODE_ENV=test nodemon — inspect=0.0.0.0:9229 app/server.js”
 
 We are running application with — inspect mode which will also expose debugger on 0.0.0.0:9229 and run application on port 3000 and start the application server.
 
