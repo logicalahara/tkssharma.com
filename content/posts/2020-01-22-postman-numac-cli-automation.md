@@ -3,7 +3,7 @@ date: 2020-01-20
 title: 'Running API Automation using newman and Test Like a Rockstar'
 template: post
 thumbnail: '../thumbnails/node.png'
-slug: building-node-js-apis-automation-platform-test
+slug: building-api-automation-using-postamn-numan
 categories:
   - Popular
 tags:

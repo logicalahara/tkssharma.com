@@ -3,7 +3,7 @@ date: 2020-01-18
 title: 'What is new About Hooks React'
 template: post
 thumbnail: '../thumbnails/react.png'
-slug: what-is-new-about-react-hooks
+slug: what-is-new-about-react-hooks-context-apis
 categories:
   - Popular
 tags:

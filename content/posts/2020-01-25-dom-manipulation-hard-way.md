@@ -3,7 +3,7 @@ date: 2020-01-25
 title: 'DOM Manipulation the hard way'
 template: post
 thumbnail: '../thumbnails/js.png'
-slug: js-dom-manipulation-hard-way
+slug: html-dom-manipulation-hard-way
 categories:
   - Popular
 tags:

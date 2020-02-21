@@ -3,7 +3,7 @@ date: 2020-01-20
 title: 'Async Waterfall, Promises and Async Await conversion'
 template: post
 thumbnail: '../thumbnails/node.png'
-slug: building-node-js-promises-and-async-await
+slug: writing-javascript-using-promises-and-async-await
 categories:
   - Popular
 tags:

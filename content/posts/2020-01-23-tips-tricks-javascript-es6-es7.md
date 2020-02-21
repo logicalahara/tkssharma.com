@@ -3,7 +3,7 @@ date: 2020-01-23
 title: 'ES6 & ES7 Tips and Tricks || Hacks in Javascript'
 template: post
 thumbnail: '../thumbnails/node.png'
-slug: common-hacks-in-es6-es7
+slug: common-hacks-in-es6-es7-javascript
 categories:
   - Popular
 tags:

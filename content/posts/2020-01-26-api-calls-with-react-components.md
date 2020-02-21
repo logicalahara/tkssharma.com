@@ -3,7 +3,7 @@ date: 2020-01-26
 title: 'Making API calls using React Components'
 template: post
 thumbnail: '../thumbnails/react.png'
-slug: react-api-calls-using-hooks-and-lifecycle-methods
+slug: making-api-calls-using-hooks-and-lifecycle-methods-reactjs
 categories:
   - Popular
 tags:

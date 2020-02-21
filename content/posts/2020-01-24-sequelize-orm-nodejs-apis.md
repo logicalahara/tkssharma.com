@@ -3,7 +3,7 @@ date: 2020-01-23
 title: 'Node JS with Sequelize ORM'
 template: post
 thumbnail: '../thumbnails/node.png'
-slug: node-js-with-sequrlize-orm
+slug: sequelize-orm-in-nodejs-api-development
 categories:
   - Popular
 tags:

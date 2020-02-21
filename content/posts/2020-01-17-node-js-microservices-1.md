@@ -3,7 +3,7 @@ date: 2020-01-17
 title: 'Building Microservices using Node JS '
 template: post
 thumbnail: '../thumbnails/node.png'
-slug: microservices-using-node-js-1st
+slug: building-microservices-using-node-js-1st
 categories:
   - Popular
 tags:

@@ -3,7 +3,7 @@ date: 2020-01-20
 title: 'Using Typescript with Node JS development project'
 template: post
 thumbnail: '../thumbnails/node.png'
-slug: building-node-js-with-typescript
+slug: building-node-js-with-typescript-es6
 categories:
   - Popular
 tags:

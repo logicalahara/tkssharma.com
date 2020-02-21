@@ -3,7 +3,7 @@ date: 2020-01-20
 title: 'Building Micro services Containers Node JS'
 template: post
 thumbnail: '../thumbnails/node.png'
-slug: building-node-js-microservices-arch
+slug: building-node-js-microservices-architecture
 categories:
   - Popular
 tags:
