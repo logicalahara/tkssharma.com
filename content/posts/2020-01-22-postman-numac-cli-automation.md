@@ -217,7 +217,7 @@ newman.run({
 ```
 
 From the code above you can get the custom report for success & failure count of your API assertions. Write as much as you can to validate the API response. After running this we will get a detailed report of passed and failure.
-> # Code Coverage using newman Execution
+> ### Code Coverage using newman Execution
 
 ![](https://cdn-images-1.medium.com/max/3260/1*o5fp0tTELGdFkSC8UF202A.png)
 

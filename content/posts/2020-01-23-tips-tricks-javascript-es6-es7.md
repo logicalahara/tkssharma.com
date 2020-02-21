@@ -287,7 +287,7 @@ Like we saw earlier, Array.from() can be used to create a new array which is a s
 ### 4. Using Array Destructuring
 
 With ES6, we have some more powerful tools in our toolbox such as destructuring, spread* *operator, arrow functions, and so on. Destructuring is a very powerful tool for extracting data from complex types like arrays and objects.
-> # The trick is to use a technique called rest parameters, which involves a combination of array destructuring and the spread operator as shown in the following snippet:
+> ### The trick is to use a technique called rest parameters, which involves a combination of array destructuring and the spread operator as shown in the following snippet:
 
     let [...arrayClone] = originalArray;
 
@@ -316,7 +316,7 @@ JSON.stringify() converts a JavaScript value to a valid JSON string, while JSON.
 Here is a simple example:
 
 ![](https://cdn-images-1.medium.com/max/3004/1*g744L7K69apazaPNXjscvQ.png)
-> # The JSON technique has some flaws especially when values other than strings, numbers and booleans are involved.
+> ### The JSON technique has some flaws especially when values other than strings, numbers and booleans are involved.
 
 These flaws in the JSON technique can be majorly attributed to the manner in which the JSON.stringify() method converts values to JSON string.
 
