@@ -241,11 +241,3 @@ Thus this is how React Hooks can be useful in making API calls, sometimes we hav
 - [https://reactjs.org/](https://reactjs.org/)
 
 Happy Learning 💻 😄
-
-## Related Stories
-[**5 Tools for Faster Development in React**
-*5 tools to speed the development of your React application, focusing on components.*blog.bitsrc.io](https://blog.bitsrc.io/5-tools-for-faster-development-in-react-676f134050f2)
-[**11 React UI Component Playgrounds for 2019**
-*Useful online playgrounds and editors for your UI components*blog.bitsrc.io](https://blog.bitsrc.io/11-react-ui-component-playgrounds-for-2018-eef5a87a1bf8)
-[**How to Easily Share and Consume React Components Using Bit**
-*Learn how to easily create, share and consume react components with the awesome power of Bit*blog.bitsrc.io](https://blog.bitsrc.io/how-to-easily-share-and-consume-react-components-using-bit-f53fb9463105)
