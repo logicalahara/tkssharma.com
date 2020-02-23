@@ -1,9 +1,9 @@
 ---
 date: 2020-01-27
-title: 'Create React Hooks | write Custom Hooks'
+title: 'Create React Hooks and write Custom Hooks | functional Components'
 template: post
 thumbnail: '../thumbnails/react.png'
-slug: create-csutom-hooks-react-js
+slug: create-custom-hooks-react-js
 categories:
   - Popular
 tags:
