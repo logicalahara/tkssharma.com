@@ -1,5 +1,5 @@
 ---
-date: 2019-12-23
+date: 2020-02-08
 title: 'Javascript Write your own Wrapper Functions'
 template: post
 thumbnail: '../thumbnails/js.png'

@@ -1,5 +1,5 @@
 ---
-date: 2019-12-23
+date: 2020-02-07
 title: 'Angular 9 | Rendering Architecture Ivy'
 template: post
 thumbnail: '../thumbnails/angular.png'

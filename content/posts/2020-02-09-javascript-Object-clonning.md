@@ -1,5 +1,5 @@
 ---
-date: 2019-12-23
+date: 2020-02-09
 title: 'Javascript Object clonning shallow and Deep'
 template: post
 thumbnail: '../thumbnails/js.png'
