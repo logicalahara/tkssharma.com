@@ -20,7 +20,7 @@ To make application 100% available with zero downtime
 1. System should have capability to add new seed data and add or remove feature toggle to enable and disable feature in application.
 
 1. Deployment should happen one instance at a time so other instance keep serving request coming from clients.
-> ### Application deployment will happen using PM2 and will be apart of CI/CD process of application.
+> #### Application deployment will happen using PM2 and will be apart of CI/CD process of application.
 
 1. Application deployment will happen using pm2 reload functionality to keep application up and running, PM2 reload will be Deploying one instance at a time to keep application up and running without downtime. In production we will be running at least 2 instance on a single system and will be having 3 EC2 medium instance. PM2 reload will read configuration from ecosystem.config.js.
 
@@ -48,7 +48,7 @@ deployment options :
        }
      ]
     };
-> ### Runtime error in application
+> #### Runtime error in application
 
 To keep application up and running we need to have API up and running without any issues or exception like unhandled promise rejection or exception or connection issues
 
@@ -69,7 +69,7 @@ Issues can come at runtime
 1. We are having log rotate and cron should be added to clear the logs for PM2
 
 1. We have baselined packages and same will be used on production.
-> ### ELB health check on API server
+> #### ELB health check on API server
 
 We should have load balancer placed before our EC2 containers which will help application to manage more traffic in application and will also keep checking health of application so it application is down it will not forward traffic to that server.
 
@@ -89,8 +89,48 @@ If you’re on macOS, installing is as simple as running **yarn add global pm2**
 
 If you’re curious what it should look like, here is an example of our process_prod.json file for Winds, our open-source RSS & Podcast application:
 
-<iframe src="https://medium.com/media/bdc36b42d9062fdee94c538eb43f50f8" frameborder=0></iframe>
-
+```json
+{
+	"apps": [
+		{
+			"name": "api",
+			"cwd": "api/dist",
+			"script": "server.js",
+			"watch": false
+		},
+		{
+			"name": "conductor",
+			"cwd": "api/dist/workers",
+			"script": "conductor.js",
+			"watch": false
+		},
+		{
+			"name": "rss-worker",
+			"cwd": "api/dist/workers",
+			"script": "rss.js",
+			"instances": 2,
+			"exec_mode": "cluster",
+			"watch": false
+		},
+		{
+			"name": "podcast-worker",
+			"cwd": "api/dist/workers",
+			"script": "podcast.js",
+			"instances": 2,
+			"exec_mode": "cluster",
+			"watch": false
+		},
+		{
+			"name": "og-worker",
+			"cwd": "api/dist/workers",
+			"script": "og.js",
+			"instances": 2,
+			"exec_mode": "cluster",
+			"watch": false
+		}
+	]
+}
+```
 As you can see, we’re running several processes, and PM2 handles them without any issues, automatically using the Node.js Cluster API to spawn multiple processes.
 
 ## Tips & Tricks
@@ -220,8 +260,8 @@ Use PM2 and its monitoring tool and have sound sleep you app is being tracked by
 If you want to add the dashboard to all HTTP servers created by your application then simply add: This is what you need to run this tool on
 
 ### [http://localhost:PORT/appmetrics-dash](http://localhost:3000/appmetrics-dash)
-> ### // Before all other ‘require’ statements:
-> ### require(‘appmetrics-dash’).attach();
+> #### // Before all other ‘require’ statements:
+> #### require(‘appmetrics-dash’).attach();
 
 to the very top of your main JavaScript source file or there are other ways also like you can use preloading:
 
