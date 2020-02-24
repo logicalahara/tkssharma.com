@@ -3,7 +3,7 @@ date: 2020-02-10
 title: 'Javascript Design Patterns'
 template: post
 thumbnail: '../thumbnails/js.png'
-slug: javascript-object-clone-shallow-and-deep
+slug: javascript-design-patterns
 categories:
   - Popular
 tags:
