@@ -20,7 +20,7 @@ To make application 100% available with zero downtime
 1. System should have capability to add new seed data and add or remove feature toggle to enable and disable feature in application.
 
 1. Deployment should happen one instance at a time so other instance keep serving request coming from clients.
-> #### Application deployment will happen using PM2 and will be apart of CI/CD process of application.
+### Application deployment will happen using PM2 and will be apart of CI/CD process of application.
 
 1. Application deployment will happen using pm2 reload functionality to keep application up and running, PM2 reload will be Deploying one instance at a time to keep application up and running without downtime. In production we will be running at least 2 instance on a single system and will be having 3 EC2 medium instance. PM2 reload will read configuration from ecosystem.config.js.
 
@@ -32,7 +32,7 @@ To make application 100% available with zero downtime
 
 deployment options :
 
-    cd /usr/<your-build-path>
+    cd /usr/<your-build-path
     npm run deploy
     pm2 list
 
@@ -42,13 +42,13 @@ deployment options :
          name: 'api_server',
          script: 'app/server.js',
          instances: 2,
-         wait_ready: **true**,
+         wait_ready: true,
          listen_timeout: 50000,
          kill_timeout: 15000
        }
      ]
     };
-> #### Runtime error in application
+#### Runtime error in application
 
 To keep application up and running we need to have API up and running without any issues or exception like unhandled promise rejection or exception or connection issues
 
@@ -62,14 +62,14 @@ Issues can come at runtime
 
 1. issue can be there due to connection or network issue on container like container unable to access DB or redis.
 
-**Preventing these runtime errors :**
+Preventing these runtime errors :
 
 1. Log monitoring will help us to identify any exception or error in system and all gets logged in key metrics or monitoring tools
 
 1. We are having log rotate and cron should be added to clear the logs for PM2
 
 1. We have baselined packages and same will be used on production.
-> #### ELB health check on API server
+ #### ELB health check on API server
 
 We should have load balancer placed before our EC2 containers which will help application to manage more traffic in application and will also keep checking health of application so it application is down it will not forward traffic to that server.
 
@@ -85,7 +85,7 @@ What all of this means is that PM2 allows you to keep your Node.js applications 
 
 Installing PM2 is a piece of cake. First, you’ll want to make sure that you have your process.json file ready to go in your code so we can kick off the process.
 
-If you’re on macOS, installing is as simple as running **yarn add global pm2**. If you’re on Linux, Windows, or using a Docker container (yes, it supports Docker as well), follow the instructions [here](https://pm2.io/doc/en/runtime/guide/installation/).
+If you’re on macOS, installing is as simple as running yarn add global pm2. If you’re on Linux, Windows, or using a Docker container (yes, it supports Docker as well), follow the instructions [here](https://pm2.io/doc/en/runtime/guide/installation/).
 
 If you’re curious what it should look like, here is an example of our process_prod.json file for Winds, our open-source RSS & Podcast application:
 
@@ -143,7 +143,7 @@ With any application (or process manager in our case), it’s good to know a few
 
 Once it’s started, your app is forever alive, auto-restarting after crashes and machine restarts — all with one simple command:
 
-**pm2 startup**
+pm2 startup
 
 ### Process Management
 
@@ -151,27 +151,27 @@ Once it’s started, your app is forever alive, auto-restarting after crashes an
 
 No matter how many applications you’re running, PM2 has a suite of commands that allow you to manage their respective states. Below are a few of our favorite commands (in no particular order):
 
-* **pm2 start process_prod.json **— Start process(es) via process JSON file
+* pm2 start process_prod.json — Start process(es) via process JSON file
 
-* **pm2 ls **— Show a list of all applications
+* pm2 ls — Show a list of all applications
 
-* **pm2 stop** **<app>** — Stops a specific application
+* pm2 stop <app — Stops a specific application
 
-* **pm2 start** **<app>** — Starts a specific application
+* pm2 start <app — Starts a specific application
 
-* **pm2 <app>** **scale N **— Scales the application you specify to N number of instances (can be used to scale up or down)
+* pm2 <app scale N — Scales the application you specify to N number of instances (can be used to scale up or down)
 
-* **pm2 kill** — Kills all running applications
+* pm2 kill — Kills all running applications
 
-* **pm2 restart** — Restarts all running applications
+* pm2 restart — Restarts all running applications
 
-* **pm2 reload** — Reloads the app configuration (this comes in handy when you modify your application’s environment variables)
+* pm2 reload — Reloads the app configuration (this comes in handy when you modify your application’s environment variables)
 
 ### Process Management
 
 ![](https://cdn-images-1.medium.com/max/2000/1*p6tdnTm-LJYi6qyzB9KT_Q.png)
 
-Running the command **pm2 monit** will return a rich set of data around your application’s health. For example, you’ll see CPU utilization, memory usage, requests/minute, and more!
+Running the command pm2 monit will return a rich set of data around your application’s health. For example, you’ll see CPU utilization, memory usage, requests/minute, and more!
 
 ### Log Management
 
@@ -181,15 +181,15 @@ PM2 has built-in log management. It aggregates log data from all of your applica
 
 There are three commands that I use often, and you should too:
 
-* **pm2 logs **— Outputs logs from all running applications
+* pm2 logs — Outputs logs from all running applications
 
-* **pm2 logs app **— Outputs logs from only the **app** application
+* pm2 logs app — Outputs logs from only the app application
 
-* **pm2 flush **— Flushes all log data, freeing up disk space
+* pm2 flush — Flushes all log data, freeing up disk space
 
 Remember, the most important thing to do is to enable log rotation. Doing so will split one giant log file into many smaller files that are more manageable for PM2. To do this, run the following command:
 
-**pm2 install pm2-logrotate**
+pm2 install pm2-logrotate
 
 More information on Log Management can be found [here](https://pm2.io/doc/en/runtime/guide/log-management/).
 
@@ -203,13 +203,13 @@ Why monitor your app with PM2 Plus ? At the end of this overview, you’ll have 
 
 ![](https://cdn-images-1.medium.com/max/4000/0*5dsVjJfvyxv4cXUR.png)
 
-PM2 Plus allows you to have an extended view of all your apps and databases in one single place, at real-time or through history. **Stop ssh in all your servers one by one**, instead, save time by having a condensed infrastructure plus view.
+PM2 Plus allows you to have an extended view of all your apps and databases in one single place, at real-time or through history. Stop ssh in all your servers one by one, instead, save time by having a condensed infrastructure plus view.
 
 [Quick Start](https://pm2.io/doc/en/plus/quick-start/)
 
 ![](https://cdn-images-1.medium.com/max/4000/0*5xqdOnVhDl4K77Mf.png)
 
-Expose the important variables from your Node.js applications source code and display them as performance metrics on the PM2 Plus dashboard. **Monitor values that matter.**
+Expose the important variables from your Node.js applications source code and display them as performance metrics on the PM2 Plus dashboard. Monitor values that matter.
 
 [Configuration](https://pm2.io/doc/en/plus/guide/configuration/)
 
@@ -217,31 +217,31 @@ Expose the important variables from your Node.js applications source code and di
 
 Know when a data reaches a threshold, when an error occurred in your application or when your production application is down.
 
-Even though PM2 makes sure that your application have no downtime, be notified in these critical situation in order to react. **Be notified and reactive in any critical situations.**
+Even though PM2 makes sure that your application have no downtime, be notified in these critical situation in order to react. Be notified and reactive in any critical situations.
 
 ![](https://cdn-images-1.medium.com/max/4000/0*ZzsyA9HoHZStoKSW.png)
 
 PM2 Plus reports the list of all errors in the “Issue Dashboard” occurred in your Node.js and gets you notified.
 
-Stop spending time finding bugs or trying to replay them, we provide you an “Issue Dashboard” with everything in one place, to make debugging easier. **Drill down in your code and get the answer.**
+Stop spending time finding bugs or trying to replay them, we provide you an “Issue Dashboard” with everything in one place, to make debugging easier. Drill down in your code and get the answer.
 
 ![](https://cdn-images-1.medium.com/max/4000/0*fE0MavOF8PIRIUsu.png)
 
 Record and aggregate the database and external calls that your application makes on every http request.
 
-The “Transaction Tracing” helps you troubleshoot performance issues and to get detailed low-level insight into how your app is working (slowest routes, most consuming, number of calls). **Provide a better user experience and make your app faster.**
+The “Transaction Tracing” helps you troubleshoot performance issues and to get detailed low-level insight into how your app is working (slowest routes, most consuming, number of calls). Provide a better user experience and make your app faster.
 
 ![](https://cdn-images-1.medium.com/max/4000/0*ACOfMWUE-b-69GOX.png)
 
 Take memory heapdumps straight from your production servers.
 
-**Memory profiling lets you find any memory leaks in your application.**
+Memory profiling lets you find any memory leaks in your application.
 
 ![](https://cdn-images-1.medium.com/max/4000/0*5LJyFUT8mCBI_GFz.png)
 
 Take CPU snapshots straight from your production servers.
 
-**CPU profiling helps you identify particular resource-heavy tasks.**
+CPU profiling helps you identify particular resource-heavy tasks.
 
 ![](https://cdn-images-1.medium.com/max/4000/0*ldZR0G7Sj4lecjPd.png)
 
@@ -260,8 +260,8 @@ Use PM2 and its monitoring tool and have sound sleep you app is being tracked by
 If you want to add the dashboard to all HTTP servers created by your application then simply add: This is what you need to run this tool on
 
 ### [http://localhost:PORT/appmetrics-dash](http://localhost:3000/appmetrics-dash)
-> #### // Before all other ‘require’ statements:
-> #### require(‘appmetrics-dash’).attach();
+-  Before all other ‘require’ statements:
+- #### require(‘appmetrics-dash’).attach();
 
 to the very top of your main JavaScript source file or there are other ways also like you can use preloading:
 
@@ -341,20 +341,20 @@ Auto-attach to all http servers created after this call, calling dash.monitor(op
 
 Simple example using attach
 
-    **var dash = require('appmetrics-dash');
-    dash.attach();**
+    var dash = require('appmetrics-dash');
+    dash.attach();
 
     var http = require('http');
 
     const port = 3000;
 
-    const requestHandler = (request, response) => {  
+    const requestHandler = (request, response) = {  
       response.end('Hello')
     }
 
     const server = http.createServer(requestHandler);
 
-    server.listen(port, (err) => {  
+    server.listen(port, (err) = {  
       if (err) {
         return console.log('An error occurred', err)
       }
