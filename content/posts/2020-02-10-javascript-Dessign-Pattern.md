@@ -1,6 +1,6 @@
 ---
-date: 2019-12-23
-title: 'Javascript Object clonning shallow and Deep'
+date: 2020-02-10
+title: 'Javascript Design Patterns'
 template: post
 thumbnail: '../thumbnails/js.png'
 slug: javascript-object-clone-shallow-and-deep
