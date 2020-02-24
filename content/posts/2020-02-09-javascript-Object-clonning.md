@@ -10,9 +10,6 @@ tags:
   - Javascript
 ---
 
-
-## Determine the specific type of any object(Object/ Array)
-
 When working with functional programming a good rule of thumb is to always create new objects instead of changing old ones. In doing so we can be sure that our meddling with the object’s structure won’t affect some seemingly unrelated part of the application, which in turn makes the entire code more predictable.
 
 How exactly can we be sure that the changes we make to an object do not affect the code elsewhere? Removing the unwanted references altogether seems like a good idea. To get rid of a reference we need to copy all of the object’s properties to a new object. There are many ways to do this and each of them yields a slightly different result. We are going to take a look at the most popular ones: shallow copy, deep copy, merging and assigning.
