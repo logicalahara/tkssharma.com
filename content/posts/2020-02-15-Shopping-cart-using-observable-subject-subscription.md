@@ -1,5 +1,5 @@
 ---
-date: 2020-02-14
+date: 2020-02-15
 title: 'Shopping Cart with Angular Observables/Subject/Subscription'
 template: post
 thumbnail: '../thumbnails/angular.png'
