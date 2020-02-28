@@ -137,39 +137,39 @@ Now we can write some CRUD operations. We will use therepository approach. Each 
 
 ### Create
 
-    **let** user = **new** User();
+    let user = new User();
     user.firstName = "Kuba";
     user.lastName = "Wolanin";
     user.age = "24";
 
-    **let** userRepository = connection.getRepository(User);
+    let userRepository = connection.getRepository(User);
 
-    **await** userRepository.save(user);
+    await userRepository.save(user);
 
     console.log("User has been saved");
 
 ### Read
 
-    **let** userRepository = connection.getRepository(User);
-    **let** users = **await** userRepository.find();
+    let userRepository = connection.getRepository(User);
+    let users = await userRepository.find();
     console.log("All users: ", users);
 
-    **let** user = await userRepository.findOne(5);
+    let user = await userRepository.findOne(5);
 
     console.log("User with id 5: ", user);
 
 ### Update
 
-    **let** userToUpdate = **await** userRepository.findOne(1);
+    let userToUpdate = await userRepository.findOne(1);
     userToUpdate.name = "Jakub";
 
-    **await** userRepository.save(userToUpdate);
+    await userRepository.save(userToUpdate);
 
 ### Delete
 
-    **let** userToRemove = **await** userRepository.findOne(1);
+    let userToRemove = await userRepository.findOne(1);
 
-    **await** userRepository.remove(userToRemove);
+    await userRepository.remove(userToRemove);
 
 ## One-to-many relation
 
@@ -209,21 +209,21 @@ Photo.ts :
 
 Now let’s create one-to-many relation because one User can have many posts. We move on to User.ts file where we add @OneToMany decorator. The first argument is the entity that we want to use and it is required by TypeORM to pass Post type as a type => Post. The second argument tells that we’ll create author property in Post entity that will determine the post owner and author will respond to User. The posts property of User is an array of Post that’s why we use Post[] type.
 
-    **import** { Post } **from** "./Post";
+    import { Post } from "./Post";
 
        ...
 
-       @OneToMany(**type** => Post, post => post.author) 
+       @OneToMany(type => Post, post => post.author) 
        posts: Post[];
     }
 
 In Post, we have to add an inverse side of the relation so this is @ManyToOne.
 
-    **import** { User } **from** "./User";
+    import { User } from "./User";
 
        ...
 
-       @ManyToOne(**type** => User, user => user.posts)
+       @ManyToOne(type => User, user => user.posts)
        user: User;
 
 After running npm start we can check out the ER diagram that we have this relation created in our database.
@@ -232,14 +232,14 @@ After running npm start we can check out the ER diagram that we have this relati
 
 Let’s assume that posts can have many photos, but the same photo can belongs to many Posts. This means that we have to add @ManyToMany decorator that will connect Posts with Photos.
 
-    **import** {Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable} **from** "typeorm";
+    import {Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable} from "typeorm";
 
     @Entity()
-    **export** **class** Posts {
+    export class Posts {
 
        ...
 
-       @ManyToMany(**type** => Photo, photo => photo.post)
+       @ManyToMany(type => Photo, photo => photo.post)
        @JoinTable()
        photos: Photo[];
     }
@@ -247,13 +247,13 @@ Let’s assume that posts can have many photos, but the same photo can belongs t
 Now let’s add the inverse side of our relation to the Photo class. 
 @JoinTable is required to specify that this is the owner side of the relation.
 
-    **export** **class** Photo {
+    export class Photo {
        
        ...
 
        @Column()
-       link: **string**;
-       @ManyToMany(**type** => Photo, photo => photo.posts)
+       link: string;
+       @ManyToMany(type => Photo, photo => photo.posts)
        posts: Post[];
     }
 
@@ -261,24 +261,24 @@ After npm start we can see that in the database a new table was created and this
 
 ### INSERT TO TABLES
 
-    **import** "reflect-metadata";
-    **import** { createConnection } **from** "typeorm";
-    **import** { User } **from** "./entity/User”;
-    **import** { Post } **from** "./entity/Post";
-    **import** { Photo } **from** "./entity/Photo";
+    import "reflect-metadata";
+    import { createConnection } from "typeorm";
+    import { User } from "./entity/User”;
+    import { Post } from "./entity/Post";
+    import { Photo } from "./entity/Photo";
 
-    createConnection().then(**async** connection => {
-       **let** postRepository = connection.getRepository(Post);
-       **let** photoRepository = connection.getRepository(Photo);
+    createConnection().then(async connection => {
+       let postRepository = connection.getRepository(Post);
+       let photoRepository = connection.getRepository(Photo);
        
-       **let** firstPhoto = **new** Photo();
+       let firstPhoto = new Photo();
        firstPhoto.link = 'http:/firstPhoto';
        await photoRepository.save(firstPhoto);
-       **let** secondPhoto = **new** Photo();
+       let secondPhoto = new Photo();
        secondPhoto.link = 'http:/secondPhoto';
-       **await** photoRepository.save(secondPhoto);
+       await photoRepository.save(secondPhoto);
        
-       **let** post = **new** Post();
+       let post = new Post();
        post.name = 'Title';
        post.photos = [firstPhoto, secondPhoto];
        postRepository.save(post);
@@ -289,8 +289,8 @@ After npm start we can see that in the database a new table was created and this
 
 When we want to find records from the database with their information about posts we just need to add {relations:['posts']}.
 
-    **let** photoRepository = connection.getRepository(Photo);
-    **let** photo = await photoRepository.findOne(5, {relations:['posts']});
+    let photoRepository = connection.getRepository(Photo);
+    let photo = await photoRepository.findOne(5, {relations:['posts']});
     console.log(photo);
 
 ## Validation
@@ -301,7 +301,7 @@ It is important to validate data that comes from outside of an app to ensure tha
 
 Below example validate age property to have integer value in a range of 18–100.
 
-    **import** {validate, Contains, IsInt, Length, IsEmail, IsDate, Min, Max} **from** "class-validator";
+    import {validate, Contains, IsInt, Length, IsEmail, IsDate, Min, Max} from "class-validator";
 
     ...
 
@@ -315,17 +315,17 @@ Below example validate age property to have integer value in a range of 18–100
 
 Now before saving data, we can use the validate method that returns errors in the case when our data are not valid. We can prevent saving and return these errors in response.
 
-    **import** { validate } **from** "class-validator";
+    import { validate } from "class-validator";
 
-    **let** userRepository = connection.getRepository(User);
-    **let** user = **new** User();
+    let userRepository = connection.getRepository(User);
+    let user = new User();
     user.age = 12;
-    **const** errors = **await** validate(user);
+    const errors = await validate(user);
 
-    **if** (errors.length > 0) {
-       **throw new** Error(`Validation failed!`);
-    } **else** {
-       **let** savedUser = **await** userRepository.save(user);
+    if (errors.length > 0) {
+       throw new Error(`Validation failed!`);
+    } else {
+       let savedUser = await userRepository.save(user);
        console.log(savedUser);
     }
 
@@ -333,32 +333,32 @@ Now before saving data, we can use the validate method that returns errors in th
 
 We used find() and findOne() methods like in code below.
 
-    **let** users = **await** userRepository.find();
+    let users = await userRepository.find();
     console.log("All users: ", users);
 
-    **let** user = await userRepository.findOne(5);
+    let user = await userRepository.findOne(5);
 
 In this section, we going to create our custom method findByName() which can find a user by first and second name. Firstly let’s create a new folder repository and UserRepository.ts file in it. An important part of this is that we extend UserRepository with Repository class which has find(), findOne() and other methods.
 
-    **import** {EntityRepository, Repository} **from** "typeorm"; 
-    **import** {User} **from** "../entity/User";
+    import {EntityRepository, Repository} from "typeorm"; 
+    import {User} from "../entity/User";
 
     @EntityRepository(User) 
-    **export** **class** UserRepository **extends** Repository<User> {
-       findByName(firstName: **string**, lastName: **string**) {
-          **return** **this**.findOne({ firstName, lastName });     
+    export class UserRepository extends Repository<User> {
+       findByName(firstName: string, lastName: string) {
+          return this.findOne({ firstName, lastName });     
        }
     }
 
 And now we can import UserRepository class and use our customfindByName() method or other build-in methods like find().
 
-    **import** {getCustomRepository} **from** "typeorm"; 
-    **import** {UserRepository} **from** "./repository/UserRepository"; 
+    import {getCustomRepository} from "typeorm"; 
+    import {UserRepository} from "./repository/UserRepository"; 
 
-    **const** userRepository = getCustomRepository(UserRepository); 
+    const userRepository = getCustomRepository(UserRepository); 
 
-    **await** userRepository.save(user); 
-    **const** timber = **await** userRepository.findByName('Jakub', 'Wolanin');
+    await userRepository.save(user); 
+    const timber = await userRepository.findByName('Jakub', 'Wolanin');
 
 ## VSC snippet
 
