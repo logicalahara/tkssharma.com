@@ -1,9 +1,9 @@
 ---
 date: 2020-02-29
-title: 'JS Interview Questions'
+title: 'Interview Questions JS'
 template: post
 thumbnail: '../thumbnails/js.png'
-slug: js-interview-questions
+slug: interview-questions-js-qa
 categories:
   - Popular
   - Javascript
