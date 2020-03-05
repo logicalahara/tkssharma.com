@@ -15,7 +15,7 @@ Using async/await while looping through arrays in Javascript loop seems simple, 
 
 Control flows are dead simple with async/await but my personal favorite practice of async/await is loops, a simple async loop can be represented in multiple ways and of course we will follow this up with parallel execution.
 
-1. Series loop
+Series loop
 --------------
 
 ```javascript
@@ -27,7 +27,7 @@ async (items) => {
 }
 ```
 
-2. Delayed loop
+Delayed loop
 ---------------
 
 We can utilize the concept of timeouts within our loop, for example if we wanted to create a method that would add a random number to an array once a second for a total of 10 seconds we could use either setTimeout or setImmediate with a counter or a for loop awaiting the timeoutPromise we implemented earlier:
