@@ -1,4 +1,4 @@
-# tkssharma.com
+# tkssharma.com Blog
 
 Tania's personal website running on Gatsby, React, and Node.js.
 
