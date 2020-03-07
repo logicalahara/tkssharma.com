@@ -35,7 +35,7 @@ export default [
     description: 'nanny Finder App to find hose worker around',
   },
   {
-    icon: '⛏️',
+    icon: ' 🧑‍🚀',
     title: ' ubmas',
     path: 'https://ubmas.tkssharma.com/',
     source:'https://ubmas.tkssharma.com/',
@@ -43,7 +43,7 @@ export default [
       'UBMAS Application for traverlers to find local food wherever they travel (Find local food and become guest)',
   },
   {
-    icon: '🐍',
+    icon: ' 🧑‍🚀',
     title: 'blabla Scooty',
     path: 'https://scooty.tkssharma.com/',
     source: 'https://scooty.tkssharma.com/',
