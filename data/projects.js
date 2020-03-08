@@ -8,7 +8,7 @@ export default [
   },
   {
     icon: '🌙🎉',
-    title: 'My Profile',
+    title: 'My Website',
     path: 'https://tkssharma.com',
     source: 'https://tkssharma.com',
     description: 'The optimized dark theme for web development. Your new favorite theme (gatsby profile app)',
@@ -19,6 +19,20 @@ export default [
     path: 'https://hackio.tkssharma.com/',
     source: 'https://hackio.tkssharma.com/',
     description: 'A Code mentor app for exploring learning sessions',
+  },
+  {
+    icon: '💻',
+    title: 'Interview Diary',
+    path: 'https://code.tkssharma.com/',
+    source: 'https://code.tkssharma.com/',
+    description: 'Blogger for Interview preparation',
+  },
+  {
+    icon: '💻',
+    title: 'Developer Profile',
+    path: 'https://profile.tkssharma.com/',
+    source: 'https://profile.tkssharma.com/',
+    description: 'My profile and Projects',
   },
   {
     icon: '🎉💻',
