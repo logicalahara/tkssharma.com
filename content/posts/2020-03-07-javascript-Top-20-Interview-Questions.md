@@ -1,9 +1,9 @@
 ---
 date: 2020-03-05
-title: 'javascript Top 20 Interview Questions'
+title: 'javascript Top 20 Interview Questions part-1'
 template: post
 thumbnail: '../thumbnails/js.png'
-slug: javascript-garbage-collection-memory-management
+slug: javascript-top-20-interview-questions-part-1
 categories:
   - Popular
   - Javascript
