@@ -1,5 +1,5 @@
 ---
-date: 2020-03-05
+date: 2020-03-07
 title: 'javascript Top 20 Interview Questions part-1'
 template: post
 thumbnail: '../thumbnails/js.png'

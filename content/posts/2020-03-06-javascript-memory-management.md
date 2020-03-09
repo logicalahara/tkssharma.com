@@ -1,5 +1,5 @@
 ---
-date: 2020-03-05
+date: 2020-03-06
 title: 'javascript Memory Management | Garbage collection'
 template: post
 thumbnail: '../thumbnails/js.png'
