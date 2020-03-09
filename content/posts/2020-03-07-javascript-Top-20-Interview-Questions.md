@@ -177,7 +177,7 @@ pokemonName.apply(pokemon,['sushi', 'algorithms']);
 ```
 
 
-3. what is the closure with example 
+###  what is the closure with example 
 
 A closure is an inner function that has access to the variables in the outer (enclosing) function’s scope chain. The closure has access to variables in three scopes; specifically: (1) variable in its own scope, (2) variables in the enclosing function’s scope, and (3) global variables.
 
@@ -202,7 +202,7 @@ var globalVar = "xyz";
 })(123);
 ```
 
-4. what will be the output of this code
+###  what will be the output of this code
 
 ```javascript
 for (var i = 0; i < 5; i++) {
@@ -233,7 +233,7 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-5. How can you clone an Object 
+###  How can you clone an Object 
 
 ```javascript
 var obj = {a: 1 ,b: 2}
@@ -364,9 +364,6 @@ if(myObj.isEmpty()) {
 }
 ```
 Extending the object prototype is not the best thing to do as it can cause some browser issues and other issues with certain frameworks (it's also not always reliable in certain environments). The example I gave is pretty much framework agnostic although.
-
-
-
 
 ## For..of, for ..in and forEach
 
