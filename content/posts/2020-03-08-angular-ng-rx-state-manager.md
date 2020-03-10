@@ -1,5 +1,5 @@
 ---
-date: 2020-03-07
+date: 2020-03-08
 title: 'Large scale angular app with @ngrx'
 template: post
 thumbnail: '../thumbnails/angular.png'

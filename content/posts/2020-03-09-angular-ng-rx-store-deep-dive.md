@@ -3,7 +3,7 @@ date: 2020-03-09
 title: 'Explore ngRx Store with Angular App '
 template: post
 thumbnail: '../thumbnails/angular.png'
-slug: angular-with-ng-rx-store
+slug: angular-with-ng-rx-store-deep-ive
 categories:
   - Popular
   - Angular
