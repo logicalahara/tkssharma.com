@@ -7,7 +7,7 @@ slug: javascript-top-20-interview-questions-part-1
 categories:
   - Popular
   - Javascript
-tags:a
+tags:
   - Javascript
 ---
 
