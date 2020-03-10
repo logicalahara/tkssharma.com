@@ -3,6 +3,7 @@ const config = require('./data/SiteConfig')
 
 module.exports = {
   pathPrefix: config.pathPrefix === '' ? '/' : config.pathPrefix,
+  plugins: [`gatsby-plugin-sitemap`],
   siteMetadata: {
     siteUrl: urljoin(config.siteUrl, config.pathPrefix),
     rssMetadata: {
@@ -15,6 +16,8 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sass',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-feed',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-netlify`,
