@@ -1,9 +1,9 @@
 ---
-date: 2020-03-11
-title: 'Using ngRx/Store with WebSockets | Angular Application-Part-1'
+date: 2020-03-012
+title: 'Using ngRx/Store with WebSockets | Angular Application-Part-2'
 template: post
 thumbnail: '../thumbnails/angular.png'
-slug: using-ngrx-store-with-web-sockets-angular-application-Part-1
+slug: using-ngrx-store-with-web-sockets-angular-application-Part-2
 categories:
   - Popular
   - Angular
