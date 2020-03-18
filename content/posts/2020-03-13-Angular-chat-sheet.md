@@ -406,7 +406,6 @@ so the <code>@Directive</code> configuration applies to components as well</p>
 </tbody></table>
 </div>
 
-
 # Angular Cheat Sheet
 
 Angular Cheat Sheet
