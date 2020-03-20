@@ -1,9 +1,9 @@
 ---
-date: 2020-03-16
-title: 'Typescript from beginner to Strong Typing Part-1'
+date: 2020-03-17
+title: 'Typescript from beginner to Strong Typing Part-2'
 template: post
 thumbnail: '../thumbnails/ts.png'
-slug: typescript-from-beginner-to-strong-typing-part-1
+slug: typescript-from-beginner-to-strong-typing-part-2
 categories:
   - Popular
   - Typescript
