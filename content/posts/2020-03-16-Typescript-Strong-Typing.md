@@ -1,5 +1,5 @@
 ---
-date: 2020-03-116
+date: 2020-03-16
 title: 'Typescript from beginner to Strong Typing'
 template: post
 thumbnail: '../thumbnails/ts.png'
