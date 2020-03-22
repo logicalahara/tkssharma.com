@@ -1,6 +1,6 @@
 ---
 date: 2020-03-21
-title: 'tOP 20 RX JS Operators for Reactive Programming'
+title: 'Top 20 RX JS Operators for Reactive Programming'
 template: post
 thumbnail: '../thumbnails/angular.png'
 slug: Top-20-RX-JS-Operators-for-Reactive-Programming

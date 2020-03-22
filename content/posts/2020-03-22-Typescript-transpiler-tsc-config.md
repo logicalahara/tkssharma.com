@@ -1,9 +1,9 @@
 ---
-date: 2020-03-19
-title: 'Typescript Compiler setting up'
+date: 2020-03-22
+title: 'Understanding Typescript Compiler'
 template: post
 thumbnail: '../thumbnails/ts.png'
-slug: setting-up-typescript-compiler
+slug: Understanding-typescript-compiler
 categories:
   - Popular
   - Typescript
