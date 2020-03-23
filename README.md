@@ -1,6 +1,6 @@
 # tkssharma.com Blog
 
-Tania's personal website running on Gatsby, React, and Node.js.
+personal website running on Gatsby, React, and Node.js.
 
 ## Note
 
