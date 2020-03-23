@@ -1,6 +1,6 @@
 const config = {
-  siteTitle: 'Tarun Sharma | My Profile',
-  siteTitleShort: 'Tarun Sharma | @tkssharma',
+  siteTitle: '@tkssharma | Tarun Sharma | My Profile',
+  siteTitleShort: '@tkssharma | Tarun Sharma | @tkssharma',
   siteTitleAlt: 'Tarun Sharma | @tkssharma',
   siteLogo: '/logos/logo-1024.png',
   siteUrl: 'https://www.tkssharma.com',
