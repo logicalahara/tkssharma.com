@@ -95,14 +95,9 @@ Now the module can be installed by anyone from this repository. To do this, the 
 * Install GitHub hosted npm package in your project
 
 We will use yarn as the package management tool (in most of the cases). You can replace it with npm and get the same result.
-
-### Host NPM source code in GitHub
-
-There is not too much to say, please refer to my example repo [https://github.com/tkssharma/npm-package-name](https://github.com/tkssharma/npm-package-name) for an NPM example (derived from [How to make a beautify, tiny npm package and publish it
-
 ### Host NPM package in Github Packages
 
-The NPM package hosted by GitHub is [scoped](https://docs.npmjs.com/about-scopes) with your GitHub account name: @scope-name/package-name. This can be set by the name attribute in package.json.
+The NPM package hosted by GitHub is [scoped](https://docs.npmjs.com/about-scopes) with your GitHub account name: @github-username/package-name. This can be set by the name attribute in package.json.
 
 It supports both public and private package (based on your GitHub repo is public or private).
 
@@ -139,7 +134,6 @@ Place this publish.yml under .github/workflows/publish.yml:
 # For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
 
 name: Node.js Package deploy
-
 on:
   push:
     branches: [ master ]
