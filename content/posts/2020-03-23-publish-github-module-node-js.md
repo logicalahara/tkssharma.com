@@ -1,9 +1,9 @@
 ---
-date: 2020-03-22
-title: 'Publishing Github Module'
+date: 2020-03-23
+title: 'Publishing Github package as NPM Module'
 template: post
 thumbnail: '../thumbnails/github.png'
-slug: publishing-github-module-with-actions
+slug: publishing-github-package-with-actions
 categories:
   - Popular
   - Typescript
