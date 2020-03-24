@@ -26,7 +26,7 @@ Lets make your package.json ready
 
 Amend the repository to the ssh URL of the repo (e.g. git@github.com:tkssharma/package-name.git). You can find this by using the ‘Clone or download’ button using the ‘Clone with SSH’ option.
 
-Update the name of the package. This must match the repo URL but with @tksssharma rather than just oncorps (e.g. git@github.com:tkssharma/package-name.git becomes @tkssharma/package-name).
+Update the name of the package. This must match the repo URL but with @tksssharma rather than just tkssharma (e.g. git@github.com:tkssharma/package-name.git becomes @tkssharma/package-name).
 
 ``Add a description for the package``.
 
