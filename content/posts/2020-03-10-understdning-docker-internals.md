@@ -1,5 +1,5 @@
 ---
-date: 2020-03-09
+date: 2020-03-10
 title: 'Understanding docker internals'
 template: post
 thumbnail: '../thumbnails/linux.png'
