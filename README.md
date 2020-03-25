@@ -2,8 +2,6 @@
 
 personal website running on Gatsby, React, and Node.js.
 
-## Note
-
 I've made my website open source for your inspiration, motivation, and curiosity. However, this theme is highly customized and personally tailored, and it would take more work to remove all my custom code than create your own. **I encourage you to be creative and create your own theme, design, and content.**
 
 The [Gatsby Advanced Starter](https://github.com/vagr9k/gatsby-advanced-starter/) is a great place to start, and is the base for this blog.
