@@ -2,7 +2,7 @@
 date: 2020-03-24
 title: 'dependency injection: setting up InversifyJS IoC for Typescript Apps'
 template: post
-thumbnail: '../thumbnails/github.png'
+thumbnail: '../thumbnails/ts.png'
 slug: dependency-injection-with-Typescript-project-InversifyJS
 categories:
   - Popular
