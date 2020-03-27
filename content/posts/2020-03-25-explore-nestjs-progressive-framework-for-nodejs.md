@@ -2,7 +2,7 @@
 date: 2020-03-25
 title: 'Nest (NestJS) is a framework for progreassive apps'
 template: post
-thumbnail: '../thumbnails/ts.png'
+thumbnail: '../thumbnails/nest.png'
 slug: nestjs-framework-for-progressive-apps
 categories:
   - Popular
