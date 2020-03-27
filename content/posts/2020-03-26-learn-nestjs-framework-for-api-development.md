@@ -1,5 +1,5 @@
 ---
-date: 2020-03-25
+date: 2020-03-26
 title: 'Step by Step Learning Nest (NestJS) framework for progreassive apps'
 template: post
 thumbnail: '../thumbnails/nest.png'
