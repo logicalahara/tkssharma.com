@@ -170,7 +170,4 @@ Let’s go through some important files:
 If you are building a full-stack application with Angular/React.js and want to use NestJS as a back end, you should consider [Nx Dev Tools](https://nx.dev/angular/getting-started/what-is-nx) which provides a lot of features.
 
 ## Conclusion
-
-We learned about the NestJS workspace and two modes that are available and how they differ, and how we can convert our workspace to monorepo mode.
-
-We also saw different files, which are important, and why they are useful. In the next post, we will discuss controllers and how we can create and configure endpoints.
+Keep learning
