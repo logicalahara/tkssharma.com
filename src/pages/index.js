@@ -63,7 +63,7 @@ export default class Index extends Component {
                 <p>
                   I write tutorials. Get an update when something new comes out by subscribing my channel/Blogs
                 </p>
-                <a className="button" href="https://www.youtube.com/channel/UCS1NeZF0Or2E1RAV9hQJz3g?view_as=subscriber">
+                <a className="button" target="_blank" href="https://tinyletter.com/tkssharma">
                   Get Started
                 </a>
               </div>
