@@ -28,7 +28,6 @@ The WebSocket API is an advanced technology that makes it possible to open a two
 
 Web Sockets can be used to push data to an Angular service. The general flow looks something like this:
 
-
 Add Web Socket functionality on the server
 ------------------------------------------
 
@@ -152,6 +151,7 @@ export class DataService {
   }
 }
 ```
+
 Subscribe to the Service Observable in a Component
 ----------------------------------------------------
 
@@ -188,4 +188,5 @@ export class AppComponent implements OnInit, OnDestroy {
 }
 ```
 
+![event driven UI](../thumbnails/ngrx.png)*ngrx with web socket*
 
