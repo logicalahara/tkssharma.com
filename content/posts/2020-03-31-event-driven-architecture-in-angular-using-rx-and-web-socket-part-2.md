@@ -1,9 +1,9 @@
 ---
 date: 2020-03-30
-title: 'Event Driven UI Using angular NgRx and WebSocket'
+title: 'Event Driven UI Using angular NgRx and WebSocket Part-2'
 template: post
 thumbnail: '../thumbnails/angular.png'
-slug: event-driven-ui-using-angular-ngrx-and-websocket
+slug: event-driven-ui-using-angular-ngrx-and-websocket-Part-2
 categories:
   - Popular
   - Javascript
