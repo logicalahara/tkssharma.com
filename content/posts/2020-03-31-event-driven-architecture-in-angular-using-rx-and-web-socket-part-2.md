@@ -1,5 +1,5 @@
 ---
-date: 2020-03-30
+date: 2020-03-31
 title: 'Event Driven UI Using angular NgRx and WebSocket Part-2'
 template: post
 thumbnail: '../thumbnails/angular.png'
@@ -7,190 +7,156 @@ slug: event-driven-ui-using-angular-ngrx-and-websocket-Part-2
 categories:
   - Popular
   - Javascript
-  - ReAngularact
+  - Angular
 tags:
   - Javascript
   - Angular
 ---
 
-Angular
-------
+## This is Part-2 of Event Driven UI Using angular NgRx and WebSocket
 
-Angular is a development platform for building mobile and desktop web applications using TypeScript/JavaScript and other languages.
+- This blogs has different parts (Let's understand one by one)
+- You should be aware how NgRx works (can be done without NgRx)
+- You should know how websocket two way communication works
+- You should be aware how angular service use observables to communicate data in components
 
-@ngrx/store
------------
-Store is RxJS powered state management for Angular applications, inspired by Redux. Store is a controlled state container designed to help write performant, consistent applications on top of Angular.
+Let's first talk about basic about NgRx how it works (not in details)
 
-WebSocket API 
--------------
-The WebSocket API is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply.
+@ngrx/store — a state management library for Angular applications inspired by Redux. By using this library we are able to keep the current state of the app in one place — the store. This enables us to use the store as *a single source of truth* meaning we can reliably access the state of the app from this one place rather than components of the app holding their own state and having to communicate and pass data between them. This reduces the communication between components which is particularly helpful to scale our app without adding more complexity.
 
-This is we want to get from application architecture, We have web socket service that will push data and at client side angular client will get data and using rx js subject we will spread this data to all components.
+The below diagram gives a basic overview of the way the store/NgRx works in our app internally
 
-![event driven UI](../thumbnails/ngrx.png)*ngrx with web socket*
+## How ngrx/store Fits Into Angular
 
+Before we look at the Flux pattern and how store/ngrx brings it to life, it’s important to note that it is not always a necessary component in building an Angular application. Using ngrx/store brings more complexity, and that complexity should be merited by the requirements of the app being constructed.
 
-Web Sockets can be used to push data to an Angular service. The general flow looks something like this:
+In a simple component, the store and view relate to eachother as seen in Figure 1.
 
-Add Web Socket functionality on the server
-------------------------------------------
+![Figure 1: Simple Component with State](https://cdn-images-1.medium.com/max/2000/1*NeFOfH1UrkvYzbI7nDgwnA.png)*Figure 1: Simple Component with State*
 
-- Create an Angular service that subscribes to the data stream provided by the server
-- Return an observable from the Angular service that a component can subscribe to
-- Emit data received in the Angular service (from the server) to observable subscribers
-- Subscribe to the service observable in a component
-- While it’s fairly easy to follow the flow described above, having an actual example makes it much easier to demonstrate the overall concept. As a result, I decided to create a simple Angular/Web Socket proof of concept project that I’ll briefly walkthrough here.
+When this suffices, well enough. However, as you know, an angular UI is composed of a hierarchical tree of components. These components can interact via @Input and eventing.
 
-1. Add Web Socket Functionality to the Server
+In simple cases, these are enough to manage shared state.
 
-There are a lot of options that can be used to add Web Socket functionality to the server – it really depends upon what language/framework you prefer. For the Angular/Web Socket example project, I went with Node.js and socket.io since it’s easy to get up and running on any OS. The overall server is extremely easy to get up and running (keep in mind that I purposely kept it very basic to demonstrate the overall concept). The server starts a timer (used to simulate data changing on the server) once a client connection is made and returns data to one or more clients as the timer fires.
+As applications grow, however, the inter-component interactions can become seriously cumbersome. It can become very difficult to understand and think about how events are impacting the state and how the components react to these state changes. Add to this the possibility of external actors on the state (like long-polling or server-push) and you have a strong case for using a central store like ngrx/store. This is seen in Figure 2.
 
-```javascript
-const express = require('express'),
-      app = express(),
-      server = require('http').createServer(app);
-      io = require('socket.io')(server);
+![Figure 2: Component Tree with State Interactions](https://cdn-images-1.medium.com/max/2000/1*RWXLmMfo6gWCaFBiyepB2g.png)*Figure 2: Component Tree with State Interactions*
 
-let timerId = null,
-    sockets = new Set();
+The solution to this problem is to externalize the state to central place, like you see in Figure 3.
 
-//This example emits to individual sockets (track by sockets Set above).
-//Could also add sockets to a "room" as well using socket.join('roomId')
-//https://socket.io/docs/server-api/#socket-join-room-callback
+![Figure 3: Centralized State](https://cdn-images-1.medium.com/max/2000/1*6L4nDADaYo_TKJFK2ohenA.png)*Figure 3: Centralized State*
 
-app.use(express.static(__dirname + '/dist')); 
+Just like we create a state in a component and then allow the various view elements to reflect that state, the idea here is to move the shared state out of the component itself, and into a central place where all those concerned can interact with it.
 
-io.on('connection', socket => {
+## Digging Into Centralized State
 
-  sockets.add(socket);
-  console.log(`Socket ${socket.id} added`);
+This is an easy idea to understand, and you may be wondering what ngrx/store does, since the above central-state idea could be implemented by injecting a global service into the components. This is a great question to ask. In fact, you may well be able to handle your applications needs by using shared services. Moreover, if you can identify subsets of components that use the same state, you can isolate your shared service state holders to smaller segments of the application.
 
-  if (!timerId) {
-    startTimer();
-  }
+Nevertheless, the idea of keeping all application state in a central place has a compelling simplicity to it. This is a central tenant of flux-thinking: one source of application truth. Therefore, let’s assume that you have determined your application merits a central state management solution. What does ngrx/store bring to the table beyond simply making a globally observable state?
 
-  socket.on('clientdata', data => {
-    console.log(data);
-  });
+## Actions and Discrete State Changes
 
-  socket.on('disconnect', () => {
-    console.log(`Deleting socket: ${socket.id}`);
-    sockets.delete(socket);
-    console.log(`Remaining sockets: ${sockets.size}`);
-  });
+One prominent feature of ngrx/store is that it allows you to modify the state only via actions. An action is a single type of state change that components can invoke. An action is executed, and the component does not know about how the state is affected. This is a key element in isolating the components from the store.
 
-});
-function startTimer() {
-  timerId = setInterval(() => {
-    if (!sockets.size) {
-      clearInterval(timerId);
-      timerId = null;
-      console.log(`Timer stopped`);
-    }
-    let value = ((Math.random() * 50) + 1).toFixed(2);
-    for (const s of sockets) {
-      console.log(`Emitting value: ${value}`);
-      s.emit('data', { data: value });
-    }
-
-  }, 2000);
-}
-
-server.listen(8080);
-console.log('Visit http://localhost:8080 in your browser');
-```
-The key part of the code is found in the io.on(‘connection’, …) section. This code handles adding client socket connections into a set, starts the timer when the first socket connection is made and handles removing a given socket from the set when a client disconnects. The startTimer() function simulates data changing on the server and handles iterating through sockets and pushing data back to connected clients (note that there are additional techniques that can be used to push data to multiple clients – see the included comments).
-
-The next 3 steps all relate to the Angular service.
---------------------------------------------------
-
-- Create an Angular Service that Subscribes to the Data Stream Provided by the Server 3. Return an Observable from the Angular Service that a Component can Subscribe to 4. Emit data received in the Angular Service (from the service) to Observable subscribers
-
-- The Angular service subscribes to the data being pushed from the server using a script provided by socket.io (the script is defined in index.html). The service’s getQuotes() function first connects to the server using the io.connect() call. It then hooks the returned socket to “data” messages returned from the server. Finally, it returns an observable to the caller. The observable is created  by calling Observable.create() in the createObservable() function.
-
-- As Web Socket data is received in the Angular service, the observer object created in createObservable() is used to pass the data to any Angular subscribers by calling observer.next(res.data). In essence, the Angular service simply forwards any data it receives to subscribers.
+You can think of an Action as a Command (in the sense of the classic [Gang of Four Pattern](https://en.wikipedia.org/wiki/Command_pattern)).
 
 ```javascript
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { Observer } from 'rxjs/Observer';
-import { map, catchError } from 'rxjs/operators';
-import * as socketIo from 'socket.io-client';
+import { LoadSongsAction } from './actions/songs'; 
+import { Store } from '@ngrx/store';
 
-import { Socket } from '../shared/interfaces';
+import * as fromRoot from './reducers'; // The convention is to define fromRoot as our namespace for reducers import { Observable } from 'rxjs/Observable';
 
-declare var io : {
-  connect(url: string): Socket;
-};
+@Component({ selector: 'app-root', 
+  templateUrl: './app.component.html', 
+  styleUrls: ['./app.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush 
+ }) 
 
-@Injectable()
-export class DataService {
+export class SongComponent implements OnInit {
+  public song$: Observable<song>;
 
-  socket: Socket;
-  observer: Observer;
-
-  getQuotes() : Observable<number> {
-    this.socket = socketIo('http://localhost:8080');
-
-    this.socket.on('data', (res) => {
-      this.observer.next(res.data);
-    });
-
-    return this.createObservable();
+  constructor(public store: Store<fromRoot.State>) {
+      this.song$ = store.select(fromRoot.getSong);
   }
-
-  createObservable() : Observable<number> {
-      return new Observable(observer => {
-        this.observer = observer;
-      });
-  }
-
-  private handleError(error) {
-    console.error('server error:', error);
-    if (error.error instanceof Error) {
-        let errMessage = error.error.message;
-        return Observable.throw(errMessage);
-    }
-    return Observable.throw(error || 'Socket.io server error');
-  }
-}
-```
-
-Subscribe to the Service Observable in a Component
-----------------------------------------------------
-
-The final step involves a component subscribing to the observable returned from the service’s getQuotes() function. In the following code, DataService is injected into the component’s constructor and then used in the ngOnOnit() function to call getQuotes() and subscribe to the observable. Data that streams into the subscription is fed into a stockQuote property that is then rendered in the UI.
-
-Note that the subscription object returned from calling subscribe() is captured in a sub property and used to unsubscribe from the observable when ngOnDestroy() is called.
-
-```javascript
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { DataService } from './core/data.service';
-import { Subscription } from 'rxjs/Subscription';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html'
-})
-export class AppComponent implements OnInit, OnDestroy {
-
-  stockQuote: number;
-  sub: Subscription;
-
-  constructor(private dataService: DataService) { }
-
+  
   ngOnInit() {
-    this.sub = this.dataService.getQuotes()
-        .subscribe(quote => {
-          this.stockQuote = quote;
-        });
-  }
-
-  ngOnDestroy() {
-    this.sub.unsubscribe();
+    this.store.dispatch(new LoadSongsAction());
   }
 }
 ```
 
+An action is a simple command. Here’s a look at the simple LoadSongAction.
 
+```javascript
+import { Number } from './../models/song';
+import { Action } from '@ngrx/store';
+
+export const LOADSONGS = '[Song] LoadAll';
+export const SONGDELETED = '[Song] Delete';
+export class LoadSongAction implements Action {
+  type = LOAD_SONGS; 
+}
+export class DeleteSongAction implements Action { 
+  type = SONG_DELETED;
+}
+```
+
+The action internally defines a constant, which convention uses a bracketed type definition followed by the activity given: ‘[Song] LoadAll’. This action can then be used as a discrete action that can be sent to the store.
+
+## Reducers
+
+There are two places where actions come into the store: reducers and effects.
+
+Reducers are pure functions, meaning they don’t produce side-effects (that is, they perform all their work internally to the function itself — another flux tenant). They are responsible for taking an action that is dispatched from the app, and applying it to the state. For example, in Listing 3, we define a reducer which applies the delete action.
+
+```javascript
+export function songReducer(state = initialState, action: Action) { 
+
+  switch(action.type) { 
+    case 'DELETE_SONG': const songId = action.payload; 
+    return state.filter(id => id !== songId); 
+    default: return state; 
+  } 
+}
+```
+The numberReducer has a typical reducer signature: it gets the initialState and the action in its arguments. In this case, it takes a payload from the action, which will contain the id of the item to be deleted. The reducer then uses the id to filter the removed element from the state.
+
+## Effects
+
+Effects, as the name implies, allow for side-effects. A common use for effects is to watch for actions which require loading data. Something like Listing 4 is typical.
+
+```javascript
+@Injectable() export class SongEffects { 
+  @Effect() update$: Observable<Action> = this.action$
+    .ofType(songs.LOAD_SONGS) 
+    .switchMap(() => this.songService 
+    .getRates() 
+    .map(data => new SongsAreLoadedAction(data))
+  );
+  
+  constructor( private currencyService: SongService, private action$: Actions ) {} 
+}
+```
+This effect watches for the LOAD_SONGS Action, and uses a song service (injected into this class) to do that work.
+
+## Alternatives to Using Effect’s for Service Interactions
+
+Although this can be a useful pattern, using effects to interact with backend services can become unwieldy as applications become more complex. This is because it can become difficult to manage the subscription and unsubscription from multiple components in the effect — if the user navigates away from the view, a new event type (e.g., CANCEL_LOAD_SONGS) can become necessary.
+
+Moreover, if interleaving of requests is important to dependant components, it can become difficult to track when the data is loaded.
+
+In short, effects can become a source of sprawling logic dependency.
+
+![*An effect can catch an action, do some processing and then emit another one or more actions.*](https://cdn-images-1.medium.com/max/2436/1*HLZRojLLZPGw7TP304-JJQ.png)An effect can catch an action, do some processing and then emit another one or more actions.
+
+![*A facade is used to abstract away the store pattern from the components.*](https://cdn-images-1.medium.com/max/2466/1*rkfbyP4jD0zz6PS_yo45Uw.png)A facade is used to abstract away the store pattern from the components.
+
+# Another Part is Event driven UI with NgRx
+
+## Ngrx + Effects with a simple REST Service
+
+![image from https://github.com/avatsaev](../thumbnails/arch-ng-rx.png)
+
+## Ngrx + Effects with Socket.IO
+
+![image from https://github.com/avatsaev](../thumbnails/arch-ng-rx2.png)
