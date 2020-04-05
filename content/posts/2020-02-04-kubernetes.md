@@ -46,23 +46,23 @@ The [master](http://kubernetes.io/docs/admin/high-availability/) is responsible 
 
 The worker nodes also runs additional components for logging, monitoring, service discovery and optional add-ons. Nodes are the workhorses of a Kubernetes cluster. They expose compute, networking and storage resources to applications. Nodes can be virtual machines (VMs) running in a cloud or bare metal servers running within the data center.
 
-<img class="cp t u fy ak" src="https://miro.medium.com/max/4936/1*svd2l7yAE-8LV7pR4bnVIA.png" width="2468" height="1200" role="presentation"/>
+<img class="cp t u fy ak" src="https://miro.medium.com/max/4936/1*svd2l7yAE-8LV7pR4bnVIA.png" width="800" height="500" role="presentation"/>
 
 _Figure 2: Kubernetes breaks down into multiple architectural components._
 
 A [pod](http://kubernetes.io/docs/user-guide/pods/) is a collection of one or more containers. The pod serves as Kubernetes’ core unit of management. Pods act as the logical boundary for containers sharing the same context and resources. The grouping mechanism of pods makes up for the differences between containerization and virtualization by making it possible to run multiple dependent processes together. At runtime, pods can be scaled by creating replica sets, which ensure that the deployment always runs the desired number of pods.
 
-<img class="cp t u fy ak" src="https://miro.medium.com/max/4436/1*Qn0NmTkn7BtyjKAfI8csjw.png" width="2218" height="1162" role="presentation"/>
+<img class="cp t u fy ak" src="https://miro.medium.com/max/4436/1*Qn0NmTkn7BtyjKAfI8csjw.png" width="800" height="500" role="presentation"/>
 
 [Replica sets](http://kubernetes.io/docs/user-guide/replicasets/) deliver the required scale and availability by maintaining a pre-defined set of pods at all times. A single pod or a replica set can be exposed to internal or external consumers via services. Services enable the discovery of pods by associating a set of pods to a specific criterion. Pods are associated to services through key-value pairs called labels and selectors. Any new pod with labels that match the selector will automatically be discovered by the service. This architecture provides a flexible, loosely-coupled mechanism for service discovery.
 
-<img class="cp t u fy ak" src="https://miro.medium.com/max/4792/1*eVvQlnlStjoPCnfQz8UVUw.png" width="2396" height="1052" role="presentation"/>
+<img class="cp t u fy ak" src="https://miro.medium.com/max/4792/1*eVvQlnlStjoPCnfQz8UVUw.png" width="800" height="500" role="presentation"/>
 
 The definition of Kubernetes objects, such as pods, replica sets and services, are submitted to the master. Based on the defined requirements and availability of resources, the master schedules the pod on a specific node. The node pulls the images from the container image registry and coordinates with the local container runtime to launch the container.
 
 [etcd](https://github.com/coreos/etcd) is an open source, distributed key-value database from CoreOS, which acts as the single source of truth ([SSOT](https://en.wikipedia.org/wiki/Single_source_of_truth)) for all components of the Kubernetes cluster. The master queries etcd to retrieve various parameters of the state of the nodes, pods and containers.
 
-<img class="cp t u fy ak" src="https://miro.medium.com/max/4818/0*mjGiSh9yJ_9JQp2P.png" width="2409" height="1984" role="presentation"/>
+<img class="cp t u fy ak" src="https://miro.medium.com/max/4818/0*mjGiSh9yJ_9JQp2P.png" width="800" height="500" role="presentation"/>
 
 all components together
 
@@ -101,7 +101,7 @@ Orchestrating Simpler Architectures
 
 What’s a simple Node.js architecture? If your application is supported by just a few processes, one or two databases, a load balancer, a client, and exists on a single host — or something comparable to this scale — then your orchestration demands can most likely be met by Docker’s [orchestration tooling](https://docs.docker.com/engine/swarm/).
 
-<img class="cp t u fy ak" src="https://miro.medium.com/max/2880/0*nzGA8ZTPxJgRjvIZ.png" width="1440" height="800" role="presentation"/>
+<img class="cp t u fy ak" src="https://miro.medium.com/max/2880/0*nzGA8ZTPxJgRjvIZ.png" width="800" height="500" role="presentation"/>
 
 If, however, your container architecture is more in line with the following image, an orchestration solution such as [Amazon ECS](https://aws.amazon.com/ecs/), [Nomad](https://www.hashicorp.com/blog/nomad-announcement), or [Kubernetes](https://kubernetes.io/) is more suited to at-scale production demands. let’s talk about K8S
 
@@ -121,7 +121,7 @@ The master-node based architecture of Kubernetes lends it to rapid, horizontal s
 
 The following image provides a visual layout describing the various scopes of the Kubernetes components:
 
-<img class="cp t u fy ak" src="https://miro.medium.com/max/2880/0*dsatk6kkt14Lrwb_.png" width="1440" height="800" role="presentation"/>
+<img class="cp t u fy ak" src="https://miro.medium.com/max/2880/0*dsatk6kkt14Lrwb_.png" width="800" height="500" role="presentation"/>
 
 LABELS AND SELECTORS
 --------------------
@@ -135,7 +135,7 @@ Labels, selectors, and namespaces are critical in enabling Kubernetes to be so f
 
 As Kubernetes itself is built on a distributed architecture, it excels at building and managing microservice and other distributed architectures. While burrowing into the details of the various services that power Kubernetes is outside the scope of this article, the following image shows a higher-level look at the interactions between the various elements of the Kubernetes _Control Plane_:
 
-<img class="cp t u fy ak" src="https://miro.medium.com/max/2880/0*SiUdeKdyMXgz5gRL.png" width="1440" height="800" role="presentation"/>
+<img class="cp t u fy ak" src="https://miro.medium.com/max/2880/0*SiUdeKdyMXgz5gRL.png" width="800" height="500" role="presentation"/>
 
 Keep the Control Plane information flows in mind as we look into how Kubernetes handles container networking.
 
