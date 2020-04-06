@@ -151,12 +151,31 @@ In short, effects can become a source of sprawling logic dependency.
 
 ![*A facade is used to abstract away the store pattern from the components.*](https://cdn-images-1.medium.com/max/2466/1*rkfbyP4jD0zz6PS_yo45Uw.png)A facade is used to abstract away the store pattern from the components.
 
-# Another Part is Event driven UI with NgRx
+### Another Part is Event driven UI with NgRx, Here we will subscribe http and websocket events
 
-## Ngrx + Effects with a simple REST Service
+# Ngrx + Effects with a simple REST Service
+
+- This is basic example where we are getting data from http api calls 
+- write NgRx store/action/reducers and effects to deal with async calls 
+- HTTP calls will trigger action, effects and update store 
+- Angular components will get data from updates store data
+
+Now what if we add socket service in above picture, the change is now we have socket push events coming 
+from which we can get data, we just need socket client to connect and receive and send events to socket api server
 
 ![image from https://github.com/avatsaev](../thumbnails/arch-ng-rx.png)
 
-## Ngrx + Effects with Socket.IO
+# Ngrx + Effects with a simple REST and Socket Service 
+
+- NgRx will work same as it was just addition of another type of effects (web socket events)
+- Now with HTTP events we will also capture web socket events and get updated data
 
 ![image from https://github.com/avatsaev](../thumbnails/arch-ng-rx2.png)
+
+## let's understand it using Code 
+
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://i.imgur.com/R2NlsFd.png" /></a>
+</p>
+
+This application uses [@ngrx/store](https://github.com/ngrx/platform/blob/master/docs/store/README.md) to manage application state, and [@ngrx/effects](https://github.com/ngrx/platform/blob/master/docs/effects/README.md) to manange side effects (http+sockets), It also uses NgRx fractal state management to leverage lazy loading of reducers and effects.
