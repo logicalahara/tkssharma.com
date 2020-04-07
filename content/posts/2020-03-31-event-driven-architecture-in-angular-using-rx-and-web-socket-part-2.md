@@ -178,4 +178,150 @@ from which we can get data, we just need socket client to connect and receive an
   <a href="http://nestjs.com/" target="blank"><img src="https://i.imgur.com/R2NlsFd.png" /></a>
 </p>
 
-This application uses [@ngrx/store](https://github.com/ngrx/platform/blob/master/docs/store/README.md) to manage application state, and [@ngrx/effects](https://github.com/ngrx/platform/blob/master/docs/effects/README.md) to manange side effects (http+sockets), It also uses NgRx fractal state management to leverage lazy loading of reducers and effects.
+This application uses [@ngrx/store](https://github.com/ngrx/platform/blob/master/docs/store/README.md) to manage application state, and [@ngrx/effects](https://github.com/ngrx/platform/blob/master/docs/effects/README.md) to manange side effects (http+sockets), It also uses NgRx fractal state management to leverage lazy loading of reducers and effects
+
+Repo Url 👍
+- https://github.com/tkssharma/ng-dashboard-training/settings
+- https://github.com/tkssharma/ng-dashboard-nestjs-apis 
+
+![App POC ](../thumbnails/screen.png)
+
+Node JS APIs
+-------------
+
+```bash
+node_1   | socket initialized
+node_1   | [Nest] 48   - 04/06/2020, 1:39 PM   [RoutesResolver] AppController {/}: +726ms
+node_1   | [Nest] 48   - 04/06/2020, 1:39 PM   [RouterExplorer] Mapped {/, GET} route +6ms
+node_1   | [Nest] 48   - 04/06/2020, 1:39 PM   [RoutesResolver] ContactsController {/contacts}: +3ms
+node_1   | [Nest] 48   - 04/06/2020, 1:39 PM   [RouterExplorer] Mapped {/, GET} route +4ms
+node_1   | [Nest] 48   - 04/06/2020, 1:39 PM   [RouterExplorer] Mapped {/:id, GET} route +3ms
+node_1   | [Nest] 48   - 04/06/2020, 1:39 PM   [RouterExplorer] Mapped {/, POST} route +4ms
+node_1   | [Nest] 48   - 04/06/2020, 1:39 PM   [RouterExplorer] Mapped {/bulk, POST} route +5ms
+node_1   | [Nest] 48   - 04/06/2020, 1:39 PM   [RouterExplorer] Mapped {/:id, PATCH} route +4ms
+node_1   | [Nest] 48   - 04/06/2020, 1:39 PM   [RouterExplorer] Mapped {/:id, DELETE} route +2ms
+node_1   | [Nest] 48   - 04/06/2020, 1:39 PM   [NestApplication] Nest application successfully started +7ms
+node_1   | SERVER IS RUNNING ON PORT 3000
+```
+The Important Part of application is handling Socket and HTTP events from API server 
+
+Conntact Actions
+----------------
+
+```javascript 
+import {createAction, props} from '@ngrx/store';
+import { Contact } from '@app/core/models';
+
+export const loadAll = createAction(
+  '[Contacts] Load all'
+);
+
+export const load = createAction(
+  '[Contacts] Load',
+  props<{id: number}>()
+);
+
+export const create = createAction(
+  '[Contacts] Create',
+  props<{contact: Contact}>()
+);
+
+export const update = createAction(
+  '[Contacts] Update',
+  props<{contact: Partial<Contact>}>()
+);
+
+export const remove = createAction(
+  '[Contacts] Remove',
+  props<{id: number}>()
+);
+```
+
+Socket service to listen to socket events like update Delete 
+
+```javascript
+import { Injectable } from '@angular/core';
+import {Socket} from 'ngx-socket-io';
+import {environment} from '@app/env';
+import {ContactsEventTypes} from '@app/core/models/contact.events';
+import {Contact} from '@app/core/models';
+
+
+@Injectable()
+export class ContactsSocketService extends Socket {
+
+  liveCreated$ = this.fromEvent<Contact>(ContactsEventTypes.LIVE_CREATED);
+  liveUpdated$ = this.fromEvent<Contact>(ContactsEventTypes.LIVE_UPDATED);
+  liveDeleted$ = this.fromEvent<number>(ContactsEventTypes.LIVE_DELETED);
+
+  constructor() {
+    super({
+      url: `${environment.socketConfig.url}/contacts`,
+      options: environment.socketConfig.opts
+    });
+  }
+}
+
+```
+All such events will be passed to Effects to update state tree
+```javascript
+
+  @Effect()
+  liveCreate$ = this.contactsSocket.liveCreated$.pipe(
+    map(contact => createSuccess({contact}))
+  );
+  @Effect()
+  liveUpdate$ = this.contactsSocket.liveUpdated$.pipe(
+    map(contact => updateSuccess({contact}))
+  );
+  @Effect()
+  liveDestroy$ = this.contactsSocket.liveDeleted$.pipe(
+    map(id => removeSuccess({id}))
+  );
+  constructor(
+    private actions$: Actions,
+    private contactsService: ContactsService,
+    private contactsSocket: ContactsSocketService
+  ) {}
+
+}
+```
+Finally our reducer which will get new state based on update & delete action and store gets updated from async socket events
+```javascript
+export const reducer = createReducer<State>(
+  INIT_STATE,
+  on(loadAllSuccess, (state, {contacts}) =>
+    contactsAdapter.addAll(contacts, state)
+  ),
+  on(loadSuccess, (state, {contact}) =>
+    contactsAdapter.upsertOne(contact, state)
+  ),
+  on(createSuccess, (state, {contact}) =>
+    contactsAdapter.addOne(contact, state)
+  ),
+  on(updateSuccess, (state, {contact}) =>
+    contactsAdapter.updateOne({id: contact.id, changes: contact}, state)
+  ),
+  on(removeSuccess, (state, {id}) =>
+    contactsAdapter.removeOne(id, state)
+  )
+);
+```
+
+Now you can open application in two differant tabs and can play around, Action being performed on one tab will also impact UI being shown in another Tab, this is how socket events will be triggered
+
+Example like
+-  new contact added 
+-  Api triggered in nestJS server 
+-  Api will emit socket event for update 
+-  Event will be handled by connected clients 
+-  Clients will update their local store 
+-  UI gets new data from socket event using NgRx Flow
+
+
+There are a lot of things which you can understand one by one
+- nestJS socket events 
+- NgRx pattern (we can use simple Angular without NgRx)
+- SocketIo client 
+  
+  
