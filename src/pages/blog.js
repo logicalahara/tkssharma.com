@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import Layout from '../layout'
 import PostListing from '../components/PostListing'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig';
 import Comments from '../components/Comments';
+import ManualPages from '../components/ManualPages';
 export default class BlogPage extends Component {
   state = {
     searchTerm: '',
@@ -63,6 +65,7 @@ export default class BlogPage extends Component {
       <Layout>
         <Helmet title={`Articles – ${config.siteTitle}`} />
         <SEO />
+        <ManualPages />
         <div className="container">
           <h1>Articles</h1>
           <div className="category-container">

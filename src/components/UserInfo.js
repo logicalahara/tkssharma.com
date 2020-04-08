@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import patreon from '../../content/thumbnails/patreon.png'
+import kofi from '../../content/thumbnails/kofi.png'
+
 import tks from '../../content/images/profile.png'
 
 export default class UserInfo extends Component {
@@ -13,14 +15,19 @@ export default class UserInfo extends Component {
             </div>
             <div>
               <p>
-              I am Publisher, Trainer Developer, working on Enterprise and open source Technologies JavaScript frameworks (React Angular 2.x), I work with client side and server side javascript programming which includes node js or any other frameworks Currently working with JavaScript framework React & Node js 🚀 with Graphql 🎉
+                I am Publisher, Trainer Developer, working on Enterprise and open source Technologies JavaScript frameworks (React Angular 2.x), I work with client side and server side javascript programming which includes node js or any other frameworks Currently working with JavaScript framework React & Node js 🚀 with Graphql 🎉
                 <strong>
-                I am passionate Javascript developer writing end to end application using javascript using React, Angular 🅰️, Vue JS with Node JS
+                  I am passionate Javascript developer writing end to end application using javascript using React, Angular 🅰️, Vue JS with Node JS
                 </strong>
               </p>
 
               <div className="flex">
-                <a
+                <a href="https://ko-fi.com/tkssharma"
+                  class="donate-button" target="_blank"
+                  rel="noopener noreferrer">
+                  <img style={{'padding-right': '10px'}} src={kofi} height="30" width="40" alt="Patreon" /> Become a Patron
+              </a>
+              <a
                   className="patreon-button"
                   href="https://www.patreon.com/tkssharma"
                   target="_blank"
