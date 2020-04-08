@@ -7,7 +7,7 @@ slug: event-driven-ui-using-angular-ngrx-and-websocket
 categories:
   - Popular
   - Javascript
-  - ReAngularact
+  - Angular
 tags:
   - Javascript
   - Angular
