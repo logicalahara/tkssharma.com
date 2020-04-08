@@ -33,7 +33,7 @@ export default class ManualPage extends Component {
     return (
       <div className="gradient-section articles">
       <div className="container">
-        <h2 className="text-center">Getting starters for beginners</h2>
+        <h2 className="text-center">Getting started : for beginners</h2>
         <div className="instruction-manuals">
           {manuals.map(manual => (
             <Link to={manual.url}>
