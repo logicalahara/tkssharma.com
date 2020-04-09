@@ -1,5 +1,5 @@
 ---
-date: 2020-04-04
+date: 2020-04-05
 title: 'Kubernetes in a nutshell — tutorial for beginners'
 template: post
 thumbnail: '../thumbnails/k8slogo.png'
@@ -7,6 +7,7 @@ slug: kubernetes-in-nutshell — tutorial-for-beginners
 categories:
   - Popular
   - Docker
+  - K8S
 tags:
   - Docker
 ---
