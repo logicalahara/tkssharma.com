@@ -19,7 +19,7 @@ const manuals = [
   { name: 'Redux', image: redux, url: '/coming-up-for-beginners' },
   { name: 'Vue', image: vue, url: '/coming-up-for-beginners' },
   { name: 'Docker', image: docker, url: '/quick-introduction-to-docker-containers' },
-  { name: 'K8S', image: k8s, url: '/coming-up-for-beginners' },
+  { name: 'K8S', image: k8s, url: '/kubernetes-in-nutshell — tutorial-for-beginners' },
   { name: 'Node', image: node, url: '/nodejs-from-bottom-to-top-for-beginners' },
   { name: 'Grpahql', image: graphql, url: '/coming-up-for-beginners' },
   { name: 'CSS', image: css, url: '/coming-up-for-beginners' },
