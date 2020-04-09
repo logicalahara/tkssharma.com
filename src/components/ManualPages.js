@@ -23,7 +23,7 @@ const manuals = [
   { name: 'Node', image: node, url: '/nodejs-from-bottom-to-top-for-beginners' },
   { name: 'Grpahql', image: graphql, url: '/coming-up-for-beginners' },
   { name: 'CSS', image: css, url: '/coming-up-for-beginners' },
-  { name: 'Javascript', image: js, url: '/coming-up-for-beginners' },
+  { name: 'Javascript', image: js, url: '/javascript-handbook-for-beginners' },
   { name: 'SQL', image: sql, url: '/coming-up-for-beginners' },
   { name: 'nestjs', image: nestjs, url: '/coming-up-for-beginners' },
   { name: 'Angular', image: angular, url: '/coming-up-for-beginners' },

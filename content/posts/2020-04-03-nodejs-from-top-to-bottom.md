@@ -16,8 +16,6 @@ tags:
 
 # The definitive Node.js handbook
 
-Image credits: Unsplash
-
 Note: you can get a [PDF, ePub, or Mobi](https://flaviocopes.com/page/node-handbook) version of this handbook for easier reference, or for reading on your Kindle or tablet.
 
 ### Table of Contents
