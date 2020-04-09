@@ -2,7 +2,7 @@
 date: 2020-04-03
 title: 'Node JS from top to bottom : Learning'
 template: post
-thumbnail: '../thumbnails/nodejs.png'
+thumbnail: '../thumbnails/node.png'
 slug: nodejs-from-bottom-to-top-for-beginners
 categories:
   - Popular
