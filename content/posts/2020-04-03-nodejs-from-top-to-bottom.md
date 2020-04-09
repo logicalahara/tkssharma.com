@@ -1,5 +1,5 @@
 ---
-date: 2020-04-02
+date: 2020-04-03
 title: 'Node JS from top to bottom : Learning'
 template: post
 thumbnail: '../thumbnails/nodejs.png'
