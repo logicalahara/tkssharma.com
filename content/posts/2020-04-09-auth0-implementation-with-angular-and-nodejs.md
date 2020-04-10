@@ -209,12 +209,13 @@ interface AuthConfig {
   NAMESPACE: string;
 };
 export const AUTH_CONFIG: AuthConfig = {
-  CLIENT_ID: '[AUTH0_CLIENT_ID]',
-  CLIENT_DOMAIN: '[AUTH0_CLIENT_DOMAIN]', // e.g., kmaida.auth0.com
-  AUDIENCE: '[YOUR_AUTH0_API_AUDIENCE]', // e.g., http://localhost:8083/api/
-  REDIRECT: `${ENV.BASE_URI}/callback`,
-  SCOPE: 'openid profile email',
   NAMESPACE: 'http://myapp.com/roles'
+  CLIENT_ID: '-------------------------',
+  CLIENT_DOMAIN : 'tkssharma.auth0.com',
+  REDIRECT : 'http://localhost:4200/callback',
+  SCOPE: 'openid profile email',
+  RESPONSETYPE: 'code token id_token',
+  AUDIENCE : 'https://tkssharma.auth0.com/api/v2/'
 };
 ```
 
@@ -245,12 +246,13 @@ All basic methods are available to login till logout and getting user profile po
 export class AuthService {
   // Create Auth0 web auth instance
   private _auth0 = new auth0.WebAuth({
-    clientID: AUTH_CONFIG.CLIENT_ID,
+      clientID: AUTH_CONFIG.CLIENT_ID,
+    audience: AUTH_CONFIG.AUDIENCE, //the end bit was changed
     domain: AUTH_CONFIG.CLIENT_DOMAIN,
-    responseType: 'token',
+    issuer: AUTH_CONFIG.CLIENT_ID,
+    responseType: AUTH_CONFIG.RESPONSETYPE,
     redirectUri: AUTH_CONFIG.REDIRECT,
-    audience: AUTH_CONFIG.AUDIENCE,
-    scope: AUTH_CONFIG.SCOPE
+    scope: AUTH_CONFIG.SCOPE,
   });
   accessToken: string;
   userProfile: any;
@@ -357,3 +359,101 @@ Now we can simply create angular Header component and do auth.login and auth.log
       </ng-template>
     </div>
 ```
+![ Our Application Post Login screen](../thumbnails/ngapp-auth0-poc.png)
+
+Lets come to execution Part and this is my client configuration look like 
+
+```javascript
+export const AUTH_CONFIG = {
+    CLIENT_ID: '-------------------------',
+    CLIENT_DOMAIN : 'tkssharma.auth0.com',
+    REDIRECT : 'http://localhost:4200/callback',
+    SCOPE: 'openid profile email',
+    RESPONSETYPE: 'code token id_token',
+    AUDIENCE : 'https://tkssharma.auth0.com/api/v2/'
+}
+```
+Once we are logged In using Auth0 we will be redirected to callback component which will show data receievd from auth service and also stored in Local storage 
+Now we can test protected server side api by passing token from auth service, We have APIservice which is ending token in headers 
+
+```javascript 
+
+@Injectable()
+export class ApiService {
+  constructor(
+    private http: HttpClient,
+    private auth: AuthService
+  ) { }
+
+  private get _authHeader(): string {
+    return `Bearer ${this.auth.accessToken}`;
+  }
+  testAPIs$(): Observable<any> {
+    return this.http
+      .get(`${ENV.BASE_API}testAuth0`,{
+        headers: new HttpHeaders().set('Authorization', this._authHeader)
+      })
+      .pipe(
+        catchError((error) => this._handleError(error))
+      );
+  }
+```
+Once we send this testAPIs request to server side then using Node JS middleware we should be able to validate token at server side using Middleware 
+
+```javascript
+import * as jwt from 'express-jwt';
+import { expressJwtSecret } from 'jwks-rsa';
+
+export class AuthenticationMiddleware implements NestMiddleware {
+  use(req, res, next) {
+    jwt({
+    secret: expressJwtSecret({
+      cache: true,
+      rateLimit: true,
+      jwksRequestsPerMinute: 5,
+      jwksUri: 'https://tkssharma.auth0.com/.well-known/jwks.json'
+  }),
+
+  // Validate the audience and the issuer.
+  audience: 'https://tkssharma.auth0.com/api/v2/',
+  algorithms: ['RS256']
+    })(req, res, err => {
+      if (err) {
+        const status = err.status || 500;
+        console.log(err);
+        const message =
+          err.message || 'Sorry, we were unable to process your request.';
+        return res.status(status).send({
+          message,
+        });
+      }
+      next();
+    });
+  }
+}
+```
+In main module we have to add apis need this middleware 
+```javascript 
+export class AppModule {
+  public configure(consumer: MiddlewareConsumer) {
+    consumer
+      .apply(AuthenticationMiddleware)
+      .forRoutes(
+        { path: '/api/testAuth0', method: RequestMethod.GET },
+      );
+  }
+}
+```
+Now we can trigger this Get api /api/testAuth0 API call from button on UI screen it will send token in header and will hit this endpoint which is protected and will validate token against Auth0 server.
+
+Working Example - 
+
+Node JS APIs
+- https://github.com/tkssharma/ngrx-socketio-nestjs-apis-poc.git
+Angular App for Auth0
+- https://github.com/tkssharma/ngrx-socketio-web-poc 
+
+
+
+
+
