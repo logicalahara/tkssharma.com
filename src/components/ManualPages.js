@@ -15,7 +15,7 @@ import nestjs from '../../content/thumbnails/nestjs.png'
 import angular from '../../content/thumbnails/angular.png'
 
 const manuals = [
-  { name: 'React', image: react, url: '/coming-up-for-beginners' },
+  { name: 'React', image: react, url: '/Beginners-Guide-to-ReactJS' },
   { name: 'Redux', image: redux, url: '/coming-up-for-beginners' },
   { name: 'Vue', image: vue, url: '/coming-up-for-beginners' },
   { name: 'Docker', image: docker, url: '/quick-introduction-to-docker-containers' },
