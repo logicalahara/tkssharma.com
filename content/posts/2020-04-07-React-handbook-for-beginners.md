@@ -1,5 +1,5 @@
 ---
-date: 2020-04-06
+date: 2020-04-07
 title: 'Beginners Guide to ReactJS'
 template: post
 thumbnail: '../thumbnails/react.png'
