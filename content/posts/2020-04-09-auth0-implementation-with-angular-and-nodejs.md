@@ -69,8 +69,6 @@ This creates and installs a new Angular project with a routing module and SCSS s
 
 Once the Angular CLI has finished creating the app and installing its dependencies, we're ready to get going on the basic customization necessary for our RSVP app.
 
-Add Title Service
-In order to change the page titles for our routes, we'll need to use Angular's Title service. This is because the <title> tag lives outside our Angular application, so we can't simply access it and add a property to change it with data binding.
 
 Open the app.module.ts file and add the Title service to imports and to the providers array like so:
 ```javascript
