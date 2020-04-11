@@ -2,7 +2,7 @@
 date: 2020-04-09
 title: 'Auth0 Implementation with Angular and Node JS'
 template: post
-featured:  '../thumbnails/arch-ng-rx.png'
+featured:  '../thumbnails/auth0-banner.png'
 thumbnail: '../thumbnails/auth0.png'
 slug: Auth0-Implementation-with-Angular-and-NodeJS
 categories:
