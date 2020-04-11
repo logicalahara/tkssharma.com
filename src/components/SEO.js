@@ -32,9 +32,10 @@ export default class SEO extends Component {
     }
 
     console.log(image, imageThumb);
-
     image = urljoin(config.siteUrl, image);
-    imageThumb = urljoin(config.siteUrl, imageThumb)
+    if(imageThumb){
+      imageThumb = urljoin(config.siteUrl, imageThumb)
+    }
 
     const blogURL = urljoin(config.siteUrl, config.pathPrefix)
     const schemaOrgJSONLD = [
