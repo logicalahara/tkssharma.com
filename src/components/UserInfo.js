@@ -22,12 +22,15 @@ export default class UserInfo extends Component {
               </p>
 
               <div className="flex">
-                <a href="https://ko-fi.com/tkssharma"
-                  class="donate-button" target="_blank"
-                  rel="noopener noreferrer">
-                  <img style={{'padding-right': '10px'}} src={kofi} height="30" width="40" alt="Patreon" /> Become a Patron
-              </a>
-              <a
+                <a 
+                  href="https://ko-fi.com/tkssharma"
+                  className="donate-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img style={{'paddingRight': '10px'}} src={kofi} height="30" width="40" alt="Patreon" /> Become a Patron
+                </a>
+                <a
                   className="patreon-button"
                   href="https://www.patreon.com/tkssharma"
                   target="_blank"

@@ -10,7 +10,8 @@ export default class SEO extends Component {
     let title
     let description
     let image = ''
-    let postURL
+    let postURL;
+    let imageThumb;
 
     if (postSEO) {
       const postMeta = postNode.frontmatter
@@ -19,14 +20,20 @@ export default class SEO extends Component {
       if (postMeta.thumbnail) {
         image = postMeta.thumbnail.childImageSharp.fixed.src
       }
-      postURL = urljoin(config.siteUrl, replacePath(postPath))
+      postURL = urljoin(config.siteUrl, replacePath(postPath));
+      imageThumb = postNode.frontmatter.image
+      ? postNode.frontmatter.image.childImageSharp.fixed.src
+      : null
     } else {
       title = config.siteTitle
       description = config.siteDescription
-      image = config.siteLogo
+      image = config.siteLogo;
+      imageThumb = image;
     }
 
-    image = urljoin(config.siteUrl, image)
+    image = urljoin(config.siteUrl, image);
+    imageThumb = urljoin(config.siteUrl, imageThumb)
+
     const blogURL = urljoin(config.siteUrl, config.pathPrefix)
     const schemaOrgJSONLD = [
       {
@@ -73,7 +80,7 @@ export default class SEO extends Component {
     return (
       <Helmet>
         <meta name="description" content={description} />
-        <meta name="image" content={image} />
+        <meta name="image" content={imageThumb} />
 
         <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
 
@@ -81,13 +88,13 @@ export default class SEO extends Component {
         {postSEO && <meta property="og:type" content="article" />}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={image} />
+        <meta property="og:image" content={imageThumb} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content={config.userTwitter} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={image} />
+        <meta name="twitter:image" content={imageThumb} />
       </Helmet>
     )
   }
