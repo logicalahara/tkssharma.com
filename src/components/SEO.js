@@ -12,7 +12,7 @@ export default class SEO extends Component {
     let image = ''
     let postURL;
     let imageThumb;
-
+  console.log(postSEO);
     if (postSEO) {
       const postMeta = postNode.frontmatter
       title = postMeta.title
@@ -30,6 +30,8 @@ export default class SEO extends Component {
       image = config.siteLogo;
       imageThumb = image;
     }
+
+    console.log(image, imageThumb);
 
     image = urljoin(config.siteUrl, image);
     imageThumb = urljoin(config.siteUrl, imageThumb)
