@@ -1,5 +1,6 @@
 # tkssharma.com Blog
 
+Build Status 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f6d221bb-82d6-4dc2-b28c-5366b5856400/deploy-status)](https://app.netlify.com/sites/xenodochial-johnson-42b1cc/deploys)
 
 personal website running on Gatsby, React, and Node.js.
