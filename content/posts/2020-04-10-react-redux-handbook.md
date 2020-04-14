@@ -1,5 +1,5 @@
 ---
-date: 2020-04-09
+date: 2020-04-10
 title: 'React Redux Handbook and StyleGuide'
 template: post
 featured:  '../thumbnails/react.png'
