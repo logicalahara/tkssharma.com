@@ -1,5 +1,5 @@
 ---
-date: 2020-04-13
+date: 2020-04-14
 title: 'Angular 9 handbook for developer Beginners'
 template: post
 featured:  '../thumbnails/angular.png'
