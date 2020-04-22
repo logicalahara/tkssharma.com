@@ -25,8 +25,8 @@ const manuals = [
   { name: 'CSS', image: css, url: '/css-handbook-for-developers' },
   { name: 'Javascript', image: js, url: '/javascript-handbook-for-beginners' },
   { name: 'SQL', image: sql, url: '/coming-up-for-beginners' },
-  { name: 'nestjs', image: nestjs, url: '/coming-up-for-beginners' },
-  { name: 'Angular', image: angular, url: '/coming-up-for-beginners' },
+  { name: 'nestjs', image: nestjs, url: '/nestjs-handbook-for-developers' },
+  { name: 'Angular', image: angular, url: '/angular-handbook-for-developers' },
 ]
 export default class ManualPage extends Component {
   render() {
