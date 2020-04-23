@@ -15,7 +15,6 @@ tags:
 ---
 # Nestjs crash course
 
-![Nestjs crash course](https://i.morioh.com/063437b9ea.png)
 If you have ever worked with Node js or Express you have properly realized how tedious and haunting it can be to maintain and scale your applications.
 
 This is where Nest js comes into place. It uses modern development tools like Typescript and provides an out-of-the-box application architecture which allows developers and teams to create highly testable, scalable, loosely coupled, and easily maintainable applications.
