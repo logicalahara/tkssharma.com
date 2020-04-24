@@ -36,29 +36,6 @@ In this section, I will create a full-stack application, using the [Angular CLI]
 *   [Docker v19.03](https://docs.docker.com/docker-for-mac/)
 *   Code editor (Visual Studio Code, Sublime, etc.)
 
-### [](#add-an-angular-app)Add an Angular app
-
-Install the latest version of the Angular CLI globally by running the commands:  
-
-<div class="highlight">
-
-    npm uninstall -g @angular/cli
-    npm cache clean --force
-    npm install -g @angular/cli@latest
-
-</div>
-
-Now that you have installed the Angular CLI, let's create our Angular app by running this command:
-
-`ng new seeding-migration-typeorm`
-
-The `ng new` command asks you several questions as shown in Figure 1:
-
-[![](https://res.cloudinary.com/practicaldev/image/fetch/s--eKMHP1ct--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/857s6d1fauudmfyb4iok.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--eKMHP1ct--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/857s6d1fauudmfyb4iok.png)
-
-*   Whether you want to use Angular routing?
-*   What style sheet format would you like to use?
-
 For this article, I've chosen to use the mysql database engine or "mysql". I will run an instance of mysql using a [mysql Docker](https://hub.docker.com/_/mysql) container, which I believe, is the cleanest, and easiest way to add a PostgreSQL database instance to your application.
 
 Start by creating a new `docker-compose.yml` at the root of the Angular app and paste the following content inside it:  
