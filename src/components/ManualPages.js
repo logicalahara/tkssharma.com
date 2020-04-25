@@ -13,6 +13,11 @@ import css from '../../content/thumbnails/scss.png'
 import sql from '../../content/thumbnails/mysql.png'
 import nestjs from '../../content/thumbnails/nestjs.png'
 import angular from '../../content/thumbnails/angular.png'
+import ts from '../../content/thumbnails/typescript.png'
+import rx from '../../content/thumbnails/ngrx-logo.png'
+import express from '../../content/thumbnails/express.png'
+import rn from '../../content/thumbnails/rn.png';
+import aws from '../../content/thumbnails/aws.png'
 
 const manuals = [
   { name: 'React', image: react, url: '/Beginners-Guide-to-ReactJS' },
@@ -27,6 +32,14 @@ const manuals = [
   { name: 'SQL', image: sql, url: '/coming-up-for-beginners' },
   { name: 'nestjs', image: nestjs, url: '/nestjs-handbook-for-developers' },
   { name: 'Angular', image: angular, url: '/angular-handbook-for-developers' },
+  { name: 'Typescript', image: ts, url: '/javascript-handbook-for-beginners' },
+  { name: 'NgRx', image: rx, url: '/javascript-handbook-for-beginners' },
+  { name: 'Express', image: express, url: '/javascript-handbook-for-beginners' },
+  { name: 'Patterns', image: ts, url: '/javascript-handbook-for-beginners' },
+  { name: 'RN', image: rn, url: '/javascript-handbook-for-beginners' },
+  { name: 'AWS', image: aws, url: '/javascript-handbook-for-beginners' },
+
+
 ]
 export default class ManualPage extends Component {
   render() {

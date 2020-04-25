@@ -1,6 +1,6 @@
 ---
-date: 2020-04-17
-title: 'Nest js with Mongoose with TypeORM and Redis'
+date: 2020-04-18
+title: 'Nest js with Mongoos and Redis'
 template: post
 featured:  '../thumbnails/nestjs.png'
 thumbnail: '../thumbnails/nestjs.png'
