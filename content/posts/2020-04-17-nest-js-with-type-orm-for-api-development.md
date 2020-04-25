@@ -20,13 +20,6 @@ Nest.js is a progressive Node.js Web Framework that provides you with a robust b
 If you are interested, read more about Nest.js at:
 
 *   [Nest.js official documentation](https://docs.nestjs.com)
-*   [Step by step guide to Nest.js](https://www.codemag.com/Article/1907081/Nest.js-Step-by-Step)
-
-The source code of this article is available at this GitHub [repo](https://github.com/bhaidar/seeding-migration-typeorm).
-
-Let's start by creating the application.
-
-## [](#create-a-fullstack-app-with-angular-cli)Create a Full-Stack app with Angular CLI
 
 In this section, I will create a full-stack application, using the [Angular CLI](https://cli.angular.io), with the support of the [Nest.js ng-universal](https://github.com/nestjs/ng-universal) library.
 
