@@ -32,8 +32,8 @@ const config = {
       link: '/resume/',
     },
     {
-      name: 'Webinar',
-      link: '/webinar/',
+      name: 'BootCamps',
+      link: '/bootcamp/',
     },
     {
       name: 'Contact',

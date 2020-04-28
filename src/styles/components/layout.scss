@@ -70,6 +70,21 @@
   }
 }
 
+.gradient-bootcamp-section {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 4rem 0;
+  background: radial-gradient(circle at 20% 20%, #7648bd 25%, #7648bd 100%);
+  h2 {
+    color: white;
+  }
+
+  &.articles {
+    margin-bottom: 30px;
+    margin-top: -60px;
+  }
+}
+
 .container {
   max-width: $width;
   padding: 0 1.5rem;

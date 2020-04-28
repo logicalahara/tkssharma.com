@@ -290,6 +290,10 @@ $dark-border: darken($background, 3%);
     }
   }
 
+  .gradient-bootcamp-section {
+    border-color: transparent;
+    background: transparent;	  
+  }	
   .gradient-section {
     border-color: transparent;
     background: transparent;	  
