@@ -1,9 +1,9 @@
 ---
-date: 2020-04-22
+date: 2020-04-23
 title: 'Getting Started with React Native for Mobile Development'
 template: post
-featured:  '../thumbnails/reactnative.png'
-thumbnail: '../thumbnails/reactnative.png'
+featured:  '../thumbnails/rn.png'
+thumbnail: '../thumbnails/rn.png'
 slug: Getting-Started-with-React-Native-for-Mobile-Development
 categories:
   - Popular
@@ -458,7 +458,6 @@ export default class BookcaseItem extends Component {
 ```
 Futher we can crate other Views and Components Like Edit book and add new Book using React forms.
 
-![forms](../thumbnails/reactnative.png)
 ![forms](../thumbnails/rn02.png)
 ## Developer Notes
 
