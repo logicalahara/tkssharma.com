@@ -1,5 +1,5 @@
 ---
-date: 2020-04-26
+date: 2020-04-27
 title: 'Node JS Express Handbook for API development'
 template: post
 featured:  '../thumbnails/node.png'
