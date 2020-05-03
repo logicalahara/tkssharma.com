@@ -32,14 +32,12 @@ const manuals = [
   { name: 'SQL', image: sql, url: '/coming-up-for-beginners' },
   { name: 'nestjs', image: nestjs, url: '/nestjs-handbook-for-developers' },
   { name: 'Angular', image: angular, url: '/angular-handbook-for-developers' },
-  { name: 'Typescript', image: ts, url: '/javascript-handbook-for-beginners' },
-  { name: 'NgRx', image: rx, url: '/javascript-handbook-for-beginners' },
-  { name: 'Express', image: express, url: '/javascript-handbook-for-beginners' },
+  { name: 'Typescript', image: ts, url: '/Typescript-Basic-and-Advance-Types-with-Interface-and-Classes' },
+  { name: 'NgRx', image: rx, url: '/event-driven-ui-using-angular-ngrx-and-websocket' },
+  { name: 'Express', image: express, url: '/Node-JS-Express-Handbook-for-API-development' },
   { name: 'Patterns', image: ts, url: '/javascript-handbook-for-beginners' },
   { name: 'RN', image: rn, url: '/javascript-handbook-for-beginners' },
   { name: 'AWS', image: aws, url: '/javascript-handbook-for-beginners' },
-
-
 ]
 export default class ManualPage extends Component {
   render() {
