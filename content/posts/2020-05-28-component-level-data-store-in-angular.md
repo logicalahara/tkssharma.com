@@ -210,3 +210,141 @@ export class Store<T> {
 }
 ```
 The store’s state (_state$) is a RxJS BehaviorSubject. Changing the state means pushing new state object into the _state$ stream via the setState method. Interested entities can subscribe to state updates by subscribing to the state$ property. It is also possible to get the current state via the state property without subscribing to state updates.
+
+
+Store class provides a unified interface for all features’ store services to extend. In the next section we’ll have a look at how to use the abstract Store class to implement an example feature store service.
+
+Features’ stores
+Feature specific stores are Angular Injectables extending the abstract Store class:
+
+```javascript
+export class DataStoreService extends Store<BusinessQueueState> {
+```
+
+In the code snippet above note the BusinessQueueState type used when extending the Store. Specifying BusinessQueueState as the store type adds correct type definitions to the generic store.
+
+BusinessQueueState is a class representing state object with initial values. 
+```javascript
+export class BusinessQueueState {
+  DataQueue: BusinessConfirmTask[];
+  DataQueueColumn: any;
+}
+```
+One last thing to do to make this simple example work is to add a super call to DataStoreService constructor in order to correctly initialize the state when creating a new instance of DataStoreService:
+```javascript
+constructor () {
+  super(new BusinessQueueState());
+}
+```
+With the above code in place, each instance of DataStoreService has a way of setting its state and getting the current state or an observable of the state. To make it more useful, additional methods to modify the state (similar to Redux reducers) should be added:
+```javascript
+@Injectable()
+export class DataStoreService extends Store<BusinessQueueState> {
+  constructor(private service: DataAPIService) {
+    super(new BusinessQueueState());
+  }
+  getQueueData(): void {
+    this.service.getQueueData().subscribe(data => {
+      this.setState({
+        ...this.state,
+        QueuData: data,
+       });
+    });
+  }
+    getQueueColumnData(): void {
+    this.service.getQueueColumnData().subscribe(data => {
+      this.setState({
+        ...this.state,
+        DataQueueColumn: data,
+       });
+    });
+  }
+```
+In the example above DataStoreService's functionality was extended by defining getQueueColumnData and getQueueData methods. In essence, these methods modify the state by pushing new state objects into the observable state$ stream via the setState method.
+
+Note how it is impossible to modify the state without notifying listeners about the change. This characteristic of observable stores makes them a perfect fit for implementing one-way data flow in Angular apps - much like with Redux or a similar state management library.
+
+Using injectable store services
+-------------------------------
+
+App’s state could all be stored in a single global state object. But as the app grows, so does the state object and it can quickly become too big to easily extend it with new features. So instead of storing the whole state in one place, it is better to split the state into smaller chunks. A good way to split the properties is to group them by feature and extract these groups into separate state objects, managed by corresponding stores.
+
+There are two types of stores that emerge from splitting:
+
+- global stores that contain globally used state,
+- component stores that contain the states used by a single component.
+  
+To set up a store containing global state accessed by different services and components, the store is listed as a provider in a module’s providers list (root app module or a feature specific module). This way Angular adds a new global provider to its dependency injector. The state in global stores will be available until the page is reloaded.
+
+```javascript
+@NgModule({
+  ...
+  providers: [ExampleGlobalStore],
+})
+export class AppModule {
+  ...
+}
+```
+
+Note that many global stores can be defined as providers in app’s modules, each managing its own subset of global state. The codebase stays much more maintainable this way, since each store follows the principle of single responsibility.
+
+To use a global store in different parts of the app, the store needs to be defined as their dependency. This way Angular injects the same instance of a global store (defined as singleton provider in AppModule or any other module) into every component/ service depending on it.
+
+```javascript
+@Component({ ... })
+export class ExampleComponent {
+  constructor (private exampleGlobalStore: ExampleGlobalStore) {
+    // ExampleComponent has access to global state via exampleGlobalStore reference
+  }
+}
+```
+Not all state needs to be global though. Component specific state should only exist in memory if a component is using it. Once user navigates to a different view and the component is destroyed, its state should be cleaned-up too. This can be achieved by adding the store to a list of component’s providers. This way we get “self-cleaning” stores that are kept in memory as long as components using them are kept in memory.
+
+```javascript
+@Component({
+  ...
+  providers: [ExampleComponentStore],
+})
+export class ExampleComponent {
+  ...
+}
+```
+Private component stores are used in the same way as global stores by defining them as dependencies in the components’ constructors. The key difference is that these component specific stores are not singletons. Instead, Angular creates a new instance of the store each time a component depending on it is created. As a consequence, multiple instances of the same component can be present in the DOM at the same time, each one of them having its own store instance with its own state.
+
+Subscribing to state updates in components’ templates
+-----------------------------------------------------
+
+```javascript
+@Component({
+  selector: 'app-unreadable-queue',
+  templateUrl: './unreadable-queue.component.html',
+  styleUrls: ['./unreadable-queue.component.scss'],
+  providers : [DataServiceStore],
+})
+export class QueueComponent implements OnInit {
+  @Input() ticketId: string;
+  public rowData: any[];
+  public tableOptions: TableGridOptions;
+  DataQueue$: Observable<BusinessQueueState> = this.store$.state$;
+  constructor(
+    private store$: DataServiceStore,
+    private dialog: MatDialog
+  ) { }
+  ngOnInit(): void {
+    this.store$.getQueueData();
+    this.store$.getQueueColumn();
+  }
+  ```
+  In template we can async pipe 
+  In case a component doesn’t execute any logic on state update and it only serves as a proxy to pass the state to its template, Angular provides a nice shortcut to subscribe to state updates directly from templates via the async pipe. ngFor in the example below will redraw a list of candidates every time the state is updated.
+
+```html
+    <oc-data-grid
+    [tableOptions]="{
+      columnDefs: (DataQueue$ | async).QueueColumns,
+      pagination: true,
+      height: '350px'
+    }"
+    [rowData]="(DataQueue$ | async).QueuData">
+  </oc-data-grid>
+```       
