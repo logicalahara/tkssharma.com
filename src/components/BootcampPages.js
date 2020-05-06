@@ -20,11 +20,11 @@ import js from '../../content/thumbnails/js.png'
 import css from '../../content/thumbnails/scss.png'
 
 const manuals = [
-  { name: 'React', image: react, url: '/jsbootcamp' },
-  { name: 'Redux', image: redux, url: '/jsbootcamp'},
-  { name: 'Docker', image: docker, url: '/jsbootcamp' },
-  { name: 'Node', image: node, url: '/jsbootcamp' },
-  { name: 'CSS', image: css, url:'/jsbootcamp' },
+  { name: 'React', image: react, url: '/reactbootcamp' },
+  { name: 'Redux', image: redux, url: '/reduxbootcamp'},
+  { name: 'Docker', image: docker, url: '/dockerbootcamp' },
+  { name: 'Node', image: node, url: '/nodebootcamp' },
+  { name: 'CSS', image: css, url:'/cssbootcamp' },
   { name: 'Javascript', image: js, url: '/jsbootcamp' },
 ]
 export default class ManualPage extends Component {
