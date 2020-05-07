@@ -1,5 +1,5 @@
 ---
-date: 2020-04-29
+date: 2020-04-30
 title: 'Learning NestJS as a beginner Developer'
 template: post
 featured:  '../thumbnails/nestjs.png'
