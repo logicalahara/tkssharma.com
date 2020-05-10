@@ -66,7 +66,7 @@ export default class Index extends Component {
                 <a className="button" target="_blank" href="https://www.youtube.com/user/vibbbbbba?sub_confirmation=1">
                   Get Started
                 </a>
-              </div>
+              </div> 
             </div>
           </div>
         </div>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import patreon from '../../content/thumbnails/patreon.png'
 import kofi from '../../content/thumbnails/kofi.png'
-
 import tks from '../../content/images/profile.png'
 
 export default class UserInfo extends Component {
@@ -28,7 +27,7 @@ export default class UserInfo extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img style={{'paddingRight': '10px'}} src={kofi} height="30" width="40" alt="Patreon" /> Become a Patron
+                  <img style={{'paddingRight': '10px'}} src={kofi} height="30" width="40" alt="Patreon" /> Buy me Coffee
                 </a>
                 <a
                   className="patreon-button"
