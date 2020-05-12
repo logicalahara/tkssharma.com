@@ -644,17 +644,18 @@ console.log(obj); // { foo: "bar", baz: 42 }
 ```
 
 * Through Object.fromEntries, you can convert Array to Object:
-* 
+
 ```javascript
  const arr = [ ['0', 'a'], ['1', 'b'], ['2', 'c'] ];
  const obj = Object.fromEntries(arr);
  console.log(obj); // { 0: "a", 1: "b", 2: "c" }
 ```
+
 ## 5.4 Symbol.prototype.description
 
 Read only description property, which is a string that returns an optional description of a Symbol object.
-```javascript
 
+```javascript
 let mySymbol = `My Symbol`;
 let symObj = Symbol(mySymbol);
 console.log(symObj) // Symbol(mySymbol);
@@ -691,6 +692,7 @@ output
 ["CAFE", index: 17, input: "Hexadecimal number: DEADBEEF CAFE", groups: undefind] 
 */
 ```
+
 ## 5.6 Function.prototype.toString() now returns exact characters, including spaces and comments
 
 The toString() method returns a string representing the source code of the function. In ES6, when toString is called on a function, it returns the string representation of the function according to the ECMAScript engine. If possible, it will return the source code, otherwise - a standardized placeholder.
