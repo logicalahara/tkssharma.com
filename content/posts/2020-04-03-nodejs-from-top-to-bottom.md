@@ -5192,3 +5192,9 @@ For example you can use this to set different error handlers for different modes
 ## Closing words
 
 I hope this introduction to Node.js will help you get started using it, or help you grasp some of its concepts. And hopefully now you’ll know enough to start building some great things!
+
+## Refernce Links for More
+
+- How to Hire a Great Node.js Developer Link =>  https://www.toptal.com/nodejs#hiring-guide
+
+

@@ -917,3 +917,9 @@ To get started:
 - React Redux by CSS Tricks
 - These tutorials are more than enough to getting started with Redux. However, I cannot resist mentioning the below tutorial too. It’s worth it :)
 - Getting started with Redux by Dan Abramov
+
+
+# Refernce links 
+
+- How to Hire a Great React.js Developer 
+https://www.toptal.com/react#hiring-guide
