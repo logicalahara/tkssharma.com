@@ -1,10 +1,10 @@
 ---
-date: 2020-05-05
+date: 2020-05-06
 title: 'Latest feature in Javscript (ES6/ES7/ES8 )🎯'
 template: post
 featured:  '../thumbnails/js.png'
 thumbnail: '../thumbnails/js.png'
-slug: lested-features-in-javascript-es8-es9
+slug: latest-features-in-javascript-es8-es9
 categories:
   - Popular
 tags:
