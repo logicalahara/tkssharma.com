@@ -1,3 +1,17 @@
+---
+date: 2020-05-08
+title: 'React JS Different Patterns in Daily Development 🏇🌟'
+template: post
+featured:  '../thumbnails/react.png'
+thumbnail: '../thumbnails/react.png'
+slug: React-JS-Different-Pattern-in-Daily-Development
+categories:
+  - Popular
+tags:
+  - javascript
+  - js
+  - es8
+---
 
 # React Patterns [on GitHub](https://github.com/chantastic/reactpatterns.com)
 
