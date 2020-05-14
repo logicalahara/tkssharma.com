@@ -9,12 +9,13 @@ categories:
   - Popular
 tags:
   - javascript
-  - js
-  - es8
+  - reactjs
+  - jsx
+  - patterns
 ---
 
 # React Patterns [on GitHub](https://github.com/chantastic/reactpatterns.com)
-
+# From @https://reactpatterns.com/#container-component 
 Get the latest React patterns, tips, and tricks right to your inbox.
 
 ## Contents
