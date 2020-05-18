@@ -24,7 +24,6 @@ import css from '../../content/thumbnails/scss.png'
 const manuals = [
   { name: 'React', image: react, url: '/reactbootcamp' },
   { name: 'Redux', image: redux, url: '/reduxbootcamp'},
-  { name: 'Docker', image: docker, url: '/dockerbootcamp' },
   { name: 'Node', image: node, url: '/nodebootcamp' },
   { name: 'CSS', image: css, url:'/cssbootcamp' },
   { name: 'Javascript', image: js, url: '/jsbootcamp' },
