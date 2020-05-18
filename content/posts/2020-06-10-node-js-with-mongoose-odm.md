@@ -2,9 +2,9 @@
 date: 2020-05-10
 title: 'Node JS with Mongoose ODM 🌟'
 template: post
-featured:  '../thumbnails/nodejs.png'
-thumbnail: '../thumbnails/nodejs.png'
-slug: Node-JS-with-Mongoose-ODM
+featured:  '../thumbnails/node.png'
+thumbnail: '../thumbnails/node.png'
+slug: Node-JS-with-Mongoose
 categories:
   - Popular
 tags:

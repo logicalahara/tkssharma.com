@@ -1,5 +1,5 @@
 ---
-date: 2020-05-08
+date: 2020-05-11
 title: 'React JS Different Patterns in Daily Development 🏇🌟'
 template: post
 featured:  '../thumbnails/react.png'
