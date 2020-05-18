@@ -36,7 +36,7 @@ export default class PublicationsPage extends Component {
                           key={f}
                         >
                           <div className="youtube__item">
-                            <img  href={`https://www.youtube.com/embed/videoseries?list=${article.id}`} className="youtube__img" src={article.snippet.thumbnails.medium.url} alt={article.snippet.title} />
+                            <img href={`https://www.youtube.com/embed/videoseries?list=${article.id}`} className="youtube__img" src={article.snippet.thumbnails.medium.url} alt={article.snippet.title} />
                           </div>
                           <div className="youtube__content">
                             <a href={`https://www.youtube.com/embed/videoseries?list=${article.id}`} target="_blank" rel="noopener noreferrer">
