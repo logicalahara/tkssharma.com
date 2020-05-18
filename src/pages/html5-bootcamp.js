@@ -21,11 +21,10 @@ export default class PublicationsPage extends Component {
                 <img src={html5} alt="" />
               </div>
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                The JavaScript
-                Full Stack Bootcamp
+                HTML5 Web development Bootcamp
               </h2>
               <h3 className="mt-6 text-xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-3xl sm:leading-none md:text-3xl">
-                A paid premium online training program
+                A Free online training program
               </h3>
               <p className="max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl mt-20">
                 Grow your skills. Become a better developer. <br />Get ready for your first coding job.
