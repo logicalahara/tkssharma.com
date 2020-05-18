@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../layout'
 import config from '../../data/SiteConfig'
-import react from '../../content/thumbnails/reactbootcamp.png';
 import SEO from '../components/SEO'
+import react from '../../content/thumbnails/react.png'
 
 export default class PublicationsPage extends Component {
   render() {
@@ -18,7 +18,7 @@ export default class PublicationsPage extends Component {
           <div className="mx-auto max-w-screen-xl px-4 sm:px-6">
             <div className="text-center">
               <div className="flex justify-center">
-                <img style={{'width': '100%'}} src={react} alt="" className="w-full h-full md:w-2/3" />
+                <img src={react} alt="javascript" />
               </div>
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                 React JS Bootcamp

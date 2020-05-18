@@ -22,12 +22,12 @@ import js from '../../content/thumbnails/js.png'
 import css from '../../content/thumbnails/scss.png'
 
 const manuals = [
-  { name: 'React', image: react, url: '/reactbootcamp' },
-  { name: 'Redux', image: redux, url: '/reduxbootcamp'},
-  { name: 'Node', image: node, url: '/nodebootcamp' },
-  { name: 'CSS', image: css, url:'/cssbootcamp' },
-  { name: 'Javascript', image: js, url: '/jsbootcamp' },
-  { name: 'html5', image: html5, url: '/html5' },
+  { name: 'React', image: react, url: '/react-js-bootcamp' },
+  { name: 'Redux', image: redux, url: '/redux-bootcamp'},
+  { name: 'Node', image: node, url: '/node-js-bootcamp' },
+  { name: 'CSS', image: css, url:'/css-bootcamp' },
+  { name: 'Javascript', image: js, url: '/javascript-bootcamp' },
+  { name: 'html5', image: html5, url: '/html5-bootcamp' },
 ]
 export default class ManualPage extends Component {
   render() {

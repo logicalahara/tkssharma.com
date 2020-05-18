@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../layout'
 import config from '../../data/SiteConfig'
-import js from '../../content/thumbnails/jsbootcamp.png';
 import SEO from '../components/SEO'
+import html5 from '../../content/thumbnails/html5.png'
 
 export default class PublicationsPage extends Component {
   render() {
@@ -13,12 +13,12 @@ export default class PublicationsPage extends Component {
         <SEO />
         <div className="container">
           <header className="page-header">
-            <h1 className="text-center">Javascript Bootcamp</h1>
+            <h1 className="text-center">HTML5 Bootcamp</h1>
           </header>
           <div className="mx-auto max-w-screen-xl px-4 sm:px-6">
             <div className="text-center">
               <div className="flex justify-center">
-                <img style={{'width': '100%'}} src={js} alt="" className="w-full h-full md:w-2/3" />
+                <img src={html5} alt="" />
               </div>
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                 The JavaScript
