@@ -10,7 +10,14 @@ I've made my website open source for your inspiration, motivation, and curiosity
 
 The [Gatsby Advanced Starter](https://github.com/vagr9k/gatsby-advanced-starter/) is a great place to start, and is the base for this blog.
 
+## Blogs Covered for many technologies 
 
+- Node JS
+- React 
+- React JS
+- Angular
+- NestJS
+- Javascript
 
 ## Features
 
