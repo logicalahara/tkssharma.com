@@ -4,6 +4,8 @@ import docker from '../../content/thumbnails/docker.png'
 import node from '../../content/thumbnails/node.png'
 import redux from '../../content/thumbnails/redux.png'
 import react from '../../content/thumbnails/react.png'
+import html5 from '../../content/thumbnails/html5.png'
+
 /* import graphql from '../../content/thumbnails/graphql.png'
 import sql from '../../content/thumbnails/mysql.png'
 import nestjs from '../../content/thumbnails/nestjs.png'
@@ -26,6 +28,7 @@ const manuals = [
   { name: 'Node', image: node, url: '/nodebootcamp' },
   { name: 'CSS', image: css, url:'/cssbootcamp' },
   { name: 'Javascript', image: js, url: '/jsbootcamp' },
+  { name: 'html5', image: html5, url: '/html5' },
 ]
 export default class ManualPage extends Component {
   render() {
