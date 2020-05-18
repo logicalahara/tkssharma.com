@@ -11,7 +11,7 @@ export default class PublicationsPage extends Component {
     return (
       <Layout>
         <Helmet title={`Published Articles – ${config.siteTitle}`} />
-        <div className="container">
+        <div className="" style={{padding: '0 30px'}}>
           <header className="page-header">
             <h1>Publications</h1>
           </header>
@@ -25,17 +25,22 @@ export default class PublicationsPage extends Component {
                   <h2 className="publication-company" id={company.replace(/\s/g, '')}>
                     {company}
                   </h2>
-                  <ul key={i}>
+                  <ul key={i} style={{display: 'flex', flexWrap: "wrap", justifyContent: 'space-between'}}>
                     {articles.map((article, f) => {
                       return ( article.snippet.thumbnails.medium.url !== link ? (
-                        <li className="youtube" key={f}>
+                        <li
+                          style={{flexBasis : '33%',
+                        display: 'flex'
+                       ,'flexDirection': 'column'}}
+                          className="youtube"
+                          key={f}
+                        >
                           <div className="youtube__item">
-                            <img className="youtube__img" src={article.snippet.thumbnails.medium.url} alt={article.snippet.title} />
+                            <img  href={`https://www.youtube.com/embed/videoseries?list=${article.id}`} className="youtube__img" src={article.snippet.thumbnails.medium.url} alt={article.snippet.title} />
                           </div>
                           <div className="youtube__content">
                             <a href={`https://www.youtube.com/embed/videoseries?list=${article.id}`} target="_blank" rel="noopener noreferrer">
                               <h5>{article.snippet.title}</h5>
-                              { article.snippet.description && <p className="youtube__content__description">{article.snippet.description.substr(0, 300) }</p>}
                             </a>
                           </div>
                         </li>

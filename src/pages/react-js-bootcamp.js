@@ -41,10 +41,10 @@ export default class PublicationsPage extends Component {
           </div>
         </div>
         <div className="container bootcamp-card">
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6">
-          Course Agenda
+          <div className="mx-auto max-w-screen-xl px-4 sm:px-6">
+            Course Agenda
+          </div>
         </div>
-      </div>
       </Layout>
     )
   }
