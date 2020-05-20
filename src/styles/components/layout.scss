@@ -69,6 +69,35 @@
     margin-top: -60px;
   }
 }
+.gradient-youtube-section.articles {
+  margin-bottom: 30px;
+  margin-top: -60px;
+}
+
+.gradient-youtube-section {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 4rem 0;
+  background: radial-gradient(circle at 20% 20%, #4951fc 25%, #804fc9 100%);
+}
+
+.gradient-youtube-section {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 4rem 0;
+  background: radial-gradient(circle at 20% 20%, #4951fc 25%, #804fc9 100%);
+  h2 {
+    color: white;
+  }
+  h4 {
+    color: white;
+  }
+
+  &.articles {
+    margin-bottom: 30px;
+    margin-top: -60px;
+  }
+}
 
 .gradient-bootcamp-section {
   border-top: 1px solid #ddd;
@@ -76,6 +105,9 @@
   padding: 4rem 0;
   background: radial-gradient(circle at 20% 20%, #7648bd 25%, #7648bd 100%);
   h2 {
+    color: white;
+  }
+  h4 {
     color: white;
   }
 

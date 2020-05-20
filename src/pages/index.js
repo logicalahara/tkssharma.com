@@ -11,10 +11,12 @@ import Publication from '../components/publicationListing'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 import projects from '../../data/projects'
-import speaking from '../../data/speaking'
-import publications from '../../data/publications'
+import speaking from '../../data/speaking';
 import quotes from '../../data/quotes'
-import tks from '../../content/images/profile.png'
+import tks from '../../content/images/profile.png';
+
+const publications = require('../../data/publications');
+
 
 export default class Index extends Component {
   render() {

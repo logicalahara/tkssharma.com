@@ -9,4 +9,9 @@ const editOnGithub = post => {
   return urljoin(config.repo, '/blob/master/content/posts', `${date}-${post.slug}.md`)
 }
 
-export { formatDate, editOnGithub }
+const transform = str => {
+ const title =  str.replace(/\s\s+/g, ' ');
+ return title.split(' ').join('-');
+}
+
+export { formatDate, editOnGithub, transform }

@@ -1,12 +1,21 @@
+/* eslint-disable no-param-reassign */
 const path = require('path')
 const kebabCase = require('lodash.kebabcase')
 const moment = require('moment')
-const siteConfig = require('./data/SiteConfig')
-const sharp = require('sharp')
+const sharp = require('sharp');
+const siteConfig = require('./data/SiteConfig');
+const publicationsData = require('./data/publications');
+
+
 sharp.simd(false)
 sharp.cache(false)
 
 const postNodes = []
+
+const transform = str => {
+  const title =  str.replace(/\s\s+/g, ' ');
+  return title.split(' ').join('-');
+ }
 
 function addSiblingNodes(createNodeField) {
   postNodes.sort(({ frontmatter: { date: date1 } }, { frontmatter: { date: date2 } }) => {
@@ -102,11 +111,18 @@ exports.setFieldsOnGraphQLNodeType = ({ type, actions }) => {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
+   // page.matchPath is a special key that's used for matching pages
+  // only on the client.
+  // page.matchPath is a special key that's used for matching pages
+  // only on the client.
+
   return new Promise((resolve, reject) => {
     const postPage = path.resolve('src/templates/post.js')
     const pagePage = path.resolve('src/templates/page.js')
     const tagPage = path.resolve('src/templates/tag.js')
     const categoryPage = path.resolve('src/templates/category.js')
+    const publications = path.resolve('src/templates/youtube.js')
+
 
     resolve(
       graphql(
@@ -178,6 +194,16 @@ exports.createPages = ({ graphql, actions }) => {
             component: tagPage,
             context: {
               tag,
+            },
+          })
+        });
+        publicationsData.YouTube.forEach(tag => {
+          const key = tag.snippet.title && transform(tag.snippet.title);
+          createPage({
+            path: `/publications/${key}`,
+            component: publications,
+            context: {
+              key,
             },
           })
         })

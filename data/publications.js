@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   YouTube: [   
     {
       "kind": "youtube#playlist",
@@ -7540,56 +7540,5 @@ export default {
           "itemCount": 16
         }
       }
-  ],
-  Packt: [
-    {
-      "kind": "youtube#playlist",
-      "etag": "\"Fznwjl6JEQdo1MGvHOGaz_YanRU/Dwkfz_rBcZrX2EjusYCsovSQvVc\"",
-      "id": "PLIGDNOJWiL197a76oG1PE-5z8MYJwzHLg",
-      "snippet": {
-       "publishedAt": "2019-05-05T06:29:23.000Z",
-       "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
-       "title": "Javascript Hacks with ES6-ES7",
-       "description": "",
-       "thumbnails": {
-        "default": {
-         "url": "https://i.ytimg.com/vi/AvJskB54Q20/default.jpg",
-         "width": 120,
-         "height": 90
-        },
-        "medium": {
-         "url": "https://i.ytimg.com/vi/AvJskB54Q20/mqdefault.jpg",
-         "width": 320,
-         "height": 180
-        },
-        "high": {
-         "url": "https://i.ytimg.com/vi/AvJskB54Q20/hqdefault.jpg",
-         "width": 480,
-         "height": 360
-        },
-        "standard": {
-         "url": "https://i.ytimg.com/vi/AvJskB54Q20/sddefault.jpg",
-         "width": 640,
-         "height": 480
-        },
-        "maxres": {
-         "url": "https://i.ytimg.com/vi/AvJskB54Q20/maxresdefault.jpg",
-         "width": 1280,
-         "height": 720
-        }
-       },
-       "channelTitle": "Code Lab",
-       "localized": {
-        "title": "Javascript Hacks with ES6-ES7",
-        "description": ""
-       }
-      },
-      "status": {
-       "privacyStatus": "public"
-      },
-      "contentDetails": {
-       "itemCount": 22
-      }
-     },
   ],
 }
