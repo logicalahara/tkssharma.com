@@ -15,8 +15,8 @@ export default class SEO extends Component {
   if(postNode){
      title = postNode.snippet.title;
      description = postNode.snippet.description;
-     image =  postNode.snippet.thumbnails.medium.url;
-    imageThumb =  postNode.snippet.thumbnails.default.url;
+     image =  postNode.snippet.thumbnails.standard.url;
+    imageThumb =  postNode.snippet.thumbnails.standard.url;
     postURL = urljoin(config.siteUrl, replacePath(`/publications/${postPath}`));
 
   }
