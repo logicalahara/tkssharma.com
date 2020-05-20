@@ -94,8 +94,11 @@
   }
 
   &.articles {
+    background-size: cover;
     margin-bottom: 30px;
+    background-position: center;
     margin-top: -60px;
+    background-repeat: no-repeat;
   }
 }
 

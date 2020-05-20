@@ -28,7 +28,6 @@ export default class PublishedVideoTemplate extends Component {
         </Helmet>
         <SEO postPath={key} key={key} postNode={result} postSEO />
         <div className="gradient-youtube-section articles">
-
           <div className="container">
             <div className="container">
               <h2 className="text-center">{result.snippet.title}</h2>
@@ -38,6 +37,26 @@ export default class PublishedVideoTemplate extends Component {
             </div>
           </div>
         </div>
+        <section className="section">
+            <h3 className="text-center">YouTube training Videos.</h3>
+            <div className="lesson-without-playlist-holder">
+              <div className="lessons-frame-holder">
+                <div className="lessons-frame ">
+                  <section className="section text-center">
+                    <div className="videoWrapper">
+                      <iframe
+                        height="600px"
+                        width="1100px"
+                        frameBorder="0"
+                        allowFullScreen=""
+                        src={`https://www.youtube.com/embed/videoseries?list=${result.id}`}
+                      />
+                    </div>
+                  </section>
+                </div>
+            </div>
+          </div>
+        </section>
         <UserInfo config={config} />
       </Layout>
     )
