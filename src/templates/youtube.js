@@ -33,7 +33,7 @@ export default class PublishedVideoTemplate extends Component {
             <div className="container">
               <h2 className="text-center">{result.snippet.title}</h2>
               <div>
-                <h4>{result.snippet.description}</h4>
+                <h5>{result.snippet.description}</h5>
               </div>
             </div>
           </div>

@@ -7588,10 +7588,10 @@ const config = {
       link: '/blog/',
     },
     {
-      name: 'Resume',
+      name: 'Tutorials',
       isGlobal: true,
-      data: 'Resume',
-      link: '/resume/',
+      data: 'Tutorials',
+      link: '/publications/',
     },
     {
       name: 'BootCamps',

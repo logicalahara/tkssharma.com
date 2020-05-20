@@ -10,6 +10,9 @@ I am passionate Javascript developer writing end to end application using javasc
 
 🎉🎉🎉 [Know More About Me](https://profile.tkssharma.com) 🎉🎉
 
+🎉🎉🎉 [Resume](https://tkssharma.com/resume) 🎉🎉
+
+
 ## Talks and Sessions
 
 <div class="project-grid">
