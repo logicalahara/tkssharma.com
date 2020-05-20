@@ -22,10 +22,9 @@ export default class SimpleListing extends Component {
   render() {
     const { data } = this.props
 
-    const getImage = (post) => {
+    /* const getImage = (post) => {
       return post.snippet?.thumbnails?.default?.url
-
-    }
+    } */
     return (
       <section className="simple-posts">
         {data && Array.isArray(data) && data.slice(0, this.state.index).map(post => {
@@ -34,7 +33,7 @@ export default class SimpleListing extends Component {
             <Link key={key} to={`/publications/${key}`} target="_blank" rel="noopener noreferrer">
               <div className="each">
                 <h2>
-                  {post && <img src={getImage(post)} alt={post.snippet.title} />}
+                  {post && '🚀⚛'}
                   {post.snippet.title}
                 </h2>
               </div>
