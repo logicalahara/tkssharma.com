@@ -38,22 +38,22 @@ export default class PublishedVideoTemplate extends Component {
           </div>
         </div>
         <section className="section">
-            <h3 className="text-center">YouTube training Videos.</h3>
-            <div className="lesson-without-playlist-holder">
-              <div className="lessons-frame-holder">
-                <div className="lessons-frame ">
-                  <section className="section text-center">
-                    <div className="videoWrapper">
-                      <iframe
-                        height="600px"
-                        width="1100px"
-                        frameBorder="0"
-                        allowFullScreen=""
-                        src={`https://www.youtube.com/embed/videoseries?list=${result.id}`}
-                      />
-                    </div>
-                  </section>
-                </div>
+          <h3 className="text-center">YouTube training Videos.</h3>
+          <div className="lesson-without-playlist-holder">
+            <div className="lessons-frame-holder">
+              <div className="lessons-frame ">
+                <section className="section text-center">
+                  <div className="videoWrapper">
+                    <iframe
+                      height="600px"
+                      width="1100px"
+                      frameBorder="0"
+                      allowFullScreen=""
+                      src={`https://www.youtube.com/embed/videoseries?list=${result.id}`}
+                    />
+                  </div>
+                </section>
+              </div>
             </div>
           </div>
         </section>
