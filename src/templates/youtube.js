@@ -45,9 +45,10 @@ export default class PublishedVideoTemplate extends Component {
                 <section className="section text-center">
                   <div className="videoWrapper">
                     <iframe
-                      height="600px"
-                      width="1100px"
                       frameBorder="0"
+                      width="100%"
+                      height="100%"
+                      allowFullScreen=""
                       allowFullScreen=""
                       src={`https://www.youtube.com/embed/videoseries?list=${result.id}`}
                     />
