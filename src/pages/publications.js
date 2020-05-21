@@ -34,7 +34,6 @@ export default class PublicationsPage extends Component {
                       return (article.snippet.thumbnails.medium.url !== link ? (
                         <li
                           style={{
-                            flexBasis: '33%',
                             display: 'flex'
                             , 'flexDirection': 'column'
                           }}
