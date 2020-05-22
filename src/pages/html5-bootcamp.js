@@ -42,123 +42,15 @@ export default class PublicationsPage extends Component {
         </div>
 
         <div className="container bootcamp-card">
-          <div className="mx-auto max-w-screen-xl px-4 sm:px-6">
-            Course Agenda <br />
-
-            01.01 - Welcome to Introduction to HTML
-            01.02 - The Evolution of HTML
-            01.03 - How it Works: The "Magic" of Page Requests
-            01.04 - Looking at Your Browser Options
-            01.05 - Editors: How to use an editor to create an HTML file
-
-            Browsers
-            02.01 - The Document Object Model [DOM]
-            02.02 - HTML5 Tags and Syntax
-            02.03 - Semantic Tags
-            02.04 - Template Page
-            02.05 - Images
-            Font Awesome Demo
-            02.06 - Hyperlinks
-            02.07 - Multimedia
-            02.08 - Tables
-            02.09 - Useful Tags
-
-            Cheatsheets
-
-
-            Module 1: HTML Review
-            Module 2: Feature Detection
-            What we strive for?
-            Browser Detection
-            Feature Detection
-            Modernizr
-            Polyfills
-
-            Module 3: The HTML5 New Elements
-            Structural Elements
-            New Form/Input Elements
-            New Attributes
-
-            Module 4: Canvas
-            Canvas - The Future of Graphics on the Web
-            Simple Shapes
-            Shape Styles
-            Complex Shapes
-            Text & Shadows
-            Canvas Pitfalls
-            Canvas & SVG
-            WebGL
-
-            Module 5: Video and Audio
-            HTML5 & RIA
-            Video and audio in the web
-            How multimedia looks like to a computer?
-            Video/audio formats and codecs
-            Controlling your multimedia with javascript
-            Code example – loop
-            Video and audio lab
-            Lab: Video and audio
-            Summary
-
-            Module 6: Web Storage
-            Introduction
-            Web Storage vs. Cookies
-            Storage types
-            Methods and Properties
-            Events
-
-            Module 7: Geolocation
-            Introduction
-            Geolocation API
-
-            Module 8: Offline Web Pages
-            What are Offline Web Pages?
-            The Manifest File
-            AppCache API
-            Connectivity API
-
-            Module 9: Microdata
-            Web 3.0: the next revolution.
-            The web is full of plain data
-            The solution: Microdata
-            Microdata usage
-            Microdata tags
-            The vocabulary
-            Microdata – case study
-            Other Microdata tags
-            Google vocabulary
-            Javascript API for microdata
-            Summary
-            Lab
-
-            Module 10: HTML5 APIs
-            HTML5 JavaScript APIs: overview
-            Web Sockets
-            Web Workers
-            IndexedDB
-            Drag-and-Drop
-            Web Notifications
-            Other APIs
-
-            Module 11: Migrating From HTML4 to HTML5
-            Migration Check List
-            Migration Sample
-            Module 12: CSS3
-            What is CSS3 in a nutshell?
-            Backgrounds
-            Border
-            Color
-            Fonts
-            Media Queries
-            Namespace
-            Text
-            Multi-column layout
-            Selectors
-            Content
-
-          </div>
+          <iframe
+            frameBorder="0"
+            width="100%"
+            height="500"
+            allowFullScreen=""
+            allowFullScreen=""
+            src={`https://www.youtube.com/embed/videoseries?list=PLIGDNOJWiL1-eexM6Af88VCAQStHZ-rhp`}
+          />
         </div>
-      
       </Layout>
     )
   }
