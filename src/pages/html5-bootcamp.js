@@ -40,7 +40,6 @@ export default class PublicationsPage extends Component {
             </div>
           </div>
         </div>
-
         <div className="container bootcamp-card">
           <iframe
             frameBorder="0"
