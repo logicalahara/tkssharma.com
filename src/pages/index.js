@@ -7,7 +7,7 @@ import PostListing from '../components/PostListing'
 import ProjectListing from '../components/ProjectListing'
 import SimpleListing from '../components/SimpleListing'
 import Publication from '../components/publicationListing'
-
+import SocialPage from './social';
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 import projects from '../../data/projects'
@@ -72,6 +72,7 @@ export default class Index extends Component {
             </div>
           </div>
         </div>
+        <SocialPage />
 
         <div className="container front-page">
           <section className="section">
