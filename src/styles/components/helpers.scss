@@ -36,6 +36,13 @@
 .flex {
   display: flex;
 }
+.display-drection {
+  @include small-breakpoint-max {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 // Display State
 .show {
