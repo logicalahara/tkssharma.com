@@ -82,7 +82,7 @@ export default class SEO extends Component {
       <Helmet>
         <meta name="description" content={description} />
         <meta name="image" content={imageThumb} />
-
+        <script data-ad-client="ca-pub-4650067392768536" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
         <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
 
         <meta property="og:url" content={postSEO ? postURL : blogURL} />
