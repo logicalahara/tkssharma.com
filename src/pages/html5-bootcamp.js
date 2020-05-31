@@ -13,7 +13,7 @@ export default class PublicationsPage extends Component {
         <SEO />
         <div className="container bootcamp-card">
           <div className="mx-auto max-w-screen-xl px-4 sm:px-6">
-            <div className="flex" style={{ justifyContent: 'space-around'}}>
+            <div className="flex display-drection" style={{ justifyContent: 'space-around'}}>
               <div>
                 <img style={{height: '200px'}} src={html5} alt="" />
               </div>
@@ -40,13 +40,9 @@ export default class PublicationsPage extends Component {
             </div>
           </div>
         </div>
-        <div className="container bootcamp-card">
+        <div className="video-container container bootcamp-card">
           <iframe
-            frameBorder="0"
-            width="100%"
-            height="500"
-            allowFullScreen=""
-            allowFullScreen=""
+            frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
             src={`https://www.youtube.com/embed/videoseries?list=PLIGDNOJWiL1-eexM6Af88VCAQStHZ-rhp`}
           />
         </div>

@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Layout from '../layout'
 import config from '../../data/SiteConfig'
 import SEO from '../components/SEO'
-import js from '../../content/thumbnails/js.png'
+import react from '../../content/thumbnails/node.png'
 
 export default class PublicationsPage extends Component {
   render() {
@@ -15,11 +15,11 @@ export default class PublicationsPage extends Component {
           <div className="mx-auto max-w-screen-xl px-4 sm:px-6">
             <div className="flex display-drection" style={{ justifyContent: 'space-around'}}>
               <div>
-                <img style={{height: '200px'}} src={js} alt="" />
+                <img style={{height: '200px'}} src={react} alt="" />
               </div>
               <div className="">
                 <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                  Javascript Bootcamp 🔭 🎯🎺
+                  Node JS Bootcamp 🔭 🎯🎺
                 </h2>
                 <h4 className="mt-2 text-xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-3xl sm:leading-none md:text-3xl">
                   A Free online training program
