@@ -1,5 +1,5 @@
 ---
-date: 2020-05-12
+date: 2020-05-13
 title: 'CQRS Pattern & NestJS (Node.js)🌟'
 template: post
 featured:  '../thumbnails/node.png'
