@@ -1,5 +1,5 @@
 ---
-date: 2020-04-18
+date: 2020-04-14
 title: 'Nest js with Mongoos and mysql with TypeORM'
 template: post
 featured:  '../thumbnails/nestjs.png'
