@@ -43,7 +43,7 @@ export default class PublicationsPage extends Component {
         <div className="video-container container bootcamp-card">
           <iframe
             frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
-            src={`https://www.youtube.com/embed/videoseries?list=PLIGDNOJWiL199L4vixrgMgmvLJXA-n_0q`}
+            src={`https://www.youtube.com/embed/videoseries?list=PLIGDNOJWiL1-42-wM9jfgN364lzxwFFI2&v`}
           />
         </div>
       </Layout>
