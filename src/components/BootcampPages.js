@@ -6,18 +6,6 @@ import redux from '../../content/thumbnails/redux.png'
 import react from '../../content/thumbnails/react.png'
 import html5 from '../../content/thumbnails/html5.png'
 
-/* import graphql from '../../content/thumbnails/graphql.png'
-import sql from '../../content/thumbnails/mysql.png'
-import nestjs from '../../content/thumbnails/nestjs.png'
-import angular from '../../content/thumbnails/angular.png'
-import ts from '../../content/thumbnails/typescript.png'
-import rx from '../../content/thumbnails/ngrx-logo.png'
-import express from '../../content/thumbnails/express.png'
-import rn from '../../content/thumbnails/rn.png';
-import aws from '../../content/thumbnails/aws.png'
-import vue from '../../content/thumbnails/vue.png'
-import k8s  from '../../content/thumbnails/k8slogo.png'
-*/
 import js from '../../content/thumbnails/js.png'
 import css from '../../content/thumbnails/scss.png'
 
