@@ -18,6 +18,7 @@ The [Gatsby Advanced Starter](https://github.com/vagr9k/gatsby-advanced-starter/
 - Angular
 - NestJS
 - Javascript
+- typescript
 
 ## Features
 
