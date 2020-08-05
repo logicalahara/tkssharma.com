@@ -1,5 +1,635 @@
 module.exports = {
   YouTube: [
+     {
+      "kind": "youtube#playlist",
+      "etag": "gy91S3SVJQqgmfdQxL8Tv52xrg0",
+      "id": "PLIGDNOJWiL1_hrealT8x7XSUReanY8TSK",
+      "snippet": {
+        "publishedAt": "2020-08-03T17:14:51Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "React Formik",
+        "description": "This course was created for those without experience in react Formik. By watching these videos, you'll go from knowing nothing about React Formik to building a working web forms. You'll see how far just knowing basic React can get you when using React Formik to build a web forms.\n\nThe app built in this course is a signup form.\n\nThis course assumes basic understanding of React, Javascript and HTML.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/w_1R-AQsJB0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/w_1R-AQsJB0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/w_1R-AQsJB0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/w_1R-AQsJB0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/w_1R-AQsJB0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "tkssharma Code Labs",
+        "localized": {
+          "title": "React Formik",
+          "description": "This course was created for those without experience in react Formik. By watching these videos, you'll go from knowing nothing about React Formik to building a working web forms. You'll see how far just knowing basic React can get you when using React Formik to build a web forms.\n\nThe app built in this course is a signup form.\n\nThis course assumes basic understanding of React, Javascript and HTML."
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "PGfubYfAv__0PN4GCmbfjrs0bH8",
+      "id": "PLIGDNOJWiL1-jzQvFV0YrxxIkAc8-2U7f",
+      "snippet": {
+        "publishedAt": "2020-07-28T15:50:18Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Building Apps in React",
+        "description": "In this course, you'll learn how to use the React JavaScript library for building user interfaces. It is among the most popular JavaScript frameworks in the world, and it powers sites like Facebook, the New York Times, eBay, and Pinterest. It will allow you to create UIs that fluidly handle complex interactions without creating tangled and hard-to-read JavaScript.\nwe will build different apps in this playlist\nNetflix\nYouTube\nWeather App\nGithub Battle App\nShopping cart App\nMany more...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/a0mcMKLxOns/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/a0mcMKLxOns/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/a0mcMKLxOns/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/a0mcMKLxOns/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "tkssharma Code Labs",
+        "localized": {
+          "title": "Building Apps in React",
+          "description": "In this course, you'll learn how to use the React JavaScript library for building user interfaces. It is among the most popular JavaScript frameworks in the world, and it powers sites like Facebook, the New York Times, eBay, and Pinterest. It will allow you to create UIs that fluidly handle complex interactions without creating tangled and hard-to-read JavaScript.\nwe will build different apps in this playlist\nNetflix\nYouTube\nWeather App\nGithub Battle App\nShopping cart App\nMany more..."
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "OsW_zoOqAKdBwb8OvR4AL__wens",
+      "id": "PLIGDNOJWiL1_R13jIah044J5zHBWyT3L6",
+      "snippet": {
+        "publishedAt": "2020-07-24T21:15:24Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "React  Hooks Crash Course",
+        "description": "React 16.8 introduced a brand-new feature to React: “React Hooks”.\n\nReact Hooks (or just “Hooks”) allow you to build your entire React app with functional components only. Yes, that’s right, no more classes.\n\nState management, lifecycle methods & side effects and many other things can now all be implemented in functional components - with the help of these Hooks.\n\nIf you’re interested WHY React Hooks were added, you can find the long form explanation here.\n\nIn short, Hooks were added to replace classes because:\n\nRe-using (stateful) logic between components was difficult in the past\nclasses can be confusing and could easily be used incorrectly (e.g. wrong usage of lifecycle hooks, subtile bugs)\nThat being said, it is important to point out that classes are not going anywhere!\n\nYou can build all components as functional components with React Hooks but neither you have to so, nor you have to convert all your existing, class-based components to functional ones with Hooks.\n\nAnd whilst it seems likely that React Hooks will become the new standard for building components, it’s way too early to tell which role they’ll play exactly in the future of React.\n\nWith that out of the way, what do Hooks look like? How are they used?\n\nWe got two major reasons for using classes in the past:\n\nState Management\nLifecyle Methods",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/HmOw-45vg80/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/HmOw-45vg80/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/HmOw-45vg80/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/HmOw-45vg80/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "tkssharma Code Labs",
+        "localized": {
+          "title": "React  Hooks Crash Course",
+          "description": "React 16.8 introduced a brand-new feature to React: “React Hooks”.\n\nReact Hooks (or just “Hooks”) allow you to build your entire React app with functional components only. Yes, that’s right, no more classes.\n\nState management, lifecycle methods & side effects and many other things can now all be implemented in functional components - with the help of these Hooks.\n\nIf you’re interested WHY React Hooks were added, you can find the long form explanation here.\n\nIn short, Hooks were added to replace classes because:\n\nRe-using (stateful) logic between components was difficult in the past\nclasses can be confusing and could easily be used incorrectly (e.g. wrong usage of lifecycle hooks, subtile bugs)\nThat being said, it is important to point out that classes are not going anywhere!\n\nYou can build all components as functional components with React Hooks but neither you have to so, nor you have to convert all your existing, class-based components to functional ones with Hooks.\n\nAnd whilst it seems likely that React Hooks will become the new standard for building components, it’s way too early to tell which role they’ll play exactly in the future of React.\n\nWith that out of the way, what do Hooks look like? How are they used?\n\nWe got two major reasons for using classes in the past:\n\nState Management\nLifecyle Methods"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "h0T0hdmSyaLl74gnKXNXNzdX-uQ",
+      "id": "PLIGDNOJWiL19gSS77cxozYBGpxeSYKmxz",
+      "snippet": {
+        "publishedAt": "2020-07-21T12:20:25Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "React JS Training | Full Course | 30 Hourse",
+        "description": "Course:  React Redux \nDuration: 30 hours with demos and hands-on labs \nFocus: React-Redux , ES6,ES5, React testing , Redux state container, React with ES5/ES6 , Module bundlers and transpilers  with hands-on example\nTargeted Audience: \nFormat: This course combines lecture, discussion and demonstrations with hands-on labs.  \nLanguage / Tools: Javascript,  Sublime, Node,Git\n\nReact js  course has been designed for Client- Side Developer, Web Developer, Web Designers.\n\nhttps://github.com/tkssharma/ReactCastTraining\n\nCourse Objectives: What You’ll Learn\n\nReact js  is a client side UI building library  to develop web based applications.React is a library developed by Facebook, and it is designed to build large applications with data that changes over time. Developers can use ReactJS to create user interfaces (UI) with high performance, where React would automatically manage all UI updates. React is all about building reusable web components, \n\nObjective is  End to end development training  to enable associate  build a full-fledged application with React + Redux + Redis + micro-services, Redux Store, Redux Thunk and Redux promises \nWe will talk about ES5/ES6 transpilers and hands-on on React application with Routing and different npm packages for building application\nReact.js Fundamentals with ES6 & Web pack with Code examples\nReact Redux + Immutable hands-on\nReact App testing using Frameworks\nDevelop App using Redux React",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ZWqfADc-0K8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ZWqfADc-0K8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ZWqfADc-0K8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/ZWqfADc-0K8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/ZWqfADc-0K8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "tkssharma Code Labs",
+        "localized": {
+          "title": "React JS Training | Full Course | 30 Hourse",
+          "description": "Course:  React Redux \nDuration: 30 hours with demos and hands-on labs \nFocus: React-Redux , ES6,ES5, React testing , Redux state container, React with ES5/ES6 , Module bundlers and transpilers  with hands-on example\nTargeted Audience: \nFormat: This course combines lecture, discussion and demonstrations with hands-on labs.  \nLanguage / Tools: Javascript,  Sublime, Node,Git\n\nReact js  course has been designed for Client- Side Developer, Web Developer, Web Designers.\n\nhttps://github.com/tkssharma/ReactCastTraining\n\nCourse Objectives: What You’ll Learn\n\nReact js  is a client side UI building library  to develop web based applications.React is a library developed by Facebook, and it is designed to build large applications with data that changes over time. Developers can use ReactJS to create user interfaces (UI) with high performance, where React would automatically manage all UI updates. React is all about building reusable web components, \n\nObjective is  End to end development training  to enable associate  build a full-fledged application with React + Redux + Redis + micro-services, Redux Store, Redux Thunk and Redux promises \nWe will talk about ES5/ES6 transpilers and hands-on on React application with Routing and different npm packages for building application\nReact.js Fundamentals with ES6 & Web pack with Code examples\nReact Redux + Immutable hands-on\nReact App testing using Frameworks\nDevelop App using Redux React"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "X3lHsaS5yIlPhYnHlySePNLU6JA",
+      "id": "PLIGDNOJWiL1-sHtXWGsfxA6CpTuf_iNT5",
+      "snippet": {
+        "publishedAt": "2020-07-17T19:12:38Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Node JS & React Full Stack Development",
+        "description": "Building fullstack applications (i.e. frontend + backend) with the MERN stack is very popular - in this course, you will learn it from scratch at the example of a complete project!\n\nMERN stands for MongoDB, Express.js, React.js and Node.js - and combined, these four technologies allow you to build amazing web applications.\n\nIn this course, we'll build an entire project and you will learn how these different technologies work together step by step. We'll first have a look at all the individual building blocks so that we then can also combine them all into one amazing application by the end of the course.\n\nThis course also doesn't stop after the basics - instead, you'll also learn how to add file upload, authentication, authorization, and how to deploy your application in different ways to different hosting services.\n\nThis course is taught by two instructors - Max (React.js, Node/ Express) and Manuel (MongoDB) who have years of experience of working with these technologies and teaching them to other people. We took and combined our experiences to deliver you the best possible MERN stack course you can find out there.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ZWqfADc-0K8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ZWqfADc-0K8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ZWqfADc-0K8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/ZWqfADc-0K8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/ZWqfADc-0K8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "tkssharma Code Labs",
+        "localized": {
+          "title": "Node JS & React Full Stack Development",
+          "description": "Building fullstack applications (i.e. frontend + backend) with the MERN stack is very popular - in this course, you will learn it from scratch at the example of a complete project!\n\nMERN stands for MongoDB, Express.js, React.js and Node.js - and combined, these four technologies allow you to build amazing web applications.\n\nIn this course, we'll build an entire project and you will learn how these different technologies work together step by step. We'll first have a look at all the individual building blocks so that we then can also combine them all into one amazing application by the end of the course.\n\nThis course also doesn't stop after the basics - instead, you'll also learn how to add file upload, authentication, authorization, and how to deploy your application in different ways to different hosting services.\n\nThis course is taught by two instructors - Max (React.js, Node/ Express) and Manuel (MongoDB) who have years of experience of working with these technologies and teaching them to other people. We took and combined our experiences to deliver you the best possible MERN stack course you can find out there."
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "CguRfRVtDP_k77dy7gk0PFASH0s",
+      "id": "PLIGDNOJWiL1-svqMFkNEiNdDyhs41Vnib",
+      "snippet": {
+        "publishedAt": "2020-07-13T06:53:09Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Docker Crash Course",
+        "description": "If you’ve been following software development trends in the past year, Docker is a term you must have grown tired of hearing every once in a while. You may have felt overwhelmed by the vast number of developers talking about containers, isolated virtual machines, hypervisors and other DevOps related voodoo magic. Today I’ll break it all down for you. It’s time to finally understand what Containers as a Service is and why you need it.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ay7Rdj7MQQA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ay7Rdj7MQQA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ay7Rdj7MQQA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/ay7Rdj7MQQA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/ay7Rdj7MQQA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "tkssharma Code Labs",
+        "localized": {
+          "title": "Docker Crash Course",
+          "description": "If you’ve been following software development trends in the past year, Docker is a term you must have grown tired of hearing every once in a while. You may have felt overwhelmed by the vast number of developers talking about containers, isolated virtual machines, hypervisors and other DevOps related voodoo magic. Today I’ll break it all down for you. It’s time to finally understand what Containers as a Service is and why you need it."
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "gt1ZeHqF2UO-S-Cg2LFU7u3e5VM",
+      "id": "PLIGDNOJWiL1_Nt0qLMaYVvcTxaTioCuRg",
+      "snippet": {
+        "publishedAt": "2020-07-09T19:24:13Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "NestJS Crash Course",
+        "description": "What you'll learn\n\nBecoming familiar with the NestJS framework and its components\nDesigning and developing REST APIs performing CRUD operations\nAuthentication and Authorization for back-end applications\nUsing TypeORM for database interaction\nSecurity best practices, password hashing and storing sensitive information\nPersisting data using a database\nDeploying back-end applications at a production-ready state to Amazon Web Services\nWriting clean, maintainable code in-line with industry standards\nUtilising the NestJS Command Line Interface (CLI)\nUsing Postman for testing back-end services\nUsing pgAdmin as an interface tool to manage PostgreSQL databases\nImplement efficient logging in a back-end application\nEnvironment-based configuration management and environment variables\nImplementing data validation and using Pipes\nGuarding endpoints for authorized users using Guards\nModelling entities for the persistence layer\nTypeScript best practices\nHandling asynchronous operations using async-await\nUsing Data Transfer Objects (DTO)\nHands-on experience with JSON Web Tokens (JWT)\nUnit testing NestJS applications\nUsing GraphQL with NestJS\nDatabase persistence with MongoDB",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5tau19ae6aY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5tau19ae6aY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5tau19ae6aY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5tau19ae6aY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5tau19ae6aY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "tkssharma Code Labs",
+        "localized": {
+          "title": "NestJS Crash Course",
+          "description": "What you'll learn\n\nBecoming familiar with the NestJS framework and its components\nDesigning and developing REST APIs performing CRUD operations\nAuthentication and Authorization for back-end applications\nUsing TypeORM for database interaction\nSecurity best practices, password hashing and storing sensitive information\nPersisting data using a database\nDeploying back-end applications at a production-ready state to Amazon Web Services\nWriting clean, maintainable code in-line with industry standards\nUtilising the NestJS Command Line Interface (CLI)\nUsing Postman for testing back-end services\nUsing pgAdmin as an interface tool to manage PostgreSQL databases\nImplement efficient logging in a back-end application\nEnvironment-based configuration management and environment variables\nImplementing data validation and using Pipes\nGuarding endpoints for authorized users using Guards\nModelling entities for the persistence layer\nTypeScript best practices\nHandling asynchronous operations using async-await\nUsing Data Transfer Objects (DTO)\nHands-on experience with JSON Web Tokens (JWT)\nUnit testing NestJS applications\nUsing GraphQL with NestJS\nDatabase persistence with MongoDB"
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "x6gPYKWvH4W3YaFsP7lTkr3QWHo",
+      "id": "PLIGDNOJWiL1-anK_Dyz9zRq7UYMJfc3P0",
+      "snippet": {
+        "publishedAt": "2020-07-09T15:59:51Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Node JS Crash course Latest",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/APuFWPlOEHs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/APuFWPlOEHs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/APuFWPlOEHs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/APuFWPlOEHs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/APuFWPlOEHs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "tkssharma Code Labs",
+        "localized": {
+          "title": "Node JS Crash course Latest",
+          "description": ""
+        }
+      }
+    },
+    {
+        "kind": "youtube#playlist",
+        "etag": "e7otop6FvVWqhxRsjUeM_xPJVfg",
+        "id": "PLT5Jhb7lgSBM4_Pid_xTcS5-1MsyP2cwB",
+        "snippet": {
+          "publishedAt": "2020-07-31T15:04:26Z",
+          "channelId": "UCIgpnDfR6LMN94lqMVLPoPw",
+          "title": "Building React Apps",
+          "description": "What's this course about?\n\nLearn React or dive deeper into it. Learn the theory, solve assignments, practice in demo projects and build one big application which is improved throughout the course: The Burger Builder!\n\nMore details please!\n\nJavaScript is the major driver of modern web applications since it's the only programming language which runs in the browser and hence allows you to provide highly reactive apps. You'll be able to achieve mobile-app like user experiences in the web.\n\nBut using JavaScript can be challenging - it quickly becomes overwhelming to create a nice web app with vanilla JavaScript and jQuery only.\n\nReact to the rescue! \n\nReact is all about components - basically custom HTML elements - with which you can quickly build amazing and powerful web apps. Just build a component once, configure it to your needs, dynamically pass data into it (or listen to your own events!) and re-use it as often as needed.\n\nNeed to display a list of users in your app? It's as simple as creating a \"User\" component and outputting it as often as needed.\n\nThis course will start at the very basics and explain what exactly React is and how you may use it (and for which kind of apps). Thereafter, we'll go all the way from basic to advanced. We'll not just scratch the surface but dive deeply into React as well as popular libraries like react-router and Redux. \n\nBy the end of the course, you can build amazing React (single page) applications!\n\nA detailed list with the course content can be found below.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/WOcLkqJkPbM/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/WOcLkqJkPbM/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/WOcLkqJkPbM/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/WOcLkqJkPbM/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            }
+          },
+          "channelTitle": "Code Studio",
+          "localized": {
+            "title": "Building React Apps",
+            "description": "What's this course about?\n\nLearn React or dive deeper into it. Learn the theory, solve assignments, practice in demo projects and build one big application which is improved throughout the course: The Burger Builder!\n\nMore details please!\n\nJavaScript is the major driver of modern web applications since it's the only programming language which runs in the browser and hence allows you to provide highly reactive apps. You'll be able to achieve mobile-app like user experiences in the web.\n\nBut using JavaScript can be challenging - it quickly becomes overwhelming to create a nice web app with vanilla JavaScript and jQuery only.\n\nReact to the rescue! \n\nReact is all about components - basically custom HTML elements - with which you can quickly build amazing and powerful web apps. Just build a component once, configure it to your needs, dynamically pass data into it (or listen to your own events!) and re-use it as often as needed.\n\nNeed to display a list of users in your app? It's as simple as creating a \"User\" component and outputting it as often as needed.\n\nThis course will start at the very basics and explain what exactly React is and how you may use it (and for which kind of apps). Thereafter, we'll go all the way from basic to advanced. We'll not just scratch the surface but dive deeply into React as well as popular libraries like react-router and Redux. \n\nBy the end of the course, you can build amazing React (single page) applications!\n\nA detailed list with the course content can be found below."
+          }
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "BPqp0Li3mfPM7v2gkBKZxLCtadk",
+        "id": "PLT5Jhb7lgSBNOdz6OpYyT0sGVnYSHFQtU",
+        "snippet": {
+          "publishedAt": "2020-07-25T14:07:39Z",
+          "channelId": "UCIgpnDfR6LMN94lqMVLPoPw",
+          "title": "React Hooks Crash Course",
+          "description": "What's this course about?\n\nLearn React or dive deeper into it. Learn the theory, solve assignments, practice in demo projects and build one big application which is improved throughout the course: The Burger Builder!\n\nMore details please!\n\nJavaScript is the major driver of modern web applications since it's the only programming language which runs in the browser and hence allows you to provide highly reactive apps. You'll be able to achieve mobile-app like user experiences in the web.\n\nBut using JavaScript can be challenging - it quickly becomes overwhelming to create a nice web app with vanilla JavaScript and jQuery only.\n\nReact to the rescue! \n\nReact is all about components - basically custom HTML elements - with which you can quickly build amazing and powerful web apps. Just build a component once, configure it to your needs, dynamically pass data into it (or listen to your own events!) and re-use it as often as needed.\n\nNeed to display a list of users in your app? It's as simple as creating a \"User\" component and outputting it as often as needed.\n\nThis course will start at the very basics and explain what exactly React is and how you may use it (and for which kind of apps). Thereafter, we'll go all the way from basic to advanced. We'll not just scratch the surface but dive deeply into React as well as popular libraries like react-router and Redux. \n\nBy the end of the course, you can build amazing React (single page) applications!\n\nA detailed list with the course content can be found below.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/SWIr-t2hcmM/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/SWIr-t2hcmM/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/SWIr-t2hcmM/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/SWIr-t2hcmM/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/SWIr-t2hcmM/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Code Studio",
+          "localized": {
+            "title": "React Hooks Crash Course",
+            "description": "What's this course about?\n\nLearn React or dive deeper into it. Learn the theory, solve assignments, practice in demo projects and build one big application which is improved throughout the course: The Burger Builder!\n\nMore details please!\n\nJavaScript is the major driver of modern web applications since it's the only programming language which runs in the browser and hence allows you to provide highly reactive apps. You'll be able to achieve mobile-app like user experiences in the web.\n\nBut using JavaScript can be challenging - it quickly becomes overwhelming to create a nice web app with vanilla JavaScript and jQuery only.\n\nReact to the rescue! \n\nReact is all about components - basically custom HTML elements - with which you can quickly build amazing and powerful web apps. Just build a component once, configure it to your needs, dynamically pass data into it (or listen to your own events!) and re-use it as often as needed.\n\nNeed to display a list of users in your app? It's as simple as creating a \"User\" component and outputting it as often as needed.\n\nThis course will start at the very basics and explain what exactly React is and how you may use it (and for which kind of apps). Thereafter, we'll go all the way from basic to advanced. We'll not just scratch the surface but dive deeply into React as well as popular libraries like react-router and Redux. \n\nBy the end of the course, you can build amazing React (single page) applications!\n\nA detailed list with the course content can be found below."
+          }
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "OIVG6oPav7cPpJ90nYUO7MpIHWc",
+        "id": "PLT5Jhb7lgSBOEFW-ZS3Xt3pPwKCyz3rSI",
+        "snippet": {
+          "publishedAt": "2020-07-25T14:07:23Z",
+          "channelId": "UCIgpnDfR6LMN94lqMVLPoPw",
+          "title": "React Full Training | 30 Hourse | Training",
+          "description": "What's this course about?\n\nLearn React or dive deeper into it. Learn the theory, solve assignments, practice in demo projects and build one big application which is improved throughout the course: The Burger Builder!\n\nMore details please!\n\nJavaScript is the major driver of modern web applications since it's the only programming language which runs in the browser and hence allows you to provide highly reactive apps. You'll be able to achieve mobile-app like user experiences in the web.\n\nBut using JavaScript can be challenging - it quickly becomes overwhelming to create a nice web app with vanilla JavaScript and jQuery only.\n\nReact to the rescue! \n\nReact is all about components - basically custom HTML elements - with which you can quickly build amazing and powerful web apps. Just build a component once, configure it to your needs, dynamically pass data into it (or listen to your own events!) and re-use it as often as needed.\n\nNeed to display a list of users in your app? It's as simple as creating a \"User\" component and outputting it as often as needed.\n\nThis course will start at the very basics and explain what exactly React is and how you may use it (and for which kind of apps). Thereafter, we'll go all the way from basic to advanced. We'll not just scratch the surface but dive deeply into React as well as popular libraries like react-router and Redux. \n\nBy the end of the course, you can build amazing React (single page) applications!\n\nA detailed list with the course content can be found below.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/x7ccLKJG0PY/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/x7ccLKJG0PY/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/x7ccLKJG0PY/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/x7ccLKJG0PY/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/x7ccLKJG0PY/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Code Studio",
+          "localized": {
+            "title": "React Full Training | 30 Hourse | Training",
+            "description": "What's this course about?\n\nLearn React or dive deeper into it. Learn the theory, solve assignments, practice in demo projects and build one big application which is improved throughout the course: The Burger Builder!\n\nMore details please!\n\nJavaScript is the major driver of modern web applications since it's the only programming language which runs in the browser and hence allows you to provide highly reactive apps. You'll be able to achieve mobile-app like user experiences in the web.\n\nBut using JavaScript can be challenging - it quickly becomes overwhelming to create a nice web app with vanilla JavaScript and jQuery only.\n\nReact to the rescue! \n\nReact is all about components - basically custom HTML elements - with which you can quickly build amazing and powerful web apps. Just build a component once, configure it to your needs, dynamically pass data into it (or listen to your own events!) and re-use it as often as needed.\n\nNeed to display a list of users in your app? It's as simple as creating a \"User\" component and outputting it as often as needed.\n\nThis course will start at the very basics and explain what exactly React is and how you may use it (and for which kind of apps). Thereafter, we'll go all the way from basic to advanced. We'll not just scratch the surface but dive deeply into React as well as popular libraries like react-router and Redux. \n\nBy the end of the course, you can build amazing React (single page) applications!\n\nA detailed list with the course content can be found below."
+          }
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "KxDl4r_oaIUH3zuxZPsp-rEGyZU",
+        "id": "PLT5Jhb7lgSBOwPV-wTy7P2eZImtpOYLcB",
+        "snippet": {
+          "publishedAt": "2020-07-25T14:06:40Z",
+          "channelId": "UCIgpnDfR6LMN94lqMVLPoPw",
+          "title": "React Node MERN Stack Course",
+          "description": "What you will Learn \nUnderstand Modern JavaScript\nUnderstand Node Js from Scratch\nUnderstand React Js from Scratch\nLearn Node JS API Development from Scratch\nLearn Frontend Web Development with React\nUnderstand JavaScript in the Browser Environment\nUnderstand JavaScript in the Node JS Environment\nHow Node JS Event Loop works\nSynchronous vs Asynchronous programming\nBlocking vs Non-Blocking code\nUsing Core Node JS Modules\nUsing your own Modules\nUsing NPM Modules\nMVC Design Pattern\nLearn Mongo DB\nLearn to implement CRUD (create, read, update, delete) on users/posts",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/ak7nnxmUQjM/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/ak7nnxmUQjM/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/ak7nnxmUQjM/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/ak7nnxmUQjM/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/ak7nnxmUQjM/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Code Studio",
+          "localized": {
+            "title": "React Node MERN Stack Course",
+            "description": "What you will Learn \nUnderstand Modern JavaScript\nUnderstand Node Js from Scratch\nUnderstand React Js from Scratch\nLearn Node JS API Development from Scratch\nLearn Frontend Web Development with React\nUnderstand JavaScript in the Browser Environment\nUnderstand JavaScript in the Node JS Environment\nHow Node JS Event Loop works\nSynchronous vs Asynchronous programming\nBlocking vs Non-Blocking code\nUsing Core Node JS Modules\nUsing your own Modules\nUsing NPM Modules\nMVC Design Pattern\nLearn Mongo DB\nLearn to implement CRUD (create, read, update, delete) on users/posts"
+          }
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "tW6T9qJQN_5Okbae6EVcYIMDEIY",
+        "id": "PLT5Jhb7lgSBOxHMZnfDtEmDCHiendfz67",
+        "snippet": {
+          "publishedAt": "2020-07-17T16:56:49Z",
+          "channelId": "UCIgpnDfR6LMN94lqMVLPoPw",
+          "title": "Docker Crash Course",
+          "description": "Docker containers are a flexible platform that allows you to easily build ship and run your applications in scalable and distributed environments. Pluralsight’s training dives deep into different deployment options and how to build scalable Docker solutions.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/dS1S12sPw1I/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/dS1S12sPw1I/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/dS1S12sPw1I/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/dS1S12sPw1I/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/dS1S12sPw1I/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Code Studio",
+          "localized": {
+            "title": "Docker Crash Course",
+            "description": "Docker containers are a flexible platform that allows you to easily build ship and run your applications in scalable and distributed environments. Pluralsight’s training dives deep into different deployment options and how to build scalable Docker solutions."
+          }
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "c6_LsW-MtHJF-JiPabhzHwwpiU4",
+        "id": "PLT5Jhb7lgSBNllzyUDYupx5aah8P00i2Y",
+        "snippet": {
+          "publishedAt": "2020-07-17T15:47:59Z",
+          "channelId": "UCIgpnDfR6LMN94lqMVLPoPw",
+          "title": "Node JS Crash Course",
+          "description": "Node.js is a very powerful JavaScript-based framework/platform built on Google Chrome's JavaScript V8 Engine.It is used to develop web and mobile applications.. Node.js is open source, completely free, and used by thousands of developers around the world. Node was built with JavaScript so it helps if you have some understanding of how JavaScript actually works.Also having some understanding of other web technologies such as HTML, CSS, AJAX is useful.This course is an absolute beginners course that will teach you some Node .js basic fundamentals.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/8mYTQyxN_U8/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/8mYTQyxN_U8/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/8mYTQyxN_U8/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/8mYTQyxN_U8/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/8mYTQyxN_U8/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Code Studio",
+          "localized": {
+            "title": "Node JS Crash Course",
+            "description": "Node.js is a very powerful JavaScript-based framework/platform built on Google Chrome's JavaScript V8 Engine.It is used to develop web and mobile applications.. Node.js is open source, completely free, and used by thousands of developers around the world. Node was built with JavaScript so it helps if you have some understanding of how JavaScript actually works.Also having some understanding of other web technologies such as HTML, CSS, AJAX is useful.This course is an absolute beginners course that will teach you some Node .js basic fundamentals."
+          }
+        }
+      },
+      {
+        "kind": "youtube#playlist",
+        "etag": "XizD8rBffD02UMFBHwJIXgC0CoQ",
+        "id": "PLT5Jhb7lgSBNg2x2aKmvHNpAWwGZZIgl8",
+        "snippet": {
+          "publishedAt": "2020-07-14T11:27:11Z",
+          "channelId": "UCIgpnDfR6LMN94lqMVLPoPw",
+          "title": "Nestjs Crash Course and Tutorials",
+          "description": "Nest (NestJS) is a framework for building efficient, scalable Node.js server-side applications. It uses progressive JavaScript, is built with and fully supports TypeScript (yet still enables developers to code in pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).\n\nUnder the hood, Nest makes use of robust HTTP Server frameworks like Express (the default) and optionally can be configured to use Fastify as well!\n\nNest provides a level of abstraction above these common Node.js frameworks (Express/Fastify), but also exposes their APIs directly to the developer. This allows developers the freedom to use the myriad of third-party modules which are available for the underlying platform.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/B80MDf_eeHg/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/B80MDf_eeHg/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/B80MDf_eeHg/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/B80MDf_eeHg/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/B80MDf_eeHg/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "Code Studio",
+          "localized": {
+            "title": "Nestjs Crash Course and Tutorials",
+            "description": "Nest (NestJS) is a framework for building efficient, scalable Node.js server-side applications. It uses progressive JavaScript, is built with and fully supports TypeScript (yet still enables developers to code in pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).\n\nUnder the hood, Nest makes use of robust HTTP Server frameworks like Express (the default) and optionally can be configured to use Fastify as well!\n\nNest provides a level of abstraction above these common Node.js frameworks (Express/Fastify), but also exposes their APIs directly to the developer. This allows developers the freedom to use the myriad of third-party modules which are available for the underlying platform."
+          }
+        }
+      },
     {
       kind: 'youtube#playlist',
       etag: 'XBoYlPuVFZYLCf8EKUV_POxMiSA',
