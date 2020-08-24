@@ -1,10 +1,10 @@
 ---
 date: 2020-05-19
-title: 'Microservices Design Patterns'
+title: 'Microservices Orchestration using Different Tools'
 template: post
 featured:  '../thumbnails/microservices.png'
 thumbnail: '../thumbnails/microservices.png'
-slug: microservices-design-patterns
+slug: microservices-orchestration-using-different-tools
 categories:
   - Popular
 tags:

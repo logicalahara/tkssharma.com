@@ -4,7 +4,7 @@ title: 'Kubernetes handbook for Developers'
 template: post
 featured:  '../thumbnails/k8s.png'
 thumbnail: '../thumbnails/k8s.png'
-slug: kubernetes-handbook-for-developers
+slug: kubernetes-handbook-developers
 categories:
   - Popular
 tags:
