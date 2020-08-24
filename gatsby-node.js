@@ -200,7 +200,7 @@ exports.createPages = ({ graphql, actions }) => {
         publicationsData.YouTube.forEach(tag => {
           const key = tag.snippet.title && transform(tag.snippet.title);
           createPage({
-            path: `/publications/${key}`,
+            path: `/${key}`,
             component: publications,
             context: {
               key,
