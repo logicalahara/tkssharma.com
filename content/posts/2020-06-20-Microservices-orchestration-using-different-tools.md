@@ -1,5 +1,5 @@
 ---
-date: 2020-05-19
+date: 2020-05-20
 title: 'Microservices Orchestration using Different Tools'
 template: post
 featured:  '../thumbnails/microservices.png'
@@ -18,70 +18,55 @@ tags:
 ---
 
 
-# Microservice Architecture and Design Patterns for Microservices
+# What is Microservices Orchestration?
 
-Microservices can have a positive impact on your enterprise. Therefore it is worth to know that, how to handle Microservice Architecture (MSA) and some Design Patterns for Microservices. General goals or principles for a microservice architecture. Here are the four goals to consider in Microservice Architecture approach [1].
-
-1. Reduce Cost: MSA will reduce the overall cost of designing, implementing, and maintaining IT services.
-
-1. Increase Release Speed: MSA will increase the speed from idea to deployment of services.
-
-1. Improve Resilience: MSA will improve the resilience of our service network.
-
-1. Enable Visibility: MSA support for better visibility on your service and network.
-
-You need to understand what principles microservice architecture has been built
-
- Scalability
-
- Availability
-
- Resiliency
-
- Flexibility
-
- Independent, autonomous
-
- Decentralized governance
-
- Failure isolation
-
- Auto-Provisioning
-
- Continuous delivery through DevOps
-
-Add hearing to the above principles, brings several challenges and issues while bring your solution or system to live. Those problems are common for many solutions. Those can overcome with using correct and matching design patterns. There are design patterns for microservices and those can divide into five Patterns. Each many contains many patterns. Below diagram shows the those.
-
-![Design Patterns for Microservices](https://miro.medium.com/max/624/1*CKSVv4WkS8Okx572rX45HA.png)Design Patterns for Microservices
-
-### I have covered these Design Patterns for Microservices in depth in my playlist.
-
-[![](https://img.youtube.com/vi/tekjeinSzaE/0.jpg)](http://www.youtube.com/watch?v=tekjeinSzaE "")
+Think of your Microservices like musical instruments: each one excels at a certain purpose, but it takes arrangement, timing and detailed coordination for them to create beautiful music together. If your application is based on microservices or simply split across multiple containers, it’s time to learn why companies building or maintaining scalable applications swear by orchestration tools.
 
 
-- Microservices Patterns # Course Overview
-- Understanding Microservice Architecture #intro
-- Introduction to MicroServices Architecture Compare with Monolith #01
-- Node JS Microservices Patterns (Different Patterns) #02
-- Different Microservices Patterns Quick Overview #03
-- Microservices Most commonly used Patterns cleanup #04
-- Microservices API Gateway Pattern Part 1 #05
-- Microservices API Gateway Pattern Part 2 #06
-- Microservices Event Driven Architecture #07
-- Microservices Event Sourcing & Event Driven Pattern #08
-- Microservices CQRS Pattern #09
-- Microservices Serverless Patterns #10
-- Docker Compose For Microservices #11
-- Container Orchestration for Microservices #12
-- Containers in Cloud for Microservices #13
-- docker-compose for Microservices
-- Microservices Patterns using Node JS
-- Microservices Patterns using Event Driven
+## Going from “Bare Metal” to Containers 
+Containers represent the natural evolution of virtualization technology. Advances in virtualization proved that “bare-metal” (physical) servers could be efficiently split into multiple, smaller servers known as virtual machines (VMs). Each VM could run a different operating system (OS) — Linux, Windows, FreeBSD, etc. — without having to modify the existing software. 
 
-[![](https://img.youtube.com/vi/RO7gEuLOjB8/0.jpg)](http://www.youtube.com/watch?v=RO7gEuLOjB8 "")
+Virtual machines have to run an operating system on top of a hypervisor (also known as a bare metal virtual machine monitor). Starting a virtual machine requires an entire operating system boot process — plus it takes over the entire OS. 
 
-[![](https://img.youtube.com/vi/3oj5LRy65C0/0.jpg)](http://www.youtube.com/watch?v=3oj5LRy65C0 "")
+Container technology, conversely, bundles its OS and all the elements needed to run the underlying microservices, such as code, runtime, system tools, system libraries, and settings. In a container scenario, all the moving parts and dependencies across various infrastructure are abstracted away, and thus become less complex for the developer.
 
-Link - https://www.youtube.com/watch?v=RO7gEuLOjB8&list=PLIGDNOJWiL1_-i0DjC69qr4gRUOkpTvRQ 
+Because containers run programs on top of an operating system, the program being executed only consumes the memory and CPU overhead of that one bundle, with a sufficient amount of isolation from the other containers on the same machine. Containers provided developers with many of the benefits of VMs, but with faster deployment times. The greater speed and isolation made them faster to create, boot up and test, making them ideal for the loosely coupled services of microservices architectures.
 
+Add hearing to the above principles, brings several challenges and issues while bring your solution or system to live. Those problems are common for many solutions. Those can overcome with using correct and matching design patterns. There are design patterns for microservices and those can divide into five Patterns.
 
+## Which Brings Us to Orchestration
+
+While microservices containers offer your applications potential increases in both functionality and productivity, they also have more moving parts to configure, coordinate, and, well, orchestrate. That’s where orchestration can help, automating many of the more time-consuming aspects of container management. 
+
+As container adoption has exploded, so has the adoption of container orchestration. Orchestration tools talk to the host OS to manage how multiple containers are created, upgraded and made available. The rich functionality, simple tools, and powerful APIs make orchestration a favorite toolset for Continuous Integration (CI) and Continuous Delivery (CD) workflows.
+
+## The Benefits of Microservices Orchestration
+
+No matter how you deploy your containers — whether on bare metal or within virtual machines — running multiple containers across multiple servers requires a level of DevOps resources that your organization might not be prepared to supply. 
+
+"Orchestration helps fill the gap, offering a variety of services that allow developers to better track, schedule and operationalize various containers at scale"
+
+Adding orchestration to your architecture:
+
+- Helps navigate the many moving parts 
+- Shows you when to start the right containers
+- Enables containers to talk to each other
+- Ensures high availability across your infrastructure
+- If a container strategy is your company’s chosen path, orchestration tools can make life a lot easier.
+
+## Microservices Orchestration Tools
+
+- Kubernetes
+Created by Google, Kubernetes tends to be the default solution for automating application deployment, scaling, and management. It’s open-source and provides key features out of the box, including means to scale workloads up and down, service discovery, and sufficient networking capabilities to connect microservices. 
+
+- Azure Kubernetes Service (AKS)
+As per the name, AKS is a managed Kubernetes container orchestration service in Azure that simplifies Kubernetes cluster management, deployment, and operations. 
+
+- Mesos
+Apache Mesos allows developers to run both containerized and non-containerized workloads in a distributed manner. It’s perhaps best known for its ability to support diverse types of workloads, including big data and cloud native apps. Unlike Kubernetes, a pod abstraction isn’t available — yet.
+
+- ECS
+Amazon Elastic Container Service is largely a container orchestration service that enables you to run and scale containerized applications on Amazon Web Services (AWS). It frees developers running apps on AWS from having to install and operate a separate container orchestration software suite. 
+
+- Conductor
+Conductor is a service created by Netflix to orchestrate their microservices based process flows in the cloud. They’ve since released it as an open source solution. 
