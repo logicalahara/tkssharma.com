@@ -17,8 +17,6 @@ tags:
 
 # Writing React Forms using Formik Library
 
-![](https://miro.medium.com/max/770/1*XHiNA2czAHGANyVuF1BFDA.jpeg)
-
 ![](https://img.youtube.com/vi/3xMiK5mVBpM/0.jpg)
 
 [tkssharma/react-forms-formik
@@ -84,14 +82,16 @@ You can play with Formik in your web browser with these live online playgrounds.
 
  [Snack (React Native)](https://snack.expo.io/?dependencies=yup%2Cformik%2Creact-native-paper%2Cexpo-constants&sourceUrl=https%3A%2F%2Fgist.githubusercontent.com%2Fbrentvatne%2F700e1dbf9c3e88a11aef8e557627ce3f%2Fraw%2Feeee57721c9890c1212ac34a4c37707f6354f469%2FApp.js)
 
-Explore More about Formik (I [@tkssharma](undefined) have Covered everything about formik in these training sessions.
+Explore More about Formik (I [@tkssharma] have Covered everything about formik in these training sessions.
 
-![](https://img.youtube.com/vi/3xMiK5mVBpM/0.jpg)](http://www.youtube.com/watch?v=3xMiK5mVBpM "")
+![](https://img.youtube.com/vi/3xMiK5mVBpM/0.jpg)(http://www.youtube.com/watch?v=3xMiK5mVBpM)
 
 
 — References
 
 [Getting Started
-Let's face it, forms are really verbose in React. To make matters worse, most form helpers do wayyyy too much magic and…formik.org](https://formik.org/docs/overview)
-[Using Formik to Handle Forms in React | CSS-Tricks
+
+- Let's face it, forms are really verbose in React. To make matters worse, most form helpers do wayyyy too much magic and…formik.org](https://formik.org/docs/overview)
+
+- [Using Formik to Handle Forms in React | CSS-Tricks
 There is no doubt that web forms play an integral role in our web site or applications. By default, they provide a…css-tricks.com](https://css-tricks.com/using-formik-to-handle-forms-in-react/)
