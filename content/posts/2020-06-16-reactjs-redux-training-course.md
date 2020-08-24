@@ -19,7 +19,7 @@ tags:
 
 Getting Started with React and Redux
 
-![](https://cdn-images-1.medium.com/max/2560/1Boi7lao4q7U4ldxYTpXYQA.png)
+![](https://img.youtube.com/vi/aS4fLCOMg1o/0.jpg)
 
 Link - https://www.youtube.com/watch?list=PLIGDNOJWiL18X8gaUi-PQYaOSHc9OAtIN&v=aS4fLCOMg1o&feature=emb_title
 
@@ -28,8 +28,6 @@ Redux is a predictable state container for JavaScript apps.
 It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. On top of that, it provides a great developer experience, such as [live code editing combined with a time traveling debugger](https://github.com/reduxjs/redux-devtools).
 
 You can use Redux together with [React](https://reactjs.org/), or with any other view library. It is tiny (2kB, including dependencies), but has a large ecosystem of addons available.
-
-![](https://img.youtube.com/vi/aS4fLCOMg1o/0.jpg)
 
 
 ## What is Redux?
