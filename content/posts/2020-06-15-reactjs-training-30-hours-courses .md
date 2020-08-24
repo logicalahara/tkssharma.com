@@ -1,5 +1,5 @@
 ---
-date: 2020-04-14
+date: 2020-05-15
 title: 'React JS Training 30 Hours Course'
 template: post
 featured:  '../thumbnails/react.png'
