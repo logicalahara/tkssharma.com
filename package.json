@@ -1,6 +1,6 @@
 {
   "name": "tkssharma.com",
-  "description": "Personal website running on Gatsby, React, and Node.js.",
+  "description": "@tkssharma Personal website running on Gatsby, React, and Node.js.",
   "version": "1.0.1",
   "author": "Tarun Sharma <hello@tkssharma.com>",
   "repository": "git@github.com:tkssharma/tkssharma.com",
@@ -47,6 +47,7 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
+    "netlify-cli": "^2.59.0",
     "prettier": "^1.16.4",
     "remark-cli": "^6.0.1",
     "remark-preset-lint-recommended": "^3.0.1",
@@ -56,7 +57,6 @@
     "write-good": "^1.0.1"
   },
   "keywords": [
-    "tania rascia",
     "development",
     "dev",
     "tutorials",
@@ -68,11 +68,11 @@
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
-    "dev": "yarn run develop",
+    "dev": "npm run develop",
     "serve": "gatsby serve",
     "build": "gatsby build",
     "build:pp": "gatsby build --prefix-paths",
-    "build:gh": "yarn run clean && yarn run build:pp && gh-pages -d public",
+    "build:gh": "npm run clean && npm run build:pp && gh-pages -d public",
     "clean": "rm -rf public && rm -rf .cache",
     "lint:js": "eslint --ext .js,.jsx .",
     "lint:md": "remark content/posts/",

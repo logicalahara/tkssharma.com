@@ -43,7 +43,7 @@ export default class PublishedVideoTemplate extends Component {
             <div className="lessons-frame-holder">
               <div className="lessons-frame ">
                 <section className="section text-center">
-                  <div className="videoWrapper container">
+                  <div className="video-container">
                     <iframe
                       frameBorder="0"
                       width="100%"

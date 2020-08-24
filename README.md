@@ -14,7 +14,7 @@ The [Gatsby Advanced Starter](https://github.com/vagr9k/gatsby-advanced-starter/
 - Node JS
 - React 
 - React JS Redux
-- Angular
+- Netlify
 - NestJS
 - Javascript
 - typescript
