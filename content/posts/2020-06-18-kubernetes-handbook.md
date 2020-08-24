@@ -1,3 +1,20 @@
+---
+date: 2020-05-18
+title: 'Kubernetes handbook for Developers'
+template: post
+featured:  '../thumbnails/k8s.png'
+thumbnail: '../thumbnails/k8s.png'
+slug: kubernetes-handbook-for-developers
+categories:
+  - Popular
+tags:
+  - k8s
+  - docker
+  - kubelete
+  - kubernetes cluster
+  - k8s
+---
+
 # The Kubernetes Handbook
 
 Apart from being very powerful, Kubernetes is known as quite hard to get started with. I won't say it's easy, but if you are equipped with the prerequisites and go through this guide attentively and with patience, you should be able to:
