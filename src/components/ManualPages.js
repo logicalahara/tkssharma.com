@@ -24,7 +24,7 @@ const manuals = [
   { name: 'Redux', image: redux, url: '/React-redux-handbook-styleguide' },
   { name: 'Vue', image: vue, url: '/coming-up-for-beginners' },
   { name: 'Docker', image: docker, url: '/quick-introduction-to-docker-containers' },
-  { name: 'K8S', image: k8s, url: '/kubernetes-in-nutshell — tutorial-for-beginners' },
+  { name: 'K8S', image: k8s, url: '/kubernetes-handbook-developers' },
   { name: 'Node', image: node, url: '/nodejs-from-bottom-to-top-for-beginners' },
   { name: 'Grpahql', image: graphql, url: '/graphql-handbook-for-developers' },
   { name: 'CSS', image: css, url: '/css-handbook-for-developers' },
@@ -36,8 +36,8 @@ const manuals = [
   { name: 'NgRx', image: rx, url: '/event-driven-ui-using-angular-ngrx-and-websocket' },
   { name: 'Express', image: express, url: '/Node-JS-Express-Handbook-for-API-development' },
   { name: 'Patterns', image: ts, url: '/javascript-handbook-for-beginners' },
-  { name: 'RN', image: rn, url: '/javascript-handbook-for-beginners' },
-  { name: 'AWS', image: aws, url: '/javascript-handbook-for-beginners' },
+  { name: 'RN', image: rn, url: '/coming-up-for-beginners'  },
+  { name: 'AWS', image: aws, url: '/coming-up-for-beginners' },
 ]
 export default class ManualPage extends Component {
   render() {
