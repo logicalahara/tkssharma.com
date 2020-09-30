@@ -1,48 +1,48 @@
 module.exports = {
   YouTube: [
-  {
-    "kind": "youtube#playlist",
-    "etag": "o-VkDM7Zjyge-UjtVGiPrQMPa6o",
-    "id": "PLIGDNOJWiL18gpsr_lwLwpITrQBBa_2JF",
-    "snippet": {
-      "publishedAt": "2020-09-29T16:21:09Z",
-      "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
-      "title": "DevOps For Developers",
-      "description": "",
-      "thumbnails": {
-        "default": {
-          "url": "https://i9.ytimg.com/vi/zJK0yb5ahhs/default.jpg?sqp=CMjnzfsF&rs=AOn4CLATXuORoC_otjsDWEdxlrTqUYXTEg",
-          "width": 120,
-          "height": 90
-        },
-        "medium": {
-          "url": "https://i9.ytimg.com/vi/zJK0yb5ahhs/mqdefault.jpg?sqp=CMjnzfsF&rs=AOn4CLAsYHKaZce-2IZHWt2m6VAT8BpHCA",
-          "width": 320,
-          "height": 180
-        },
-        "high": {
-          "url": "https://i9.ytimg.com/vi/zJK0yb5ahhs/hqdefault.jpg?sqp=CMjnzfsF&rs=AOn4CLDZX0685UDbtnrKX7og-7Rt5ks_HA",
-          "width": 480,
-          "height": 360
-        },
-        "standard": {
-          "url": "https://i9.ytimg.com/vi/zJK0yb5ahhs/sddefault.jpg?sqp=CMjnzfsF&rs=AOn4CLBQld2g15E57sEXe5lwnkG3sObzmQ",
-          "width": 640,
-          "height": 480
-        },
-        "maxres": {
-          "url": "https://i9.ytimg.com/vi/zJK0yb5ahhs/maxresdefault.jpg?sqp=CMjnzfsF&rs=AOn4CLBV2uv_M6fl4Pqd2UVUNQwcIJRwTA",
-          "width": 1280,
-          "height": 720
-        }
-      },
-      "channelTitle": "Code Labs",
-      "localized": {
+    {
+      "kind": "youtube#playlist",
+      "etag": "NbWCW4MirHsctF4bIT80abBpJlI",
+      "id": "PLIGDNOJWiL18gpsr_lwLwpITrQBBa_2JF",
+      "snippet": {
+        "publishedAt": "2020-09-29T16:21:09Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
         "title": "DevOps For Developers",
-        "description": ""
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zJK0yb5ahhs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zJK0yb5ahhs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zJK0yb5ahhs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/zJK0yb5ahhs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/zJK0yb5ahhs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Code Labs",
+        "localized": {
+          "title": "DevOps For Developers",
+          "description": ""
+        }
       }
-    }
-  },
+    },
   {
     "kind": "youtube#playlist",
     "etag": "ek76HPRrjTyQg-xNtiAVI64ljfU",
