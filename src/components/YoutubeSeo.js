@@ -22,7 +22,7 @@ export default class SEO extends Component {
       image =  postNode.snippet.thumbnails.medium.url;
       imageThumb =  postNode.snippet.thumbnails.medium.url;
      }
-    postURL = urljoin(config.siteUrl, replacePath(`/publications/${postPath}`));
+    postURL = urljoin(config.siteUrl, replacePath(`${postPath}`));
 
   }
     const blogURL = urljoin(config.siteUrl, config.pathPrefix)
