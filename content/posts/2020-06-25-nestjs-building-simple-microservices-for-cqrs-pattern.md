@@ -1,6 +1,6 @@
 ---
 date: 2020-05-25
-title: 'Building Simple Micro-services using CQRS Pattern (Nest JS)'
+title: 'Building Simple Micro-services using CQRS Pattern (Nest JS) 🔭 🎯🎺'
 template: post
 featured:  '../thumbnails/nestjs.png'
 thumbnail: '../thumbnails/nestjs.png'

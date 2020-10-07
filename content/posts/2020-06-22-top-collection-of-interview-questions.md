@@ -1,6 +1,6 @@
 ---
 date: 2020-05-22
-title: 'Top Collection of Coding Interview Questions'
+title: 'Top Collection of Coding Interview Questions 🔭 🎯🎺'
 template: post
 featured:  '../thumbnails/js.png'
 thumbnail: '../thumbnails/js.png'
