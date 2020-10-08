@@ -1,5 +1,5 @@
 ---
-date: 2020-05-26
+date: 2020-05-29
 title: 'React RoadMap for Developers'
 template: post
 featured:  '../thumbnails/react.png'
