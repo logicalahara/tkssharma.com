@@ -2,8 +2,8 @@
 date: 2020-06-02
 title: 'Quick starter Nestjs CRUD Using TypeORM Mysql 💻 🎯'
 template: post
-featured:  '../thumbnails/js.png'
-thumbnail: '../thumbnails/js.png'
+featured:  '../thumbnails/nodejs.png'
+thumbnail: '../thumbnails/nodejs.png'
 slug: nestjs-crud-using-typeorm-and-mysql
 categories:
   - Popular

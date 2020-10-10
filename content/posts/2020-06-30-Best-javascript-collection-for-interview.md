@@ -1,6 +1,6 @@
 ---
 date: 2020-05-30
-title: 'Best Javascript collection for Interviews 💻 🎯'
+title: 'Top Javascript collection for Interviews (Crack Jobs) 💻 🎯'
 template: post
 featured:  '../thumbnails/js.png'
 thumbnail: '../thumbnails/js.png'
