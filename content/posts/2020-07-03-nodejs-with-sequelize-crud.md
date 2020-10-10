@@ -1,5 +1,5 @@
 ---
-date: 2020-06-02
+date: 2020-06-03
 title: 'Node JS CRUD Using Sequelize ORM Mysql 💻 🎯'
 template: post
 featured:  '../thumbnails/nodejs.png'
@@ -288,7 +288,7 @@ Now, we create a final user.controller.js there contain all function.
     module.exports = app => {
        app.post("/user",userController.createUser);
        app.get("/user/:id",userController.getUser);
-       app.put("/update-details",userController.updateUser);
+       app.put("/update/:id",userController.updateUser);
        app.delete("/user/:id",userController.deleteUser);
     };
 ```
