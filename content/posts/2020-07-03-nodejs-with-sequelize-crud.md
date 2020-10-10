@@ -2,8 +2,8 @@
 date: 2020-06-03
 title: 'Node JS CRUD Using Sequelize ORM Mysql 💻 🎯'
 template: post
-featured:  '../thumbnails/nodejs.png'
-thumbnail: '../thumbnails/nodejs.png'
+featured:  '../thumbnails/node.png'
+thumbnail: '../thumbnails/node.png'
 slug: nodejs-crud-using-sequelize-and-mysql
 categories:
   - Popular
