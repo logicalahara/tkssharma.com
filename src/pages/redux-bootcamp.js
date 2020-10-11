@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Layout from '../layout'
 import config from '../../data/SiteConfig'
 import SEO from '../components/SEO'
-import react from '../../content/thumbnails/node.png'
+import react from '../../content/thumbnails/react.png'
 
 export default class PublicationsPage extends Component {
   render() {
@@ -19,7 +19,7 @@ export default class PublicationsPage extends Component {
               </div>
               <div className="">
                 <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                  Node JS Bootcamp 🔭 🎯🎺
+                  Redux Bootcamp 🔭 🎯🎺
                 </h2>
                 <h4 className="mt-2 text-xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-3xl sm:leading-none md:text-3xl">
                   A Free online training program
@@ -43,10 +43,8 @@ export default class PublicationsPage extends Component {
         <div className="video-container container bootcamp-card">
           <iframe
             frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
-            src={`https://www.youtube.com/embed/videoseries?list=PLIGDNOJWiL18Rh8ymQgXnIwtg_Qx0fkXf`}
+            src={`https://www.youtube.com/embed/videoseries?list=PLIGDNOJWiL18X8gaUi-PQYaOSHc9OAtIN`}
           />
-
-
         </div>
       </Layout>
     )
