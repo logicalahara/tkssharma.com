@@ -1,10 +1,10 @@
 ---
-date: 2020-06-12
-title: 'Angular Interview Questions Part-1'
+date: 2020-06-14
+title: 'Angular Interview Questions Part-2'
 template: post
 featured:  '../thumbnails/angular.png'
 thumbnail: '../thumbnails/angular.png'
-slug: angular-interview-qiestions-part-1
+slug: angular-interview-qiestions-part-2
 categories:
   - Popular
 tags:

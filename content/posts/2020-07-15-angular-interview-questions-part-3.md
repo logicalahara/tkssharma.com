@@ -1,5 +1,5 @@
 ---
-date: 2020-06-12
+date: 2020-06-15
 title: 'Angular Interview Questions Part-3'
 template: post
 featured:  '../thumbnails/angular.png'
