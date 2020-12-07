@@ -41,7 +41,7 @@ vi ~/.npmrc
     always-auth=true
     //gitlab.com/api/v4/packages/npm/:_authToken=AUTH_TOKEN
     //gitlab.com/api/v4/projects/PROJECT_ID/packages/npm/:_authToken=AUTH_TOKEN
-    [@](http://twitter.com/zr)my_org:registry=[https://gitlab.com/api/v4/packages/npm/](https://gitlab.com/api/v4/packages/npm/)
+    @my_org:registry=[https://gitlab.com/api/v4/packages/npm/](https://gitlab.com/api/v4/packages/npm/)
 
 Here an example for .npmrc for gitlab private repository, here we have to specify AUTH_TOKEN which we can get from account -> settings-> access-token
 
@@ -143,6 +143,6 @@ services:
     always-auth=true
     //gitlab.com/api/v4/packages/npm/:_authToken=AUTH_TOKEN
     //gitlab.com/api/v4/projects/PROJECT_ID/packages/npm/:_authToken=AUTH_TOKEN
-    [@](http://twitter.com/zr)my_org:registry=[https://gitlab.com/api/v4/packages/npm/](https://gitlab.com/api/v4/packages/npm/)
+    @my_org:registry=[https://gitlab.com/api/v4/packages/npm/](https://gitlab.com/api/v4/packages/npm/)
 
 this example was for pulling modules from gitlab but its kind of same for others like Github and NPM module    
