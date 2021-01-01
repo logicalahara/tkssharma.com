@@ -1,6 +1,6 @@
 ---
 date: 2020-06-22
-title: 'Top 1000 Angular Interview Questions'
+title: 'Top 500 Angular Interview Questions'
 template: post
 featured:  '../thumbnails/angular.png'
 thumbnail: '../thumbnails/angular.png'

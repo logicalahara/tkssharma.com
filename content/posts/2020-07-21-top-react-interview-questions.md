@@ -1,6 +1,6 @@
 ---
 date: 2020-06-21
-title: 'Top 1000 React JS Interview Questions'
+title: 'Top 500 React JS Interview Questions'
 template: post
 featured:  '../thumbnails/react.png'
 thumbnail: '../thumbnails/react.png'
@@ -14,7 +14,7 @@ tags:
   - js
 ---
 
-# Top 1000 React Interview Question
+# Top 500 React Interview Question
     
 1. ### What is React?
 
