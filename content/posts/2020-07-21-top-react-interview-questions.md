@@ -4,7 +4,7 @@ title: 'Top 500 React JS Interview Questions'
 template: post
 featured:  '../thumbnails/react.png'
 thumbnail: '../thumbnails/react.png'
-slug: top-1000-react-interview-questions
+slug: top-500-react-interview-questions
 categories:
   - Popular
 tags:

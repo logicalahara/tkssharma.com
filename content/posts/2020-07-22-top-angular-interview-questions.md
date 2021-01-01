@@ -4,7 +4,7 @@ title: 'Top 500 Angular Interview Questions'
 template: post
 featured:  '../thumbnails/angular.png'
 thumbnail: '../thumbnails/angular.png'
-slug: top-1000-react-interview-questions
+slug: top-500-angular-interview-questions
 categories:
   - Popular
 tags:

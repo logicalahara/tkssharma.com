@@ -3,7 +3,7 @@ date: 2020-06-23
 title: 'Node JS Top Interview Questions Top 50'
 template: post
 thumbnail: '../thumbnails/node.png'
-slug: nodejs-top-interview-questions
+slug: nodejs-top-interview-question
 categories:
   - NodeJS
   - Popular
