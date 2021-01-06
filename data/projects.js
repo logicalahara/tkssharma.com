@@ -42,13 +42,6 @@ export default [
     description: 'A simple Code Academy Application as Learning solution for developers and expers',
   },
   {
-    icon: '💻',
-    title: 'Nanny Finder',
-    path: 'https://nanny.tkssharma.com/',
-    source:  'https://nanny.tkssharma.com/',
-    description: 'nanny Finder App to find hose worker around',
-  },
-  {
     icon: '🚀',
     title: ' ubmas',
     path: 'https://ubmas.tkssharma.com/',
