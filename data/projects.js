@@ -1,7 +1,7 @@
 export default [
   {
     icon: '🚀',
-    title: 'GenNexTraining',
+    title: 'My Courses',
     path: 'https://training.tkssharma.com',
     source: 'https://training.tkssharma.com',
     description: 'A web-based training portal to provide learning resources',
@@ -29,21 +29,28 @@ export default [
   },
   {
     icon: '⚛',
-    title: 'Developer Profile',
+    title: 'Developer Profile | Its me',
     path: 'https://profile.tkssharma.com/',
     source: 'https://profile.tkssharma.com/',
     description: 'My profile and Projects',
   },
   {
     icon: '🎉',
-    title: 'Code Lab',
+    title: 'Code Lab | Find Consultants',
     path: 'https://academy.tkssharma.com/',
     source: 'https://academy.tkssharma.com/',
-    description: 'A simple Code Academy Application as Learning solution for developers and expers',
+    description: 'A Platform for trainers and consultants',
+  },
+  {
+    icon: '🎉',
+    title: 'Quiz for Developers',
+    path: 'https://devs.tkssharma.com/',
+    source: 'https://devs.tkssharma.com/',
+    description: 'online quiz platform for testing your knowledge',
   },
   {
     icon: '🚀',
-    title: ' ubmas',
+    title: ' ubmas | swiggy',
     path: 'https://ubmas.tkssharma.com/',
     source:'https://ubmas.tkssharma.com/',
     description:
@@ -62,5 +69,19 @@ export default [
     path: 'https://trainer.tkssharma.com/',
     source: 'https://trainer.tkssharma.com/',
     description: 'Learning platform for developers',
+  },
+  {
+    icon: '🚀',
+    title: 'Fellows Clone',
+    path: 'https://fellows.tkssharma.com/',
+    source: 'https://fellows.tkssharma.com/',
+    description: 'Learning platform for developers',
+  },
+  {
+    icon: '🚀',
+    title: 'Code Buddy',
+    path: 'https://buddy.tkssharma.com/',
+    source: 'https://buddy.tkssharma.com/',
+    description: 'Code Buddy for developers to find projects and share ideas',
   }
 ]
