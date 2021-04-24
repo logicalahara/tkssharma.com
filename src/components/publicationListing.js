@@ -30,10 +30,10 @@ export default class SimpleListing extends Component {
         {data && Array.isArray(data) && data.slice(0, this.state.index).map(post => {
           const key = post.snippet.title && transform(post.snippet.title);
           return (
-            <Link key={key} to={`/publications/${key}`} target="_blank" rel="noopener noreferrer">
+            <Link key={key} to={`/${key}`} target="_blank" rel="noopener noreferrer">
               <div className="each">
                 <h2>
-                  {post && '🚀⚛'}
+                  {post && '🚀'}
                   {post.snippet.title}
                 </h2>
               </div>
