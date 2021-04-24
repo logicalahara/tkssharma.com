@@ -72,14 +72,14 @@ export default [
   },
   {
     icon: '🎉🚀',
-    title: 'Code School Lab | Learn Coding',
+    title: 'CodeSchool',
     path: 'https://codeschool.tkssharma.com/',
     source: 'https://codeschool.tkssharma.com/',
     description: 'A Platform for Beginners',
   },
   {
     icon: '🚀',
-    title: 'swiggy Clone',
+    title: 'Swiggy',
     path: 'https://swiggy.tkssharma.com/',
     source: 'https://swiggy.tkssharma.com/',
     description:
@@ -87,21 +87,21 @@ export default [
   },
   {
     icon: '🚀',
-    title: 'Udemy Clone',
+    title: 'Udemy',
     path: 'https://udemy.tkssharma.com/',
     source: 'https://udemy.tkssharma.com/',
     description: 'Learning platform for developers',
   },
   {
     icon: '⚛',
-    title: 'Scooty Rentals Clone',
+    title: 'Scooty',
     path: 'https://scooty.tkssharma.com/',
     source: 'https://scooty.tkssharma.com/',
     description: 'Scooty rental platform for travellers to find scooty on rentals',
   },
   {
     icon: '🚀',
-    title: 'Code Buddy Clone',
+    title: 'Code Buddy',
     path: 'https://buddy.tkssharma.com/',
     source: 'https://buddy.tkssharma.com/',
     description: 'Code Buddy for developers to find projects and share ideas',
