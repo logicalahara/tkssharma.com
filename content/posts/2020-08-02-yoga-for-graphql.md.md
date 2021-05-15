@@ -69,9 +69,10 @@ next add the below to your package.json file.
   "start": "nodemon index.js"
 },
 ```
-Lastly, create an index.js file.
-- touch index.js
+
+create index.js using `touch index.js`
 and paste the following. Don’t worry explanations are below..
+
 ```javascript
 const { GraphQLServer } = require("graphql-yoga");
 const fetch = require("node-fetch");
@@ -154,6 +155,7 @@ type Stat {
 
 Type AbilityObj & StatObj
 These two may confuse you and I’m looking into if there is a better way to do this, but for the time being this works. Unfortunately, when your using a 3rd party API you need to deal with how they return the information since we can’t control it.
+
 ```javascript
 type AbilityObj {
   slot: Int
@@ -166,10 +168,10 @@ type StatObj {
   stat: Stat
 }
 ```
+
 You’ll notice these two types contain a few attributes most importantly ability and stat which point to the types Ability and Stat. The Pokemon API returns the abilities and stats arrays structured in an interesting way. Notice below it’s not an array of objects that are abilities, It’s an array of objects with some ability attributes, then nested inside that another object with the ability name. Due to this I had to create somewhat wonky looking Ability and Stat ‘containers’ (if you will) which is why you see the additional types of AbilityObj & StatObj which contain a couple attributes and also point to ability and stat which are of type Ability & Stat.
 
 ```javascript
-
 abilities: [
   {
     slot: 0,
@@ -192,6 +194,7 @@ type Query {
 
 Resolvers
 Next we have our resolvers, or in this case resolver. We match the naming with our getPokemon query and it simply takes the id, fetches the data, and returns it.
+
 ```javascript
 const resolvers = {
   Query: {
@@ -205,6 +208,7 @@ const resolvers = {
 ```
 
 then we create our server via graphql-yoga’s GraphQLServer, pass it our types and resolver(s), and fire it up!
+
 ```javascript
 const server = new GraphQLServer({ typeDefs, resolvers });
 server.start(() => console.log("Server is running on localhost:4000"));
@@ -215,6 +219,7 @@ One of my favorite parts of GraphQL is the playground. This is a place where you
 
 Sorry, if you were hoping for a swing set and monkey bars.
 Paste the query below on the left and hit the play buttton.
+
 ```javascript
 {
   getPokemon(id: 1) {
