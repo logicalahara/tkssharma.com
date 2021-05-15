@@ -2,8 +2,8 @@
 date: 2020-05-04
 title: 'Event-driven architecture using camunda as Microservice workflow orchestration🎯'
 template: post
-featured:  '../thumbnails/microservices.png'
-thumbnail: '../thumbnails/microservices.png'
+featured:  '../thumbnails/camunda.png'
+thumbnail: '../thumbnails/camunda.png'
 slug: Event-driven-architecture-using-camunda-Microservice-workflow-orchestration
 categories:
   - Popular
