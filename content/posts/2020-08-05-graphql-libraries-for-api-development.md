@@ -1,5 +1,5 @@
 ---
-date: 2020-08-03
+date: 2020-08-05
 title: 'Libraries for Graphql API Development'
 template: post
 thumbnail: '../thumbnails/graphql.png'
