@@ -1,6 +1,6 @@
 ---
 date: 2020-08-05
-title: 'Libraries for Graphql API Development'
+title: 'Libraries for Graphql API Development 2021'
 template: post
 thumbnail: '../thumbnails/graphql.png'
 slug: libraries-for-graphql-api-development
