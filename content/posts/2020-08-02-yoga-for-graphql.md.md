@@ -18,6 +18,7 @@ tags:
 # Building APIs using Graphql-Yoga
 🧘 Fully-featured GraphQL Server with focus on easy setup, performance & great developer experience
 
+![GraphQL: An Efficient alternative to REST](https://www.multidots.com/wp-content/uploads/2018/02/banner-8.jpg?quality=90)
 ## graphql-yoga
 
 Fully-featured GraphQL Server with focus on easy setup, performance & great developer experience

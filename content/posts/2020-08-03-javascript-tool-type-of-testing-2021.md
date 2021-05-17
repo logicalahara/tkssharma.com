@@ -19,6 +19,7 @@ tags:
 
 ## Testing in Today's world with different Libraries and Tools 
 
+![Software Engineer, React Training, Testing JavaScript Training || from kentcdodd.com](https://kentcdodds.com/static/d8bc410cb6d4ffd1e48e1edd9999a3aa/3e561/banner.jpg)
 ### JavaScript Unit Testing
 
 JavaScript Unit Testing is a testing method in which JavaScript test code written for a web page or web application module is combined with HTML as an inline event handler and executed in the browser to test if all functionalities work fine. These unit tests are then organized in the test suite.
