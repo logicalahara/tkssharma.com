@@ -80,7 +80,7 @@ module.exports = {
           `/dev-404-page`,
           `/404`,
           `/404.html`,
-          `/account`,
+          `/tags`,
           `/assets`,
           `/loading`,
           `/offline-plugin-app-shell-fallback`,
