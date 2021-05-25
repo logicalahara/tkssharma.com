@@ -73,7 +73,22 @@ module.exports = {
     'gatsby-plugin-sharp',
     `gatsby-transformer-sharp`,
     'gatsby-plugin-catch-links',
-    'gatsby-plugin-sitemap',
+    {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      options: {
+        exclude: [
+          `/dev-404-page`,
+          `/404`,
+          `/404.html`,
+          `/account`,
+          `/assets`,
+          `/loading`,
+          `/offline-plugin-app-shell-fallback`,
+        ],
+        createLinkInHead: true, 
+        addUncaughtPages: true, 
+      }
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
