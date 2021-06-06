@@ -90,16 +90,3 @@ export default class SEO extends Component {
     )
   }
 }
-/*
- "snippet": {
-        "publishedAt": "2020-05-09T04:50:04.000Z",
-        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
-        "title": "Angular  Webinar Series | Weekend webcasts",
-        "description": "Angular  brings some new features to the popular JavaScript framework for building mobile, desktop and web applications.  Angular is an all-encompassing JavaScript framework that is frequently used by developers all over the world for building web, desktop, and mobile applications",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/cW-Sxjs5KFY/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          */

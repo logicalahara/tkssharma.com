@@ -9,7 +9,7 @@ export default class TagTemplate extends Component {
   render() {
     const { tag } = this.props.pageContext
     const postEdges = this.props.data.allMarkdownRemark.edges
-
+  
     return (
       <Layout>
         <Helmet title={`Posts tagged as "${tag}" – ${config.siteTitle}`} />

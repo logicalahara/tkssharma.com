@@ -1114,6 +1114,7 @@ blockquote {
   }
 }
 
+
 .coffee-icon {
   margin: 0;
   margin-right: 0.5rem;
@@ -1187,6 +1188,30 @@ blockquote {
   padding-top: 56.25%;
   display: block;
   content: '';
+}
+
+.lesson-without-playlist-holder {
+  width: 80%;
+  margin: 0 auto;
+}
+.title-subtitle-block {
+  margin-bottom: 45px;
+  text-align: center;
+}
+.title-subtitle-block .title {
+  margin-bottom: 5px;
+  color: #363636;
+}
+.title-subtitle-block .subtitle {
+  margin-bottom: 0;
+  color: #555;
+}
+.browse-all-lessons-holder {
+  line-height: 34px;
+  padding: 20px;
+    color: #ffffff;
+    margin: 10px;
+    background-color: #5183f5;
 }
 
 .video-container iframe {
