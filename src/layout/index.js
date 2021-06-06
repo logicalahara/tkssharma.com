@@ -30,6 +30,7 @@ export default class MainLayout extends Component {
         >
           <meta name="description" content={config.siteDescription} />
           <link rel="shortcut icon" type="image/png" href={favicon} />
+          <script data-ad-client="ca-pub-4650067392768536" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <link
             rel="stylesheet"
             type="text/css"
