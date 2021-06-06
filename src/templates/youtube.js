@@ -45,7 +45,7 @@ export default class PublishedVideoTemplate extends Component {
 				</Helmet>
 				<SEO postPath={key} key={key} postNode={result} postSEO />
 				<div className="youtube-container">
-					<section style={getStyle(result.snippet.thumbnails.maxres.url)} />
+					<section style={getStyle(result.snippet?.thumbnails?.maxres?.url)} />
           <section className="section">
           <h3 className="text-center">YouTube training Videos.</h3>
           <div className="lesson-without-playlist-holder">
