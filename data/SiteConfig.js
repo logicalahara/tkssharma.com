@@ -35,9 +35,9 @@ const config = {
   userTwitter: 'tkssharma',
   menuLinks: [
     {
-      name: 'About me',
+      name: 'About',
       isGlobal: true,
-      data: 'About me',
+      data: 'About',
       link: '/me/',
     },
     {

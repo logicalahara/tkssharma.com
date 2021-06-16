@@ -6,11 +6,17 @@
     height: 300px;
     justify-content: flex-end;
     align-items: flex-end;
-    background-position: center;
     background-size: cover;
     padding: 1.6rem;
   }
-
+  .youtube-bg {
+    height: 300px;
+  }
+  @media screen and (max-width: 480px) {
+    .youtube-bg {
+      height: 200px !important;
+    }
+  }
 
   .carousel {
     margin: auto;

@@ -35,7 +35,6 @@ export default class PublishedVideoTemplate extends Component {
 				backgroundSize: 'cover',
 				height: '300px',
         marginTop: '-40px',
-				backgroundPosition: 'center'
 			};
 		};
 		return (
@@ -45,7 +44,7 @@ export default class PublishedVideoTemplate extends Component {
 				</Helmet>
 				<SEO postPath={key} key={key} postNode={result} postSEO />
 				<div className="youtube-container">
-					<section style={getStyle(result.snippet?.thumbnails?.maxres?.url)} />
+					<section className="youtube-bg" style={getStyle(result.snippet?.thumbnails?.maxres?.url)} />
           <section className="section">
           <h3 className="text-center">YouTube training Videos.</h3>
           <div className="lesson-without-playlist-holder">

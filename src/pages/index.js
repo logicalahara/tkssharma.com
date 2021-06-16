@@ -61,7 +61,7 @@ export default class Index extends Component {
             <div className="newsletter-section">
               <img  src={tks} className="newsletter-avatar" alt="tkssharma profile" />
               <div>
-                <h3>About Me </h3>
+                <h3>About me</h3>
                 <p>
                   I write tutorials. Get an update when something new comes out by subscribing my channel/Blogs
                 </p>
