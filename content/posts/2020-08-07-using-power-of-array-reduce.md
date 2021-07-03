@@ -30,6 +30,7 @@ The reducer function takes four arguments:
 - Current Value
 - Current Index
 - Source Array
+  
 Your reducer function's returned value is assigned to the accumulator, whose value is remembered across each iteration throughout the array, and ultimately becomes the final, single resulting value.
 
 Array Reduce is a method that exists on the Array.prototype that was introduced in ECMAScript 5 (ES5) and is supported in all modern browsers.
