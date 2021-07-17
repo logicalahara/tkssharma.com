@@ -1,9 +1,9 @@
 ---
-date: 2020-08-08
-title: 'Testing in Nest JS unit and Integration Tests'
+date: 2020-08-11
+title: 'Testing in Nest JS Integration-E2E Tests'
 template: post
 thumbnail: '../thumbnails/nestjs.png'
-slug: unit-testing-nestjs-controllers-and-services
+slug: e2e-integration-tests-nestjs-for-apis
 categories:
   - nestjs
   - nodejs
@@ -19,7 +19,7 @@ tags:
 
 ![](https://i.ytimg.com/vi/ChdjnaRYOOI/maxresdefault.jpg)
 
-# Unit Testing and Integration Testing Nestjs Application
+# Integration Testing Nestjs Application
 
 ## We will use Jest as Runner for Running tests for NestJS 
 Lets first talk about Jest a little bit which is a popular test runner
