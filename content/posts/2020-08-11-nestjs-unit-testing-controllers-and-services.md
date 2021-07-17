@@ -557,3 +557,5 @@ describe('testing', () => {
 ```
 
 This is all about Unit Testing, i will add another Blog about E2E Testing with real database by hitting APIs and seeding data for all tables for testing
+Here is the playlist if you want to see this in action 
+https://www.youtube.com/watch?v=kROllv22WHw&list=PLIGDNOJWiL18srI6BmFLfwDPvorTmyQ_c
