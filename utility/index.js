@@ -31,7 +31,7 @@ async function fetchDataFromYouTube() {
 }
 
 async function writeFile(data) {
-  const payload =  JSON.stringify(data);
+  const payload = JSON.stringify(data);
   return new Promise((resolve, reject) => {
     const file = `masterData.json`;
     return fs.writeFile(file, payload, err => {

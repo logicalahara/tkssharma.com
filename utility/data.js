@@ -2,6 +2,586 @@ module.exports = {
   YouTube: [
     {
       "kind": "youtube#playlist",
+      "etag": "c6UeLWXdsiPUvL1mO-iE6YjP6b0",
+      "id": "PLIGDNOJWiL18DIOG6ZhRf_7YyaAyoDNlb",
+      "snippet": {
+        "publishedAt": "2021-12-25T08:38:49Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "React Redux Toolkit",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5xkGQkPrs00/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5xkGQkPrs00/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5xkGQkPrs00/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5xkGQkPrs00/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5xkGQkPrs00/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "React Redux Toolkit",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "iR4kxZJJCcrUs-oh3_AECesjWYI",
+      "id": "PLIGDNOJWiL1-8hpXEDlD1UrphjmZ9aMT1",
+      "snippet": {
+        "publishedAt": "2021-12-23T11:26:47Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Nest JS for API development 2022 | Intermediate to Advance",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "Nest JS for API development 2022 | Intermediate to Advance",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "07p2UhjGCz_YxyDEs73VkmL8PmQ",
+      "id": "PLIGDNOJWiL1-7M1QEsXN59eTv0Bl7_CiY",
+      "snippet": {
+        "publishedAt": "2021-12-12T07:35:11Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Node JS Microservices and Containers",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "Node JS Microservices and Containers",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "cilDSuqWC6zAFihPcmDFvsbqCEE",
+      "id": "PLIGDNOJWiL1-Smf4ABmuvcOrV7E4mCqN3",
+      "snippet": {
+        "publishedAt": "2021-12-02T10:30:11Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Full Stack Clone - Uber Eats Clone",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/t1JsK9rMYI8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/t1JsK9rMYI8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/t1JsK9rMYI8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/t1JsK9rMYI8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "Full Stack Clone - Uber Eats Clone",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "I5_JYq0akPtFzh5sTR0Xme0njok",
+      "id": "PLIGDNOJWiL1_-NKjmlXFaso_IX-fvYdvm",
+      "snippet": {
+        "publishedAt": "2021-11-17T13:29:09Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Hackerrank Coding to Crack Jobs (Master Course)",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/bnBeEdl2O-o/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/bnBeEdl2O-o/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/bnBeEdl2O-o/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "Hackerrank Coding to Crack Jobs (Master Course)",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "bVFoLI6g-DajMjc5TjtjoY64_3s",
+      "id": "PLIGDNOJWiL1-uGdiUKnhLvql_KrDNlvDy",
+      "snippet": {
+        "publishedAt": "2021-11-17T13:19:40Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Graphql Master Course  (Apollo and Yoga Graphql)",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8pRGyOABuX8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8pRGyOABuX8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8pRGyOABuX8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/8pRGyOABuX8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/8pRGyOABuX8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "Graphql Master Course  (Apollo and Yoga Graphql)",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "WvnxhvVPR0MDOC0e26tXTu4ijPY",
+      "id": "PLIGDNOJWiL1_yCqtAm5i1CDU6wxmcU2_G",
+      "snippet": {
+        "publishedAt": "2021-11-08T04:45:55Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Node JS with Mongo DB Mongoose ODM",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "Node JS with Mongo DB Mongoose ODM",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "L0DCaZxWuBAYN5z9hNkelQQlfnQ",
+      "id": "PLIGDNOJWiL1_ygbYCizW9ORMazELD9foK",
+      "snippet": {
+        "publishedAt": "2021-11-08T04:45:28Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Node JS with Prisma ORM",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "Node JS with Prisma ORM",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "LNphMU3rDKQBQIV93PPzl1_PxCU",
+      "id": "PLIGDNOJWiL1-Xk7Ii6wwxSa7mhS2ehTOp",
+      "snippet": {
+        "publishedAt": "2021-11-07T12:35:35Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "HackerRank Certifications",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/bnBeEdl2O-o/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/bnBeEdl2O-o/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/bnBeEdl2O-o/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "HackerRank Certifications",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "MLA_76I8ZRnQ9NVtQGVpaNp3d8Q",
+      "id": "PLIGDNOJWiL18XF_t7HVUI3v3Qa8uFcN9P",
+      "snippet": {
+        "publishedAt": "2021-10-30T04:05:54Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Knex JS with Node JS",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/gO3iErGW5ZI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/gO3iErGW5ZI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/gO3iErGW5ZI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/gO3iErGW5ZI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/gO3iErGW5ZI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "Knex JS with Node JS",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "9NrhSSc9qg6sQ_CWojrjKfjLkLE",
+      "id": "PLIGDNOJWiL1_QLbl29Y1cfBbUrlE1OeWj",
+      "snippet": {
+        "publishedAt": "2021-09-23T03:39:28Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "React JS with Typescript and Tailwind CSS",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/1ML-wO4uUjM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/1ML-wO4uUjM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/1ML-wO4uUjM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/1ML-wO4uUjM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/1ML-wO4uUjM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "React JS with Typescript and Tailwind CSS",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "rFeCSKbJXb6A4r_F27seeCxVyNs",
+      "id": "PLIGDNOJWiL1-aMrPjLaTfvkeDCYo-sRBF",
+      "snippet": {
+        "publishedAt": "2021-09-22T20:39:53Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Weekend Webinars :: Full Stack Apps",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/78nqu4REExk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/78nqu4REExk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/78nqu4REExk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/78nqu4REExk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/78nqu4REExk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "Weekend Webinars :: Full Stack Apps",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "j4QR77_ADfyIalJq7jh-ho9psTU",
+      "id": "PLIGDNOJWiL186E2BIAofH6vbS9GxAWRle",
+      "snippet": {
+        "publishedAt": "2021-08-21T12:04:38Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Nest JS Master Course",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5tau19ae6aY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5tau19ae6aY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5tau19ae6aY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5tau19ae6aY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5tau19ae6aY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "Nest JS Master Course",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "JS00C7jWHY9kc5zqajUU08pSA5U",
+      "id": "PLIGDNOJWiL18srI6BmFLfwDPvorTmyQ_c",
+      "snippet": {
+        "publishedAt": "2021-07-13T12:54:53Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "Nest JS Microservices || 12 Factor App",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kROllv22WHw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kROllv22WHw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kROllv22WHw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/kROllv22WHw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/kROllv22WHw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "Nest JS Microservices || 12 Factor App",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
+      "etag": "zYbhPtD-hJqtXBUTs4ALjy30rS4",
+      "id": "PLIGDNOJWiL1-hSzJ8-0NKQmJteTvtkac-",
+      "snippet": {
+        "publishedAt": "2021-06-28T04:04:27Z",
+        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
+        "title": "React JS with Typescript Course",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/z2eB8809ovc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/z2eB8809ovc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/z2eB8809ovc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/z2eB8809ovc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/z2eB8809ovc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Code with tkssharma",
+        "localized": {
+          "title": "React JS with Typescript Course",
+          "description": ""
+        }
+      }
+    },
+    {
+      "kind": "youtube#playlist",
       "etag": "iH200X5odSUayMDC-8TrIe9w_RA",
       "id": "PLIGDNOJWiL182w2gKS5TsDuO6PZkJa0tK",
       "snippet": {
