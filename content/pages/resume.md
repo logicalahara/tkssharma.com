@@ -35,15 +35,20 @@ template: page
 ### Concepts
 RESTful API Design, CI/CD, Agile Methodology, Microservices Architecture, Secure Authentication, Testing (unit, integration, end-to-end, snapshot, DOM) Databases (MySQL, Mongo BD, Redis cache), search engine Elastic
 
+## Experience in Product Domain
+
+### Sr Developer
+
+**Mercanis ** - Feb 2021 - Present | Delhi, India [REMOTE]
+
+- About 10 years of experience in development, designing and implementing solution with JavaScript as full stack development-  and particularly strong at - JavaScript frameworks Angular ,React and server side Node JS with GraphQL and Microservices based Architecture
+- currently working with product development in javascript using React, Node JS and different tools and technologies in javascript domain.
+
 ## Experience in Service Domain
 
 ### Lead Enginner
 
-**Srijan Technologies Technology, Inc** - _2016 - Present | Delhi, India_
-
-- About 7 years of experience in development, designing and implementing solution with JavaScript as full stack development-  and particularly strong at - JavaScript frameworks Angular ,React and server side Node JS with GraphQL and Microservices based Architecture
-
-**Srijan Technologies Technology, Inc** - _2016 - Present | Delhi, India_
+** Srijan Technologies Technology, Inc** - _2016 - Feb 2021 | Delhi, India_
 
 -  Worked on Different projects for different Clients in JavaScript and Node JS, Like News Portal server side rendering using Node JS, IOT Devices Data monitoring Dashboard, Beauty Brand Learning Portal websites and virtual try on augmented reality Web Portal 
 -  Currently working with Different beauty brands to build a learning solutions for their retail owners about their different products.
@@ -51,7 +56,7 @@ RESTful API Design, CI/CD, Agile Methodology, Microservices Architecture, Secure
 
 ### Tech Lead
 
-**Srijan Technologies Technology, Inc** - _2016 - Present | Delhi, India_
+** Srijan Technologies Technology, Inc** - _2016 - Present | Delhi, India_
 
  -  Developing Client project using Node js as backend and React js with Redux as front end state manager, Managing devOps on AWS infrastructure
 -  Working as full stack developer writing APIs and application in JavaScript using Node JS 
