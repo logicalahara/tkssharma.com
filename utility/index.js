@@ -13,16 +13,20 @@ async function fetchDataFromYouTube() {
   const array = [];
   try {
     for (const youtubeList of allData.YouTube) {
-      const {
-        id
-      } = youtubeList;
-      const payload = {};
-      payload.key = id;
-      await delay();
-      const data = await fetchSinglePlaylist(id);
-      payload.value = data;
-      console.log('data is there with length' + data.length);
-      array.push(payload);
+      try {
+        const {
+          id
+        } = youtubeList;
+        const payload = {};
+        payload.key = id;
+        await delay();
+        const data = await fetchSinglePlaylist(id);
+        payload.value = data;
+        console.log('data is there with length' + data.length);
+        array.push(payload);
+      } catch (err) {
+
+      }
     }
     await writeFile(array);
   } catch (err) {
