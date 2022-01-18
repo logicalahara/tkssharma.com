@@ -45,7 +45,7 @@ module.exports = {
     },
     {
       "kind": "youtube#playlist",
-      "etag": "iR4kxZJJCcrUs-oh3_AECesjWYI",
+      "etag": "sDw7FG0C9gUKFXFe-q0QSg_Y2ck",
       "id": "PLIGDNOJWiL1-8hpXEDlD1UrphjmZ9aMT1",
       "snippet": {
         "publishedAt": "2021-12-23T11:26:47Z",
@@ -54,57 +54,34 @@ module.exports = {
         "description": "",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "url": "https://i.ytimg.com/vi/kROllv22WHw/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "url": "https://i.ytimg.com/vi/kROllv22WHw/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "url": "https://i.ytimg.com/vi/kROllv22WHw/hqdefault.jpg",
             "width": 480,
             "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/kROllv22WHw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/kROllv22WHw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
           }
         },
         "channelTitle": "Code with tkssharma",
         "localized": {
           "title": "Nest JS for API development 2022 | Intermediate to Advance",
-          "description": ""
-        }
-      }
-    },
-    {
-      "kind": "youtube#playlist",
-      "etag": "07p2UhjGCz_YxyDEs73VkmL8PmQ",
-      "id": "PLIGDNOJWiL1-7M1QEsXN59eTv0Bl7_CiY",
-      "snippet": {
-        "publishedAt": "2021-12-12T07:35:11Z",
-        "channelId": "UCS1NeZF0Or2E1RAV9hQJz3g",
-        "title": "Node JS Microservices and Containers",
-        "description": "",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
-            "width": 480,
-            "height": 360
-          }
-        },
-        "channelTitle": "Code with tkssharma",
-        "localized": {
-          "title": "Node JS Microservices and Containers",
           "description": ""
         }
       }
@@ -225,7 +202,7 @@ module.exports = {
     },
     {
       "kind": "youtube#playlist",
-      "etag": "WvnxhvVPR0MDOC0e26tXTu4ijPY",
+      "etag": "eoFO-7puJMFMzEbvSEkWlGMmJdg",
       "id": "PLIGDNOJWiL1_yCqtAm5i1CDU6wxmcU2_G",
       "snippet": {
         "publishedAt": "2021-11-08T04:45:55Z",
@@ -234,19 +211,29 @@ module.exports = {
         "description": "",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "url": "https://i.ytimg.com/vi/_iR4Pt4fLwE/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "url": "https://i.ytimg.com/vi/_iR4Pt4fLwE/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "url": "https://i.ytimg.com/vi/_iR4Pt4fLwE/hqdefault.jpg",
             "width": 480,
             "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/_iR4Pt4fLwE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/_iR4Pt4fLwE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
           }
         },
         "channelTitle": "Code with tkssharma",
@@ -258,7 +245,7 @@ module.exports = {
     },
     {
       "kind": "youtube#playlist",
-      "etag": "L0DCaZxWuBAYN5z9hNkelQQlfnQ",
+      "etag": "aPO-JinNDAGEw61tQuPt4xm8dxU",
       "id": "PLIGDNOJWiL1_ygbYCizW9ORMazELD9foK",
       "snippet": {
         "publishedAt": "2021-11-08T04:45:28Z",
@@ -267,17 +254,17 @@ module.exports = {
         "description": "",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "url": "https://i.ytimg.com/vi/Mzu3u0CsEm4/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "url": "https://i.ytimg.com/vi/Mzu3u0CsEm4/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/img/no_thumbnail.jpg",
+            "url": "https://i.ytimg.com/vi/Mzu3u0CsEm4/hqdefault.jpg",
             "width": 480,
             "height": 360
           }
